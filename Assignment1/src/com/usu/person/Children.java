@@ -1,32 +1,40 @@
 package com.usu.person;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@XmlType(name="Child")
+//@XmlType(name="Child")
+/**
+ * @author anujk
+ * This is a POJO class for Children object in hierarchical inheritance 
+ *
+ */
 public class Children extends Person{
 	
 	@JsonProperty("NewbornScreeningNumber")
+//	@XmlElement(name="NewbornScreeningNumber")
 	String newbornScreeningNumber;
 	@JsonProperty("IsPartOfMultipleBirth")
+//	@XmlElement(name="IsPartOfMultipleBirth")
 	String isPartOfMultipleBirth;
 	@JsonProperty("BirthOrder")
+//	@XmlElement(name="BirthOrder")
 	int birthOrder;
 	@JsonProperty("BirthCounty")
+//	@XmlElement(name="BirthCounty")
 	String birthCounty;
 	@JsonProperty("MotherFirstName")
+//	@XmlElement(name="MotherFirstName")
 	String motherFirstName;
 	@JsonProperty("MotherMiddleName")
+//	@XmlElement(name="MotherMiddleName")
 	String motherMiddleName;
 	@JsonProperty("MotherLastName")
+//	@XmlElement(name="MotherLastName")
 	String motherLastName;
 	
 	/**
 	 * @return the newbornScreeningNumber
 	 */
-	@XmlElement(name="NewbornScreeningNumber")
 	public String getNewbornScreeningNumber() {
 		return newbornScreeningNumber;
 	}
@@ -39,7 +47,6 @@ public class Children extends Person{
 	/**
 	 * @return the isPartOfMultipleBirth
 	 */
-	@XmlElement(name="IsPartOfMultipleBirth")
 	public String getIsPartOfMultipleBirth() {
 		return isPartOfMultipleBirth;
 	}
@@ -52,7 +59,6 @@ public class Children extends Person{
 	/**
 	 * @return the birthOrder
 	 */
-	@XmlElement(name="BirthOrder")
 	public int getBirthOrder() {
 		return birthOrder;
 	}
@@ -65,7 +71,6 @@ public class Children extends Person{
 	/**
 	 * @return the birthCounty
 	 */
-	@XmlElement(name="BirthCounty")
 	public String getBirthCounty() {
 		return birthCounty;
 	}
@@ -78,20 +83,19 @@ public class Children extends Person{
 	/**
 	 * @return the motherFirstName
 	 */
-	@XmlElement(name="MotherFirstName")
 	public String getMotherFirstName() {
 		return motherFirstName;
 	}
 	/**
 	 * @param motherFirstName the motherFirstName to set
 	 */
+
 	public void setMotherFirstName(String motherFirstName) {
 		this.motherFirstName = motherFirstName;
 	}
 	/**
 	 * @return the motherMiddleName
 	 */
-	@XmlElement(name="MotherMiddleName")
 	public String getMotherMiddleName() {
 		return motherMiddleName;
 	}
@@ -104,7 +108,6 @@ public class Children extends Person{
 	/**
 	 * @return the motherLastName
 	 */
-	@XmlElement(name="MotherLastName")
 	public String getMotherLastName() {
 		return motherLastName;
 	}

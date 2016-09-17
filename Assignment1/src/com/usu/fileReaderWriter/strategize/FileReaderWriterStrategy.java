@@ -7,7 +7,7 @@ import com.usu.person.Person;
 
 /**
  * @author anujk
- * This is an abstract class whose behavior is decided in the child classes.
+ * This is an abstract class for file read write whose behavior is decided in the child classes.
  *
  */
 public abstract class FileReaderWriterStrategy {
@@ -15,5 +15,5 @@ public abstract class FileReaderWriterStrategy {
 	
 	public abstract List<Person> inputFileReader(String personInputFileName);
 
-    public abstract List<Person> outputFileWriter();
+    public abstract void outputFileWriter(String personOutputFileName, List<Integer> comparedPersonObjectId);
 }

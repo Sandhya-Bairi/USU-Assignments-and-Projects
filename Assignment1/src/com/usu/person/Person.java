@@ -1,59 +1,71 @@
 package com.usu.person;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSeeAlso;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
 
+/**
+ * @author anujk
+ * This is a POJO class for Person object
+ *
+ */
 @JsonTypeInfo(use = Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "__type")
 @JsonSubTypes({@Type(value = Children.class, name = "Child"), @Type(value = Adult.class, name = "Adult")})
-@XmlRootElement(name="Person")
-@XmlSeeAlso({Children.class,Adult.class})
+//@XmlRootElement(name="Person")
+/*@XmlAccessorType(XmlAccessType.FIELD)
+@XmlSeeAlso({Children.class,Adult.class})*/
 public abstract class Person {
 
 	@JsonProperty("ObjectId")
+//	@XmlElement(name="ObjectId")
 	int objectId;
 	@JsonProperty("StateFileNumber")
+//	@XmlElement(name="StateFileNumber")
 	String stateFileNumber;
 	@JsonProperty("SocialSecurityNumber")
+//	@XmlElement(name="SocialSecurityNumber")
 	String socialSecurityNumber;
 	@JsonProperty("FirstName")
+//	@XmlElement(name="FirstName")
 	String firstName;
 	@JsonProperty("MiddleName")
+//	@XmlElement(name="MiddleName")
 	String middleName;
 	@JsonProperty("LastName")
+//	@XmlElement(name="LastName")
 	String lastName;
 	@JsonProperty("BirthYear")
+//	@XmlElement(name="BirthYear")
 	int birthYear;
 	@JsonProperty("BirthMonth")
+//	@XmlElement(name="BirthMonth")
 	int birthMonth;
 	@JsonProperty("BirthDay")
+//	@XmlElement(name="BirthDay")
 	int birthDay;
 	@JsonProperty("Gender")
+//	@XmlElement(name="Gender")
 	String gender;
 
 	/**
 	 * @return the objectId
 	 */
-	@XmlElement(name="ObjectId")
+
 	public int getObjectId() {
 		return objectId;
 	}
 	/**
 	 * @param objectId the objectId to set
 	 */
+	
 	public void setObjectId(int objectId) {
 		this.objectId = objectId;
 	}
 	/**
 	 * @return the stateFileNumber
 	 */
-	@XmlElement(name="StateFileNumber")
 	public String getStateFileNumber() {
 		return stateFileNumber;
 	}
@@ -66,7 +78,6 @@ public abstract class Person {
 	/**
 	 * @return the socialSecurityNumber
 	 */
-	@XmlElement(name="SocialSecurityNumber")
 	public String getSocialSecurityNumber() {
 		return socialSecurityNumber;
 	}
@@ -79,7 +90,6 @@ public abstract class Person {
 	/**
 	 * @return the firstName
 	 */
-	@XmlElement(name="FirstName")
 	public String getFirstName() {
 		return firstName;
 	}
@@ -92,7 +102,6 @@ public abstract class Person {
 	/**
 	 * @return the middleName
 	 */
-	@XmlElement(name="MiddleName")
 	public String getMiddleName() {
 		return middleName;
 	}
@@ -105,7 +114,6 @@ public abstract class Person {
 	/**
 	 * @return the lastName
 	 */
-	@XmlElement(name="LastName")
 	public String getLastName() {
 		return lastName;
 	}
@@ -118,7 +126,6 @@ public abstract class Person {
 	/**
 	 * @return the birthYear
 	 */
-	@XmlElement(name="BirthYear")
 	public int getBirthYear() {
 		return birthYear;
 	}
@@ -131,7 +138,6 @@ public abstract class Person {
 	/**
 	 * @return the birthMonth
 	 */
-	@XmlElement(name="BirthMonth")
 	public int getBirthMonth() {
 		return birthMonth;
 	}
@@ -144,7 +150,6 @@ public abstract class Person {
 	/**
 	 * @return the birthDay
 	 */
-	@XmlElement(name="BirthDay")
 	public int getBirthDay() {
 		return birthDay;
 	}
@@ -157,7 +162,6 @@ public abstract class Person {
 	/**
 	 * @return the gender
 	 */
-	@XmlElement(name="Gender")
 	public String getGender() {
 		return gender;
 	}

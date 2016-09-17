@@ -10,9 +10,18 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.usu.person.Person;
 
+/**
+ * @author anujk
+ * This is a strategy implementor class for json file format
+ *
+ */
 public class JSONFileReaderWriterStrategy extends FileReaderWriterStrategy {
 	ObjectMapper personObjectMapper = new ObjectMapper();
 	
+	/* (non-Javadoc)
+	 * @see com.usu.fileReaderWriter.strategize.FileReaderWriterStrategy#inputFileReader(java.lang.String)
+	 * This method provides the implementation for json input files parsing using jackson jars
+	 */
 	@SuppressWarnings("deprecation")
 	@Override
 	public List<Person> inputFileReader(String personInputFileName) {
@@ -26,9 +35,14 @@ public class JSONFileReaderWriterStrategy extends FileReaderWriterStrategy {
 		return persons;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.usu.fileReaderWriter.strategize.FileReaderWriterStrategy#outputFileWriter(java.lang.String, java.util.List)
+	 * No implementation is provided as we do not want to save in JSON format
+	 */
 	@Override
-	public List<Person> outputFileWriter() {
-		return null;
+	public void outputFileWriter(String personOutputFileName, List<Integer> comparedPersonObjectId) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
