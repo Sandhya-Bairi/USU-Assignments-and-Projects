@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Person xsi:type="Adult">
+<Persons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Person type="Adult">
     <ObjectId>45</ObjectId>
     <StateFileNumber>1992 50976</StateFileNumber>
     <SocialSecurityNumber>047914054</SocialSecurityNumber>
@@ -12,7 +12,7 @@
     <Gender>F</Gender>
     <Phone1>435-555-4176</Phone1>
   </Person>
-  <Person xsi:type="Child">
+  <Person type="Child">
     <ObjectId>46</ObjectId>
     <StateFileNumber>2005 05643</StateFileNumber>
     <FirstName>Steven</FirstName>
@@ -27,7 +27,7 @@
     <MotherMiddleName>&gt;]=TX</MotherMiddleName>
     <MotherLastName>EUF1K0_]]</MotherLastName>
   </Person>
-  <Person xsi:type="Adult">
+  <Person type="Adult">
     <ObjectId>45</ObjectId>
     <SocialSecurityNumber>047914054</SocialSecurityNumber>
     <FirstName>Ivie</FirstName>
@@ -39,7 +39,7 @@
     <Gender>F</Gender>
     <Phone1>435-555-4176</Phone1>
   </Person>
-  <Person xsi:type="Adult">
+  <Person type="Adult">
     <ObjectId>45</ObjectId>
     <StateFileNumber>1992 50976</StateFileNumber>
     <FirstName>Ivie</FirstName>
@@ -50,7 +50,7 @@
     <Gender>F</Gender>
     <Phone1>435-555-4176</Phone1>
   </Person>
-  <Person xsi:type="Child">
+  <Person type="Child">
     <ObjectId>46</ObjectId>
     <FirstName>Steven</FirstName>
     <LastName>Young</LastName>
@@ -64,4 +64,4 @@
     <MotherMiddleName>&gt;]=TX</MotherMiddleName>
     <MotherLastName>EUF1K0_]]</MotherLastName>
   </Person>
-</ArrayOfPerson>
+</Persons>
