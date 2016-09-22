@@ -20,7 +20,7 @@ public class MissionaryAndCannibals {
 		if(!(missionaryCount >= cannibalsCount)) {
 			throw new Exception("[Error] invalid input!! Missionaries should always be greater than or equal to Cannibals");
 		} else if(missionaryCount == 4 && cannibalsCount == 4) {
-			throw new Exception("[Error] no solution found. No solition possible when the Missionaries and Cannibals are equal to 4");
+			throw new Exception("[Error] no solution found. No solution possible when the Missionaries and Cannibals are equal to 4");
 		}
 		
 		StatesInSolution initialState = new StatesInSolution (missionaryCount, cannibalsCount, Position.LEFT, 0, 0);
