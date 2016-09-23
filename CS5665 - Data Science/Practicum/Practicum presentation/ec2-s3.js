@@ -1,7 +1,7 @@
 var aws = require('aws-sdk');
 aws.config.update({
-  accessKeyId: 'AKIAJJSVU2YYPWE44DCA',
-  secretAccessKey: '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',
+  accessKeyId: '',
+  secretAccessKey: '',
   region:'us-west-2b' 
 });
 var s3Bucket = new aws.S3({params: {Bucket: 'cs5665-dspracticum-awsdemo-33'}});
