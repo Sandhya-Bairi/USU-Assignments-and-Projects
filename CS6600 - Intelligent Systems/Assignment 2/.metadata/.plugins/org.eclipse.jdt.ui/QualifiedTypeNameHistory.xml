@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="com.usu.machinelearning.decisiontree.label.BooleanLabel"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.usu.machinelearning.decisiontree.Node"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.usu.machinelearning.decisiontree.label.Label"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="com.usu.machinelearning.decisiontree.feature.Feature"/>
+<fullyQualifiedTypeName name="com.usu.machinelearning.decisiontree.label.StringLabel"/>
+<fullyQualifiedTypeName name="org.supercsv.cellprocessor.constraint.NotNull"/>
+<fullyQualifiedTypeName name="com.usu.machinelearning.decisiontree.impurity.EntropyCalculationMethod"/>
+<fullyQualifiedTypeName name="com.usu.decisionTree.DecisionTree"/>
+<fullyQualifiedTypeName name="com.usu.decisionTree.DecisionTree.Node"/>
+<fullyQualifiedTypeName name="com.usu.decisionTree.StringDecisionTree"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="weka.core.Instance"/>
+<fullyQualifiedTypeName name="weka.core.Instances"/>
+<fullyQualifiedTypeName name="weka.core.Debug.Random"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,167 @@
+package com.usu.machinelearning.main;
+
+import static com.usu.machinelearning.decisiontree.feature.P.betweenD;
+import static com.usu.machinelearning.decisiontree.feature.P.lessThanD;
+import static com.usu.machinelearning.decisiontree.feature.P.moreThan;
+import static com.usu.machinelearning.decisiontree.feature.P.moreThanD;
+import static com.usu.machinelearning.decisiontree.feature.P.startsWith;
+import static com.usu.machinelearning.decisiontree.feature.PredicateFeature.newFeature;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.List;
+
+import com.usu.machinelearning.decisiontree.DecisionTree;
+import com.usu.machinelearning.decisiontree.data.DataSample;
+import com.usu.machinelearning.decisiontree.data.SimpleDataSample;
+import com.usu.machinelearning.decisiontree.feature.Feature;
+import com.usu.machinelearning.decisiontree.label.BooleanLabel;
+import org.supercsv.cellprocessor.Optional;
+import org.supercsv.cellprocessor.ParseBool;
+import org.supercsv.cellprocessor.ParseDouble;
+import org.supercsv.cellprocessor.ParseInt;
+import org.supercsv.cellprocessor.ift.CellProcessor;
+import org.supercsv.io.CsvListReader;
+import org.supercsv.io.ICsvListReader;
+import org.supercsv.prefs.CsvPreference;
+import org.supercsv.util.CsvContext;
+
+import com.google.common.collect.Lists;
+
+public class Main {
+
+    public static void main(String[] args) throws FileNotFoundException, IOException {
+        List<DataSample> trainingData = readData(true);
+        DecisionTree tree = new DecisionTree();
+        
+        List<Feature> features = getFeatures();
+        
+        tree.train(trainingData, features);
+        
+        // print tree after training
+        tree.printTree();
+        
+        // read test data
+        List<DataSample> testingData = readData(false);
+        List<String> predictions = Lists.newArrayList();
+        // classify all test data
+        for (DataSample dataSample : testingData) {
+            predictions.add(dataSample.getValue("PassengerId").get() + "," + tree.classify(dataSample).getPrintValue());
+        }
+        
+        // write predictions to file
+        FileWriter fileWriter = new FileWriter(new File("predictions.csv"));
+        fileWriter.append("PassengerId,Survived").append("\n");
+        for (String prediction : predictions) {
+            fileWriter.append(prediction).append("\n");
+        }
+        fileWriter.flush();
+        fileWriter.close();
+        
+    }
+    
+    /**
+     * @return
+     * This method is used for creating the various categories in each columns
+     */
+    private static List<Feature> getFeatures() {
+        Feature firstAlt = newFeature("Alt", "Yes");
+        Feature secondAlt = newFeature("Alt", "No");
+        Feature firstBar = newFeature("Bar", "Yes");
+        Feature secondBar = newFeature("Bar", "No");
+        Feature firstFri = newFeature("Fri", "Yes");
+        Feature secondFri = newFeature("Fri", "No");
+        Feature firstHun = newFeature("Hun", "Yes");
+        Feature secondHun = newFeature("Hun", "No");
+        Feature firstPat = newFeature("Pat", "Some");
+        Feature secondPat = newFeature("Pat", "Full");
+        Feature thirdPat = newFeature("Pat", "None");
+        Feature firstPrice = newFeature("Price", "$");
+        Feature secondPrice = newFeature("Price", "$$");
+        Feature thirdPrice = newFeature("Price", "$$$");
+        Feature firstRain = newFeature("Rain", "Yes");
+        Feature secondRain = newFeature("Rain", "No");
+        Feature firstRes = newFeature("Res", "Yes");
+        Feature secondRes = newFeature("Res", "No");
+        Feature firstType = newFeature("Type", "French");
+        Feature secondType = newFeature("Type", "French");
+        Feature thirdType = newFeature("Type", "French");
+        Feature fourthType = newFeature("Type", "French");
+        Feature firstEst = newFeature("Est", "0 - 10");
+        Feature secondEst = newFeature("Est", "30 - 60");
+        Feature thirdEst = newFeature("Est", ">60");
+        Feature fourthEst = newFeature("Est", "10 - 30");
+
+        return Arrays.asList(firstAlt, secondAlt, firstBar, secondBar, firstFri, secondFri, firstHun, secondHun, firstPat, secondPat, thirdPat, firstPrice, secondPrice, thirdPrice, firstRain, secondRain, 
+        		firstRes, secondRes, firstType, secondType, thirdType, fourthType, firstEst, secondEst, thirdEst, fourthEst);
+    }
+    
+    private static List<DataSample> readData(boolean training) throws IOException {
+        List<DataSample> data = Lists.newArrayList();
+        String filename = "C:\\Users\\Anuj Khasgiwala\\Desktop\\Table.csv";
+        //String filename = training ? "C:\\Users\\Anuj Khasgiwala\\Desktop\Table.csv" : "C:\\Users\\Anuj Khasgiwala\\Desktop\Table.csv";
+        InputStreamReader stream = new FileReader(filename);
+        try (ICsvListReader listReader = new CsvListReader(stream, CsvPreference.STANDARD_PREFERENCE);) {
+            
+            // the header elements are used to map the values to the bean (names must match)
+            final String[] header = listReader.getHeader(true);
+            
+            List<Object> values;
+            while ((values = listReader.read(getProcessors(training))) != null) {
+//                System.out.println(String.format("lineNo=%s, rowNo=%s, data=%s", listReader.getLineNumber(), listReader.getRowNumber(), values));
+                data.add(SimpleDataSample.newSimpleDataSample("Alt", header, values.toArray()));
+            }
+        }
+        return data;
+    }
+    
+    private static CellProcessor[] getProcessors(boolean training) {
+        if (training) {
+            final CellProcessor[] processors = new CellProcessor[] { 
+                    new Optional(),
+                    new Optional(),
+                    new Optional(),
+                    new Optional(),
+                    new Optional(),
+                    new Optional(),
+                    new Optional(),
+                    new Optional(),
+                    new Optional(),
+                    new Optional(),
+                    new Optional(),
+                    new Optional()
+            };
+            return processors;
+        } else {
+            final CellProcessor[] processors = new CellProcessor[] { 
+                   /* new Optional(new ParseInt()),
+                    new Optional(new ParseInt()),
+                    new Optional(),
+                    new Optional(),
+                    new Optional(new ParseDouble()),
+                    new Optional(new ParseInt()),
+                    new Optional(new ParseInt()),
+                    new Optional(),
+                    new Optional(new ParseDouble()),
+                    new Optional(),
+                    new Optional()*/
+            };
+            return processors;
+        }
+    }
+    
+    private static class ParseBooleanLabel extends ParseBool {
+        
+        public Object execute(final Object value, final CsvContext context) {
+            Boolean parsed = (Boolean)super.execute(value, context);
+            return parsed ? com.usu.machinelearning.decisiontree.label.BooleanLabel.TRUE_LABEL : com.usu.machinelearning.decisiontree.label.BooleanLabel.FALSE_LABEL;
+        }
+        
+    }
+    
+}

@@ -1,0 +1,246 @@
+package com.usu.decisionTree;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ * @author Anuj Khasgiwala
+ *
+ */
+public class DecisionTree {
+
+	/**
+	 * @author Anuj Khasgiwala
+	 * This is a nested class
+	 */
+	private class BinaryTree {
+
+		private int     nodeID;
+		private String  questionOrAns = null;
+		private BinaryTree yesBranch  = null;
+		private BinaryTree noBranch   = null;
+
+		/**
+		 * @param newNodeID
+		 * @param newQuestAns
+		 * 
+		 * Nested Constructor
+		 */
+		public BinaryTree(int newNodeID, String newQuestAns) {
+			nodeID     = newNodeID;
+			questionOrAns = newQuestAns;
+		}
+	}
+
+	static BufferedReader keyboardInput = new BufferedReader(new InputStreamReader(System.in));
+	BinaryTree rootNode = null;
+
+	/**
+	 * Parent class default constructor
+	 */
+	public DecisionTree() {
+	}
+
+	/* ----------------------------------------------- */
+	/*                                                 */
+	/*               TREE BUILDING METHODS             */
+	/*                                                 */
+	/* ----------------------------------------------- */
+
+	/* CREATE ROOT NODE */
+
+	public void createRoot(int newNodeID, String newQuestAns) {
+		rootNode = new BinaryTree(newNodeID,newQuestAns);	
+		System.out.println("Created root node " + newNodeID);	
+	}
+
+	/* ADD YES NODE */
+
+	public void addYesNode(int existingNodeID, int newNodeID, String newQuestAns) {
+		// If no root node do nothing
+
+		if (rootNode == null) {
+			System.out.println("ERROR: No root node!");
+			return;
+		}
+
+		// Search tree
+
+		if (searchTreeAndAddYesNode(rootNode,existingNodeID,newNodeID,newQuestAns)) {
+			System.out.println("Added node " + newNodeID +
+					" onto \"yes\" branch of node " + existingNodeID);
+		}
+		else System.out.println("Node " + existingNodeID + " not found");
+	}
+
+	/* SEARCH TREE AND ADD YES NODE */
+
+	private boolean searchTreeAndAddYesNode(BinaryTree currentNode,
+			int existingNodeID, int newNodeID, String newQuestAns) {
+		if (currentNode.nodeID == existingNodeID) {
+			// Found node
+			if (currentNode.yesBranch == null) currentNode.yesBranch = new
+					BinaryTree(newNodeID,newQuestAns);
+			else {
+				System.out.println("WARNING: Overwriting previous node " +
+						"(id = " + currentNode.yesBranch.nodeID +
+						") linked to yes branch of node " +
+						existingNodeID);
+				currentNode.yesBranch = new BinaryTree(newNodeID,newQuestAns);
+			}		
+			return(true);
+		}
+		else {
+			// Try yes branch if it exists
+			if (currentNode.yesBranch != null) { 	
+				if (searchTreeAndAddYesNode(currentNode.yesBranch,
+						existingNodeID,newNodeID,newQuestAns)) {    	
+					return(true);
+				}	
+				else {
+					// Try no branch if it exists
+					if (currentNode.noBranch != null) {
+						return(searchTreeAndAddYesNode(currentNode.noBranch,
+								existingNodeID,newNodeID,newQuestAns));
+					}
+					else return(false);	// Not found here
+				}
+			}
+			return(false);		// Not found here
+		}
+	} 	
+
+	/* ADD NO NODE */
+
+	public void addNoNode(int existingNodeID, int newNodeID, String newQuestAns) {
+		// If no root node do nothing
+
+		if (rootNode == null) {
+			System.out.println("ERROR: No root node!");
+			return;
+		}
+
+		// Search tree
+
+		if (searchTreeAndAddNoNode(rootNode,existingNodeID,newNodeID,newQuestAns)) {
+			System.out.println("Added node " + newNodeID +
+					" onto \"no\" branch of node " + existingNodeID);
+		}
+		else System.out.println("Node " + existingNodeID + " not found");
+	}
+
+	/* SEARCH TREE AND ADD NO NODE */
+
+	private boolean searchTreeAndAddNoNode(BinaryTree currentNode,
+			int existingNodeID, int newNodeID, String newQuestAns) {
+		if (currentNode.nodeID == existingNodeID) {
+			// Found node
+			if (currentNode.noBranch == null) currentNode.noBranch = new
+					BinaryTree(newNodeID,newQuestAns);
+			else {
+				System.out.println("WARNING: Overwriting previous node " +
+						"(id = " + currentNode.noBranch.nodeID +
+						") linked to yes branch of node " +
+						existingNodeID);
+				currentNode.noBranch = new BinaryTree(newNodeID,newQuestAns);
+			}		
+			return(true);
+		}
+		else {
+			// Try yes branch if it exists
+			if (currentNode.yesBranch != null) { 	
+				if (searchTreeAndAddNoNode(currentNode.yesBranch,
+						existingNodeID,newNodeID,newQuestAns)) {    	
+					return(true);
+				}	
+				else {
+					// Try no branch if it exists
+					if (currentNode.noBranch != null) {
+						return(searchTreeAndAddNoNode(currentNode.noBranch,
+								existingNodeID,newNodeID,newQuestAns));
+					}
+					else return(false);	// Not found here
+				}
+			}
+			else return(false);	// Not found here
+		}
+	} 	
+
+	/* --------------------------------------------- */
+	/*                                               */
+	/*               TREE QUERY METHODS             */
+	/*                                               */
+	/* --------------------------------------------- */
+
+	public void queryBinaryTree() throws IOException {
+		queryBinaryTree(rootNode);
+	}
+
+	private void queryBinaryTree(BinaryTree currentNode) throws IOException {
+
+		// Test for leaf node (answer) and missing branches
+
+		if (currentNode.yesBranch==null) {
+			if (currentNode.noBranch==null) System.out.println(currentNode.questionOrAns);
+			else System.out.println("Error: Missing \"Yes\" branch at \"" +
+					currentNode.questionOrAns + "\" question");
+			return;
+		}
+		if (currentNode.noBranch==null) {
+			System.out.println("Error: Missing \"No\" branch at \"" +
+					currentNode.questionOrAns + "\" question");
+			return;
+		}
+
+		// Question
+
+		askQuestion(currentNode);
+	}
+
+	private void askQuestion(BinaryTree currentNode) throws IOException {
+		System.out.println(currentNode.questionOrAns + " (enter \"Yes\" or \"No\")");
+		String answer = keyboardInput.readLine();
+		if (answer.equals("Yes")) queryBinaryTree(currentNode.yesBranch);
+		else {
+			if (answer.equals("No")) queryBinaryTree(currentNode.noBranch);
+			else {
+				System.out.println("ERROR: Must answer \"Yes\" or \"No\"");
+				askQuestion(currentNode);
+			}
+		}
+	}
+
+	/* ----------------------------------------------- */
+	/*                                                 */
+	/*               TREE OUTPUT METHODS               */
+	/*                                                 */
+	/* ----------------------------------------------- */
+
+	/* OUTPUT BIN TREE */
+
+	public void outputBinaryTree() {
+
+		outputBinaryTree("1",rootNode);
+	}
+
+	private void outputBinaryTree(String tag, BinaryTree currentNode) {
+
+		// Check for empty node
+
+		if (currentNode == null) return;
+
+		// Output
+
+		System.out.println("[" + tag + "] nodeID = " + currentNode.nodeID +
+				", question/answer = " + currentNode.questionOrAns);
+
+		// Go down yes branch
+
+		outputBinaryTree(tag + ".1",currentNode.yesBranch);
+
+		// Go down no branch
+
+		outputBinaryTree(tag + ".2",currentNode.noBranch);
+	}  
+}
