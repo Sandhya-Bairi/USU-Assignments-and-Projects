@@ -1,0 +1,20 @@
+package com.usu.perceptron;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class InputParser {
+	
+	public static void main(String[] args) throws Exception {
+		generatePerceptron();
+	}
+	
+	public static void generatePerceptron() throws Exception{
+		BufferedReader in = new BufferedReader(new FileReader("files/Data.txt"));
+		String line;
+		while ((line = in.readLine()) != null) {
+			String[] tokens = line.split("\t");
+		}
+		in.close();
+	}
+}

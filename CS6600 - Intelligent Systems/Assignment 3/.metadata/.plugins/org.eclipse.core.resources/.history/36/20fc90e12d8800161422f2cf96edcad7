@@ -1,0 +1,34 @@
+package com.usu.perceptron;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.HashMap;
+import java.util.Map;
+
+public class InputParser {
+	
+	public static void main(String[] args) throws Exception {
+		Map<Integer, InputValues> perceptronInput = new HashMap<Integer, InputValues>();
+		perceptronInput = generatePerceptron(perceptronInput);
+	}
+	
+	public static Map<Integer, InputValues> generatePerceptron(Map<Integer, InputValues> perceptronInput) throws Exception{
+		BufferedReader in = new BufferedReader(new FileReader("files/Data.txt"));
+		String line = null;
+		InputValues iv;
+		int key = 0;
+		while ((line = in.readLine()) != null) {
+			in.lines();
+			iv = new InputValues();
+			String[] tokens = line.split("\t");
+			iv.setX1(Double.parseDouble(tokens[0]));
+			iv.setX2(Double.parseDouble(tokens[1]));
+			iv.setCorrectOutput(Integer.parseInt(tokens[2]));
+			
+			perceptronInput.put(key++, iv);
+		}
+		in.close();
+		
+		return perceptronInput;
+	}
+}

@@ -1,0 +1,54 @@
+package com.usu.perceptron;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class InputParser {
+	
+	List<Double> targetOutput = new ArrayList<>();
+	
+	public static void main(String[] args) throws Exception {
+		Map<Integer, Perceptron> perceptronInputs = new HashMap<Integer, Perceptron>();
+		perceptronInputs = readInputs(perceptronInputs);
+		
+		for (Map.Entry<Integer, Perceptron> perceptronInput : perceptronInputs.entrySet()) {
+			
+		}
+	}
+	
+	public static Map<Integer, Perceptron> readInputs(Map<Integer, Perceptron> perceptronInputs) throws Exception{
+		BufferedReader in = new BufferedReader(new FileReader("files/Data.txt"));
+		String line;
+		Perceptron iv;
+		int key = 0;
+		while ((line = in.readLine()) != null) {
+			if(!line.contains("X1")) {
+				iv = new Perceptron();
+				String[] tokens = line.split("\t");
+				iv.setX1(Double.parseDouble(tokens[0]));
+				iv.setX2(Double.parseDouble(tokens[1]));
+				iv.setCorrectOutput(Integer.parseInt(tokens[2]));
+				
+				perceptronInputs.put(key++, iv);
+			}
+		}
+		in.close();
+		
+		return perceptronInputs;
+	}
+	
+	public void calculateError() {
+		
+	}
+	
+	public void calculateDeltaWeight() {
+		
+	}
+	
+	public void calculateOutput() {
+		
+	}
+}
