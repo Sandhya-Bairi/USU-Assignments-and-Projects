@@ -1,0 +1,24 @@
+package com.usu.stocks;
+
+public abstract class StockSubject {
+	/**
+	 * 
+	 * @param addNewObserver
+	 */
+	public void registerStockOberserver(int addNewObserver) {
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param deleteObserver
+	 */
+	public void removeStockObserver(int deleteObserver) {
+		throw new UnsupportedOperationException();
+	}
+
+	public void notifyStockObserver() {
+		throw new UnsupportedOperationException();
+	}
+
+}

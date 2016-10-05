@@ -1,0 +1,103 @@
+package com.usu.stockMonitoring;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.Color;
+import javax.swing.JTextPane;
+import javax.swing.JMenu;
+import javax.swing.JPopupMenu;
+import java.awt.Component;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.Dimension;
+import javax.swing.SwingConstants;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JTextField;
+import javax.swing.JSplitPane;
+
+public class StockPriceMonitoringSystemControlForm {
+
+	private JFrame frame;
+	private JTextField txtHeaderInfo;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					StockPriceMonitoringSystemControlForm window = new StockPriceMonitoringSystemControlForm();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public StockPriceMonitoringSystemControlForm() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setResizable(false);
+		frame.setBounds(100, 100, 1146, 716);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setForeground(Color.RED);
+		panel.setBounds(0, 0, 1140, 666);
+		frame.getContentPane().add(panel);
+		
+		JMenuBar menuBar = new JMenuBar();
+		frame.setJMenuBar(menuBar);
+		menuBar.setSize(15,15);
+		
+		JMenu mnNewMenu = new JMenu("Stock");
+		mnNewMenu.setHorizontalAlignment(SwingConstants.CENTER);
+		menuBar.add(mnNewMenu);
+		
+		JMenuItem mntmAdd = new JMenuItem("Add");
+		mntmAdd.setHorizontalAlignment(SwingConstants.LEFT);
+		mnNewMenu.add(mntmAdd);
+		
+		JMenuItem mntmDelete = new JMenuItem("Delete");
+		mntmDelete.setHorizontalAlignment(SwingConstants.LEFT);
+		mnNewMenu.add(mntmDelete);
+		
+		txtHeaderInfo = new JTextField();
+		txtHeaderInfo.setEditable(false);
+		txtHeaderInfo.setText("Header Info");
+		menuBar.add(txtHeaderInfo);
+		txtHeaderInfo.setColumns(8);
+	}
+	private static void addPopup(Component component, final JPopupMenu popup) {
+		component.addMouseListener(new MouseAdapter() {
+			public void mousePressed(MouseEvent e) {
+				if (e.isPopupTrigger()) {
+					showMenu(e);
+				}
+			}
+			public void mouseReleased(MouseEvent e) {
+				if (e.isPopupTrigger()) {
+					showMenu(e);
+				}
+			}
+			private void showMenu(MouseEvent e) {
+				popup.show(e.getComponent(), e.getX(), e.getY());
+			}
+		});
+	}
+}

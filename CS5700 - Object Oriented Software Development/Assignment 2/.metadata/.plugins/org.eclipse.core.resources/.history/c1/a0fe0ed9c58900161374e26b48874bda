@@ -1,0 +1,9 @@
+package com.usu.simulatorCommunication.Messages;
+
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+
+public class SimulatorCommunicator {
+	 DatagramSocket socket = new DatagramSocket();
+
+}

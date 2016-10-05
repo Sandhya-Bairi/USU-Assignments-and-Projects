@@ -1,0 +1,5 @@
+package com.usu.stocks.decorator;
+import com.usu.stocks.StockDictionary;
+
+public class Portfolio extends StockDictionary {
+}

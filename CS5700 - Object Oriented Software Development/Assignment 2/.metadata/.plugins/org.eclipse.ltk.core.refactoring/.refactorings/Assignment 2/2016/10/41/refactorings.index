@@ -1,0 +1,18 @@
+1475514315156	Move compilation unit
+1475526384403	Delete element
+1475527081055	Delete element
+1475527096889	Rename type 'StockPriceMonitoringSystemControlFor'
+1475530661396	Rename type 'Subject'
+1475531184104	Move compilation units
+1475531304193	Delete element
+1475531310330	Delete element
+1475531372872	Move compilation unit
+1475531382261	Move compilation units
+1475531487291	Move compilation unit
+1475531768299	Rename field '_symbols'
+1475534918348	Delete elements
+1475535057323	Rename type 'StockDecorator'
+1475536506430	Move compilation unit
+1475551731511	Rename package 'com.usu.stockMonitoring.Forms'
+1475551806759	Rename package 'com.usu.simulatorCommunication.Messages'
+1475551816583	Rename package 'com.usu.simulatorCommunication.Utils'

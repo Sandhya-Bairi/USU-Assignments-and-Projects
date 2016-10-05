@@ -1,0 +1,7 @@
+package com.usu.stockMonitoring;
+
+public class StockPriceMonitoringSystem {
+	public static void main(String[] args) {
+		
+	}
+}

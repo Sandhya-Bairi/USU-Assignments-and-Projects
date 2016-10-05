@@ -1,0 +1,87 @@
+package com.usu.simulatorCommunication.messages;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+import java.util.Map.Entry;
+import java.util.concurrent.ThreadPoolExecutor;
+
+import com.usu.stocks.Portfolio;
+import com.usu.stocks.Stock;
+
+public class SimulatorCommunicator {
+	
+	DatagramSocket clientSocket;
+	Portfolio portfolios;
+	
+	public void receiveUDPPacket() throws Exception {
+		clientSocket = new DatagramSocket(12099);
+		
+		clientSocket.receive(receivePacket);
+		System.out.println("Connection Status: " + clientSocket.isConnected());
+		//ThreadPoolExecutor tickerPool = new ThreadPoolExecutor(50, 1000);
+	}
+	
+	public void stopUDPPacket() throws SocketException, Exception {
+		if(clientSocket != null) {
+			clientSocket.close();
+			clientSocket = null;
+		}
+	}
+	
+	private void Monitoring(Object state) {
+        if (portfolios == null)
+        	return;
+        
+        while (clientSocket.isConnected()) {
+            // Try to receive a TickerMessage and pass it onto the Portfolio for processing.  It will
+            // wait 1000 ms before giving up on the receive attempt.  In that case, the message will
+            // be null and the Portfolio.Update method will do nothing.
+            try {
+            	//var message = Receive(1000);
+            	portfolios.update(Receive(0));
+            }
+            catch (Exception e) {                    
+                // TODO: Handle the error.  For example, you may want to Stop the communicator and log the error
+            }
+        }
+    }
+	
+	/// <summary>
+    /// This method receives a single TickerMessage within some time limit.  If no message
+    /// comes in within the time limit, then it returns a null.  Used by Monitoring method.
+    /// </summary>
+    /// <param name="timeout"></param>
+    /// <returns></returns>
+    private TickerMessage Receive(int timeout) throws IOException {
+        TickerMessage message = null;
+
+        byte[] receivedPacket = ReceivePacket(timeout);
+        if (receivedPacket != null && receivedPacket.length > 0)
+            message = TickerMessage.Decode(receivedPacket);
+
+        return message;
+    }
+
+    /// <summary>
+    /// This method receives a byte array from the UpdClient, within some time limit.  Used by
+    /// the Receive method
+    /// </summary>
+    /// <param name="timeout"></param>
+    /// <returns></returns>
+    private byte[] ReceivePacket(int timeout) {
+        
+    	byte[] receivedPacket = new byte[1024];
+
+        clientSocket.setSoTimeout(timeout);
+        try {
+        	receivedPacket = clientSocket.receive(new DatagramPacket(receivedPacket, receivedPacket.length));
+        }
+        catch (SocketException err) {
+
+        }
+        return receivedPacket;
+    }
+}

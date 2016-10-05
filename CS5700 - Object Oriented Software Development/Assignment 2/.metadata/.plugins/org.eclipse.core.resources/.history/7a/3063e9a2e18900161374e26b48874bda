@@ -1,0 +1,58 @@
+package com.usu.stocks;
+
+import java.util.Dictionary;
+import java.util.Enumeration;
+
+import com.usu.simulatorCommunication.Messages.TickerMessage;
+
+public class Portfolio extends Dictionary<String, Stock> {
+	public void update(TickerMessage message) {
+        if (message == null)
+        	return;
+
+        if (message.symbol)
+            this[message.symbol].update(message);
+    }
+
+	@Override
+	public Enumeration<Stock> elements() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Stock get(Object arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Enumeration<String> keys() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Stock put(String arg0, Stock arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Stock remove(Object arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

@@ -1,0 +1,5 @@
+package com.usu.simulatorCommunication;
+import StockDecorator;
+
+public class Communicate extends StockDecorator {
+}

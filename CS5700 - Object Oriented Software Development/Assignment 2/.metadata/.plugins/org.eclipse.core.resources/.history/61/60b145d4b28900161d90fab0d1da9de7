@@ -1,0 +1,10 @@
+import com.usu.stockMonitoring.*;
+
+public abstract class StocksObserver extends StockPriceMonitoringSystemControlForm {
+
+	public void update() {
+		// TODO - implement StocksObserver.update
+		throw new UnsupportedOperationException();
+	}
+
+}

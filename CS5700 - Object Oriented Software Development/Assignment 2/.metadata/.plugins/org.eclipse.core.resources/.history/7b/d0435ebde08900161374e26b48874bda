@@ -1,0 +1,24 @@
+package com.usu.stocks;
+
+import java.util.List;
+
+public class Stock extends StockSubject {
+
+	private List<StocksObserver> stockObserverList;
+
+	@Override
+	public void registerStockOberserver(StocksObserver addNewObserver) {
+		
+	}
+
+	@Override
+	public void removeStockObserver(StocksObserver deleteObserver) {
+		
+	}
+
+	@Override
+	public void notifyStockObserver() {
+		
+	}
+
+}

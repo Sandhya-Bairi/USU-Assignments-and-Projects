@@ -1,0 +1,50 @@
+package com.usu.stocks;
+
+import java.util.Dictionary;
+import java.util.Enumeration;
+
+import com.usu.simulatorCommunication.Messages.TickerMessage;
+
+public class Portfolio extends Dictionary<String, Stock> {
+	public void Update(TickerMessage message) {
+        if (message == null) return;
+
+        if (ContainsKey(message.symbol))
+            this[message.Symbol].Update(message);
+    }
+
+	@Override
+	public Enumeration<Stock> elements() {
+		return null;
+	}
+
+	@Override
+	public Stock get(Object arg0) {
+		return null;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return false;
+	}
+
+	@Override
+	public Enumeration<String> keys() {
+		return null;
+	}
+
+	@Override
+	public Stock put(String arg0, Stock arg1) {
+		return null;
+	}
+
+	@Override
+	public Stock remove(Object arg0) {
+		return null;
+	}
+
+	@Override
+	public int size() {
+		return 0;
+	}
+}

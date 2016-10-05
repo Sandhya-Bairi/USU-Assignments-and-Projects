@@ -1,0 +1,16 @@
+package com.usu.simulatorCommunication.messages;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+
+public class SimulatorCommunicator {
+	 
+	public void receiveUDPPacket() throws Exception {
+		DatagramSocket clientSocket = new DatagramSocket(12099, InetAddress.getByName("172.31.29.240"));
+		byte[] receiveData = new byte[1024];
+		DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
+		clientSocket.receive(receivePacket);
+	}
+}

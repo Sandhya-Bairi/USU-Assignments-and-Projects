@@ -1,0 +1,5 @@
+package com.usu.stockMonitoring.Forms;
+import com.usu.stocks.StocksObserver;
+
+public class IndividualStockVolumeGraph extends StocksObserver {
+}

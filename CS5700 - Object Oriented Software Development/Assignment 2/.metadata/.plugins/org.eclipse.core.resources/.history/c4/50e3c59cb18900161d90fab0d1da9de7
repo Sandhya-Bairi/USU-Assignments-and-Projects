@@ -1,0 +1,26 @@
+public abstract class Subject {
+
+	/**
+	 * 
+	 * @param addNewObserver
+	 */
+	public void subscribe(int addNewObserver) {
+		// TODO - implement Subject.subscribe
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param deleteObserver
+	 */
+	public void unsubscribe(int deleteObserver) {
+		// TODO - implement Subject.unsubscribe
+		throw new UnsupportedOperationException();
+	}
+
+	public void notify() {
+		// TODO - implement Subject.notify
+		throw new UnsupportedOperationException();
+	}
+
+}

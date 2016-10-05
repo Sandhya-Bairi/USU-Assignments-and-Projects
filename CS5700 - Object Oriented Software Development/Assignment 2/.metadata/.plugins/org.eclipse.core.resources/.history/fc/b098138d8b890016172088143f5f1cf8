@@ -1,0 +1,4 @@
+import StockDecorator;
+
+public class Communicate extends StockDecorator {
+}
