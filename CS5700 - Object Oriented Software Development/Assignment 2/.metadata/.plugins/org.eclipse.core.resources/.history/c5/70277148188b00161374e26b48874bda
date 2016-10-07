@@ -1,0 +1,179 @@
+package com.usu.stockMonitoring.forms;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.Color;
+import javax.swing.JTextPane;
+import javax.swing.JMenu;
+import javax.swing.JPopupMenu;
+import java.awt.Component;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.Dimension;
+import javax.swing.SwingConstants;
+
+import com.usu.stocks.Stock;
+
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JTextField;
+import javax.swing.JSplitPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import java.awt.FlowLayout;
+import javax.swing.UIManager;
+import java.awt.GridLayout;
+import javax.swing.BoxLayout;
+import javax.swing.border.BevelBorder;
+import java.awt.Canvas;
+import javax.swing.JSeparator;
+
+public class StockPriceMonitoringSystemControlForm {
+
+	private JFrame frame;
+	private JTextField txtHeaderInfo;
+	private JTable table;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		Stock stock = new Stock();
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					StockPriceMonitoringSystemControlForm window = new StockPriceMonitoringSystemControlForm();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public StockPriceMonitoringSystemControlForm() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setResizable(false);
+		frame.setBounds(100, 100, 1146, 716);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPopupMenu popupMenu = new JPopupMenu();
+		popupMenu.setBounds(0, 0, 137, 28);
+		frame.getContentPane().add(popupMenu);
+		
+		JMenuItem mntmNewMenuItem = new JMenuItem("Add");
+		mntmNewMenuItem.setBounds(0, 0, 129, 22);
+		frame.getContentPane().add(mntmNewMenuItem);
+		
+		JMenuItem mntmNewMenuItem2 = new JMenuItem("Delete");
+		mntmNewMenuItem2.setBounds(0, 0, 129, 22);
+		frame.getContentPane().add(mntmNewMenuItem2);
+		
+		popupMenu.add(mntmNewMenuItem);
+		popupMenu.add(mntmNewMenuItem2);
+		
+		JSeparator separator_1 = new JSeparator();
+		separator_1.setBounds(0, 0, 2, 20);
+		frame.getContentPane().add(separator_1);
+		separator_1.setOrientation(SwingConstants.VERTICAL);
+		
+		txtHeaderInfo = new JTextField();
+		txtHeaderInfo.setBounds(0, 0, 1043, 20);
+		frame.getContentPane().add(txtHeaderInfo);
+		txtHeaderInfo.setHorizontalAlignment(SwingConstants.LEFT);
+		txtHeaderInfo.setEditable(false);
+		txtHeaderInfo.setText("Header Info");
+		txtHeaderInfo.setColumns(2);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.WHITE);
+		panel.setForeground(Color.BLUE);
+		panel.setBounds(0, 0, 1140, 666);
+		frame.getContentPane().add(panel);
+		panel.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5));
+		
+		table = new JTable();
+		table.setBorder(new BevelBorder(BevelBorder.LOWERED, Color.BLACK, Color.RED, null, null));
+		table.setAlignmentY(Component.TOP_ALIGNMENT);
+		table.setAlignmentX(Component.LEFT_ALIGNMENT);
+		panel.add(table);
+		table.setBackground(Color.BLACK);
+		table.setFillsViewportHeight(true);
+		table.setShowGrid(true);
+		table.setRowSelectionAllowed(false);
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{null, null, null, null},
+			},
+			new String[] {
+				"Stock", "Current", "Bid", "Ask"
+			}
+		) {
+			Class[] columnTypes = new Class[] {
+				String.class, Object.class, Object.class, Object.class
+			};
+			public Class getColumnClass(int columnIndex) {
+				return columnTypes[columnIndex];
+			}
+		});
+		
+		JTextPane textPane = new JTextPane();
+		textPane.setBackground(Color.PINK);
+		textPane.setEditable(false);
+		panel.add(textPane);
+		
+		JTextPane textPane_1 = new JTextPane();
+		textPane_1.setEditable(false);
+		textPane_1.setBackground(Color.YELLOW);
+		panel.add(textPane_1);
+		
+		JSeparator separator = new JSeparator();
+		panel.add(separator);
+		
+		Canvas canvas = new Canvas();
+		canvas.setEnabled(false);
+		canvas.setBackground(Color.MAGENTA);
+		panel.add(canvas);
+		
+		JMenu mnNewMenu = new JMenu("Stock");
+		mnNewMenu.setHorizontalAlignment(SwingConstants.LEFT);
+		
+		JMenuItem mntmAdd = new JMenuItem("Add");
+		mntmAdd.setHorizontalAlignment(SwingConstants.LEFT);
+		mnNewMenu.add(mntmAdd);
+		
+		JMenuItem mntmDelete = new JMenuItem("Delete");
+		mntmDelete.setHorizontalAlignment(SwingConstants.LEFT);
+		mnNewMenu.add(mntmDelete);
+	}
+	private static void addPopup(Component component, final JPopupMenu popup) {
+		component.addMouseListener(new MouseAdapter() {
+			public void mousePressed(MouseEvent e) {
+				if (e.isPopupTrigger()) {
+					showMenu(e);
+				}
+			}
+			public void mouseReleased(MouseEvent e) {
+				if (e.isPopupTrigger()) {
+					showMenu(e);
+				}
+			}
+			private void showMenu(MouseEvent e) {
+				popup.show(e.getComponent(), e.getX(), e.getY());
+			}
+		});
+	}
+}

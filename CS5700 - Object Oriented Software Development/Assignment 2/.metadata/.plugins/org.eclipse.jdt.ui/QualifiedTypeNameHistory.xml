@@ -3,5 +3,26 @@
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.usu.simulatorCommunication.Messages.TickerMessage"/>
+<fullyQualifiedTypeName name="java.util.Dictionary"/>
+<fullyQualifiedTypeName name="java.net.InetAddress"/>
+<fullyQualifiedTypeName name="java.net.DatagramSocket"/>
+<fullyQualifiedTypeName name="java.net.DatagramPacket"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.usu.stocks.StocksObserver"/>
+<fullyQualifiedTypeName name="com.usu.stocks.StockSubject"/>
+<fullyQualifiedTypeName name="com.usu.stocks.Portfolio"/>
+<fullyQualifiedTypeName name="com.usu.stocks.Stock"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.usu.simulatorCommunication.messages.TickerMessage"/>
+<fullyQualifiedTypeName name="javax.swing.JPopupMenu"/>
+<fullyQualifiedTypeName name="com.usu.simulatorCommunication.messages.SimulatorCommunicator"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ThreadPoolExecutor"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Executor"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
 </qualifiedTypeNameHistroy>

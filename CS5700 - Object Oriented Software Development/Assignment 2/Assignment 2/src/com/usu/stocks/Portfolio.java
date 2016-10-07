@@ -15,6 +15,6 @@ public class Portfolio extends HashMap<String, Stock> {
         if (message == null) return;
 
         if (containsKey(message.symbol));
-//        	this.get(message.symbol).update(message);
+        	this.get(message.symbol).update(message);
     }
 }

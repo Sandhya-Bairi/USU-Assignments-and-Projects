@@ -2,14 +2,28 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.usu.perceptron.InputValues"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.usu.perceptron.Perceptron"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="javax.management.InstanceAlreadyExistsException"/>
+<fullyQualifiedTypeName name="weka.core.Instance"/>
+<fullyQualifiedTypeName name="weka.core.Instances"/>
+<fullyQualifiedTypeName name="weka.core.Debug.Random"/>
+<fullyQualifiedTypeName name="weka.classifiers.Evaluation"/>
+<fullyQualifiedTypeName name="weka.core.Utils"/>
+<fullyQualifiedTypeName name="weka.classifiers.Classifier"/>
+<fullyQualifiedTypeName name="weka.classifiers.AbstractClassifier"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.parser.ParserDelegator"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.usu.perceptron.InputParser"/>
+<fullyQualifiedTypeName name="com.usu.perceptron.Perceptron"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>

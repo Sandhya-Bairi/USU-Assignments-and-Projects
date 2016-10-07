@@ -3,6 +3,8 @@ package com.usu.stocks;
 import java.util.List;
 
 import com.usu.simulatorCommunication.messages.TickerMessage;
+import com.usu.stocks.subjectObserver.StockSubject;
+import com.usu.stocks.subjectObserver.StocksObserver;
 
 public class Stock extends StockSubject {
 
@@ -122,8 +124,8 @@ public class Stock extends StockSubject {
 		this.averageVolume = averageVolume;
 	}
 	
-	public void Update(TickerMessage message) {
-		
+	public void update(TickerMessage message) {
+		//send the stock value to ui using observer
 	}
 
 }
