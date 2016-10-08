@@ -3,28 +3,20 @@ package com.usu.simulatorCommunication.messages;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
+import java.net.InetAddress;
 import java.net.SocketException;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.ThreadPoolExecutor;
 
 import com.usu.stocks.Portfolio;
+import com.usu.stocks.Stock;
 
 public class SimulatorCommunicator {
 	
 	DatagramSocket clientSocket;
-	Portfolio portfolios;
+	Portfolio portfolios = new Portfolio();
 	
 	public void startUDPPacket() throws Exception {
 		clientSocket = new DatagramSocket(12099);
-		Thread t = new Thread(new Runnable() {
-			
-			@Override
-			public void run() {
-				Monitoring(new Object());
-			}
-		});
-		System.out.println(clientSocket.getRemoteSocketAddress());
+		new CommunicatorThread().run();
 	}
 	
 	public void stopUDPPacket() throws SocketException, Exception {
@@ -35,6 +27,7 @@ public class SimulatorCommunicator {
 	}
 	
 	private void Monitoring(Object state) {
+		portfolios.put("PIH", new Stock());
         if (portfolios == null)
         	return;
         
@@ -59,7 +52,7 @@ public class SimulatorCommunicator {
         byte[] bytesToSend = message.Encode();
 
         try {
-        	clientSocket.send(new DatagramPacket(bytesToSend, bytesToSend.length));
+        	clientSocket.send(new DatagramPacket(bytesToSend, bytesToSend.length, InetAddress.getByName("0.0.0.0"), 12099));
         }
         catch (Exception e) {
         }
@@ -88,5 +81,15 @@ public class SimulatorCommunicator {
 
         }
         return receivedPacket;
+    }
+    
+    private class CommunicatorThread implements Runnable {
+
+		@Override
+		public void run() {
+			System.out.println("Inside run");
+			Monitoring(new Object());			
+		}
+    	
     }
 }

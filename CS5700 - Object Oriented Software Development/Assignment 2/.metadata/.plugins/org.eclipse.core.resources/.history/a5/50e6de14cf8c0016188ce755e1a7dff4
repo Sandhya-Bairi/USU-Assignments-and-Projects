@@ -1,0 +1,2 @@
+public class currentPrice extends StockObserverDecorator {
+}
