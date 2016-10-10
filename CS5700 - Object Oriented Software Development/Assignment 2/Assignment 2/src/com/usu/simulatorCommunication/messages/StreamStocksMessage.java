@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.usu.simulatorCommunication.utils.HelperFunctions;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -25,14 +26,14 @@ public class StreamStocksMessage {
 
     public void Add(String symbol) {
         if (symbols==null)
-        	symbols = new LinkedList<>();
+        	symbols = new ArrayList<>();
 
         if (symbol !=null && !symbol.isEmpty() && !symbol.trim().isEmpty())
             symbols.add(symbol);
     }
 
     public byte[] Encode() {
-        ByteBuffer buffer = ByteBuffer.allocate(2 + Count()*6).order(ByteOrder.BIG_ENDIAN);
+        ByteBuffer buffer = ByteBuffer.allocate(2 + Count()*7).order(ByteOrder.BIG_ENDIAN);
 
         if (symbols != null) {
             buffer.putShort(Count());

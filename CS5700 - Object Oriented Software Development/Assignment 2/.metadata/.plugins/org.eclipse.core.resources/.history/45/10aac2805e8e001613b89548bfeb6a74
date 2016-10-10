@@ -1,0 +1,51 @@
+package com.usu.stockMonitoring.forms;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JList;
+
+import com.usu.stocks.Portfolio;
+
+public class AddStocksForms {
+
+	private JFrame frame;
+
+	/**
+	 * Create the application.
+	 */
+	public AddStocksForms(Portfolio portfolios) {
+		initialize(portfolios);
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize(Portfolio portfolios) {
+		frame = new JFrame();
+		frame.setResizable(false);
+		frame.setBounds(100, 100, 410, 330);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		frame.setVisible(true);
+		
+		JList<String> list = new JList(portfolios.keySet().toArray(new String[portfolios.size()]));
+		list.setBounds(10, 10, 160, 250);
+		frame.getContentPane().add(list);
+		
+		JList<String> list_1 = new JList<String>();
+		list_1.setBounds(230, 10, 160, 250);
+		frame.getContentPane().add(list_1);
+		
+		JButton button = new JButton(">");
+		button.setBounds(180, 70, 40, 30);
+		frame.getContentPane().add(button);
+		
+		JButton button_1 = new JButton("<");
+		button_1.setBounds(180, 170, 40, 30);
+		frame.getContentPane().add(button_1);
+		
+		JButton btnOk = new JButton("Ok");
+		btnOk.setBounds(301, 271, 89, 23);
+		frame.getContentPane().add(btnOk);
+	}
+}

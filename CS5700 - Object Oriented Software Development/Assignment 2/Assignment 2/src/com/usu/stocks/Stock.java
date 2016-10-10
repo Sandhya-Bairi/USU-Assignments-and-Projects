@@ -125,7 +125,9 @@ public class Stock extends StockSubject {
 	}
 	
 	public void update(TickerMessage message) {
-		//send the stock value to ui using observer
+		for (StocksObserver stocksObserver : stockObserverList) {
+			stocksObserver.update();
+		}
 	}
 
 }

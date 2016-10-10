@@ -4,7 +4,11 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+import java.net.Socket;
 import java.net.SocketException;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 import com.usu.stocks.Portfolio;
 import com.usu.stocks.Stock;
@@ -13,83 +17,97 @@ public class SimulatorCommunicator {
 	
 	DatagramSocket clientSocket;
 	Portfolio portfolios = new Portfolio();
+	private InetAddress remoteAddress;
+    private boolean isMonitoring;
 	
 	public void startUDPPacket() throws Exception {
-		clientSocket = new DatagramSocket(12099);
+		clientSocket = new DatagramSocket();
+		remoteAddress = InetAddress.getByName("52.41.30.128");
+		clientSocket.connect(remoteAddress, 0);
+		
+        isMonitoring=true;
 		new CommunicatorThread().run();
 	}
 	
 	public void stopUDPPacket() throws SocketException, Exception {
+		isMonitoring = false;
 		if(clientSocket != null) {
 			clientSocket.close();
 			clientSocket = null;
 		}
 	}
 	
-	private void Monitoring(Object state) {
+	private void monitoring(Object state) {
 		portfolios.put("PIH", new Stock());
         if (portfolios == null)
         	return;
         
         StreamStocksMessage startMessage = new StreamStocksMessage();
-        for(String key : portfolios.keySet())
-           startMessage.Add(key);
-        Send(startMessage);
+        for(String key : portfolios.keySet()) {
+        	startMessage.Add(key);
+        }
+        send(startMessage);
         
         while (clientSocket.isConnected()) {
             try {
-            	portfolios.update(Receive(0));
+            	portfolios.update(receive(200));
             }
             catch (Exception e) {
             }
         }
     }
 	
-	private void Send(StreamStocksMessage message) {
+	private void send(StreamStocksMessage message) {
         if (message == null)
         	return;
 
         byte[] bytesToSend = message.Encode();
 
         try {
-        	clientSocket.send(new DatagramPacket(bytesToSend, bytesToSend.length, InetAddress.getByName("0.0.0.0"), 12099));
+        	clientSocket.send(new DatagramPacket(bytesToSend, bytesToSend.length, remoteAddress, 12099));//we can replace port # by 0
         }
         catch (Exception e) {
         }
     }
 
 	
-    private TickerMessage Receive(int timeout) throws IOException {
+    private TickerMessage receive(int timeout) throws IOException {
         TickerMessage message = null;
 
-        byte[] receivedPacket = ReceivePacket(timeout);
-        if (receivedPacket != null && receivedPacket.length > 0)
-            message = TickerMessage.Decode(receivedPacket);
+        byte[] receivedData = receivePacket(timeout);
+        if (receivedData != null && receivedData.length > 0)
+            message = TickerMessage.Decode(receivedData);
 
         return message;
     }
 
 
-    private byte[] ReceivePacket(int timeout) throws IOException {
-    	byte[] receivedPacket = new byte[1024];
+    private byte[] receivePacket(int timeout) throws IOException {
+    	byte[] receivedData = new byte[42];
 
         clientSocket.setSoTimeout(timeout);
+        DatagramPacket receivedPacket = new DatagramPacket(receivedData, receivedData.length);
         try {
-        	clientSocket.receive(new DatagramPacket(receivedPacket, receivedPacket.length));
+        	clientSocket.receive(receivedPacket);
         }
         catch (SocketException err) {
-
+        	JFrame frame = new JFrame();
+            JOptionPane.showMessageDialog(frame, "Simulator stopped sending packet");
         }
-        return receivedPacket;
+        
+        return receivedPacket.getData();
     }
     
     private class CommunicatorThread implements Runnable {
 
 		@Override
 		public void run() {
-			System.out.println("Inside run");
-			Monitoring(new Object());			
+			monitoring(new Object());			
 		}
     	
+    }
+    
+    public SimulatorCommunicator(Portfolio selectedStocksPortfolio){
+        portfolios = selectedStocksPortfolio;
     }
 }

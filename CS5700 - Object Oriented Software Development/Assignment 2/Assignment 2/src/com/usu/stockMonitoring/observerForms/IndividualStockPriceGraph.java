@@ -1,11 +1,16 @@
 package com.usu.stockMonitoring.observerForms;
+import com.usu.stocks.Stock;
 import com.usu.stocks.subjectObserver.StocksObserver;
 
 public class IndividualStockPriceGraph extends StocksObserver {
 
+	public IndividualStockPriceGraph(Stock stock) {
+		super(stock);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void update() {
-		// TODO Auto-generated method stub
-		
+		stock=null;//need to assign values later
 	}
 }
