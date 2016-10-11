@@ -16,14 +16,14 @@ import com.usu.stocks.Stock;
 public class SimulatorCommunicator {
 	
 	DatagramSocket clientSocket;
-	Portfolio portfolios = new Portfolio();
+	Portfolio portfolios;
 	private InetAddress remoteAddress;
     private boolean isMonitoring;
 	
 	public void startUDPPacket() throws Exception {
-		clientSocket = new DatagramSocket();
+		clientSocket = new DatagramSocket(0);
 		remoteAddress = InetAddress.getByName("52.41.30.128");
-		clientSocket.connect(remoteAddress, 0);
+		// clientSocket.connect("0.0.0.0", 0);
 		
         isMonitoring=true;
 		new CommunicatorThread().run();
@@ -38,7 +38,6 @@ public class SimulatorCommunicator {
 	}
 	
 	private void monitoring(Object state) {
-		portfolios.put("PIH", new Stock());
         if (portfolios == null)
         	return;
         
@@ -48,7 +47,7 @@ public class SimulatorCommunicator {
         }
         send(startMessage);
         
-        while (clientSocket.isConnected()) {
+        while (isMonitoring) {
             try {
             	portfolios.update(receive(200));
             }

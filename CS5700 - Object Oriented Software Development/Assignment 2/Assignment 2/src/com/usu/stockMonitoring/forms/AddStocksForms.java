@@ -7,14 +7,16 @@ import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JList;
+import javax.swing.JScrollPane;
 
+import com.usu.simulatorCommunication.messages.SimulatorCommunicator;
 import com.usu.stocks.Portfolio;
 import com.usu.stocks.Stock;
 
 public class AddStocksForms {
 
 	private JFrame frmSelectStocks;
-	static Portfolio selectedPortfolio = new Portfolio();
+	static Portfolio selectedPortfolio;
 
 	/**
 	 * Create the application.
@@ -30,13 +32,13 @@ public class AddStocksForms {
 		frmSelectStocks = new JFrame();
 		frmSelectStocks.setTitle("Select Stocks");
 		frmSelectStocks.setResizable(false);
-		frmSelectStocks.setBounds(100, 100, 410, 330);
+		frmSelectStocks.setBounds(300, 100, 410, 330);
 		frmSelectStocks.getContentPane().setLayout(null);
 		frmSelectStocks.setVisible(true);
 		
 		JList<String> list = new JList(portfolios.keySet().toArray(new String[portfolios.size()]));
 		list.setBounds(10, 10, 160, 250);
-		frmSelectStocks.getContentPane().add(list);
+		frmSelectStocks.getContentPane().add(new JScrollPane(list));
 		
 		JList<String> list_1 = new JList<String>(new DefaultListModel<>());
 		list_1.setBounds(230, 10, 160, 250);
@@ -69,10 +71,16 @@ public class AddStocksForms {
 		frmSelectStocks.getContentPane().add(btnOk);
 		btnOk.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				for(String selectedStockSymbol : list_1.getSelectedValuesList()) {
-					selectedPortfolio.put(selectedStockSymbol, new Stock());
+				selectedPortfolio = new Portfolio();
+				for(int i = 0; i < list_1.getModel().getSize(); i++) {
+					selectedPortfolio.put((String)((DefaultListModel)list_1.getModel()).getElementAt(i), new Stock());
 				}
 				frmSelectStocks.setVisible(false);
+				try {
+					new SimulatorCommunicator(selectedPortfolio).startUDPPacket();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
 			}
 		});
 	}

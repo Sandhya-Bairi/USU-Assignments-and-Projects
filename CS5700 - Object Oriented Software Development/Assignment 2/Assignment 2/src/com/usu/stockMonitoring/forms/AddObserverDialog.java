@@ -9,16 +9,17 @@ import java.awt.event.ItemListener;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.border.EmptyBorder;
-import javax.swing.event.ChangeListener;
-import javax.swing.event.ChangeEvent;
+
+import com.usu.stockMonitoring.parser.StockSymbolCSVParser;
 
 public class AddObserverDialog extends JDialog {
 	
-	public AddObserverDialog() {
-		radioButtonsValue();
+	public AddObserverDialog(JFrame frmStockPriceMonitoring) {
+		radioButtonsValue(frmStockPriceMonitoring);
 	}
 
 	/**
@@ -32,7 +33,7 @@ public class AddObserverDialog extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public void radioButtonsValue() {
+	private void radioButtonsValue(JFrame frmStockPriceMonitoring) {
 		setTitle("Select Observer");
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(null);
@@ -45,14 +46,46 @@ public class AddObserverDialog extends JDialog {
 		JRadioButton rdbtnNewRadioButton = new JRadioButton("Portfolio Stock Prices");
 		rdbtnNewRadioButton.setBounds(134, 75, 200, 23);
 		contentPanel.add(rdbtnNewRadioButton);
+		rdbtnNewRadioButton.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent e) {
+				if(e.getStateChange() == ItemEvent.SELECTED) {
+					radioButtonsValue[0] = true;
+				} else {
+					radioButtonsValue[0] = false;
+				}
+			}
+		});
 
 		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("Individual Stock Price Graph");
 		rdbtnNewRadioButton_1.setBounds(134, 101, 200, 23);
 		contentPanel.add(rdbtnNewRadioButton_1);
+		rdbtnNewRadioButton_1.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent e) {
+				if(e.getStateChange() == ItemEvent.SELECTED) {
+					radioButtonsValue[1] = true;
+				} else {
+					radioButtonsValue[1] = false;
+				}
+			}
+		});
 
 		JRadioButton rdbtnNewRadioButton_2 = new JRadioButton("Individual Stock Volume Graph");
 		rdbtnNewRadioButton_2.setBounds(134, 127, 200, 23);
 		contentPanel.add(rdbtnNewRadioButton_2);
+		rdbtnNewRadioButton_2.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent e) {
+				if(e.getStateChange() == ItemEvent.SELECTED) {
+					radioButtonsValue[2] = true;
+				} else {
+					radioButtonsValue[2] = false;
+				}
+			}
+		});
+		
+		ButtonGroup bg1 = new ButtonGroup();
+		bg1.add(rdbtnNewRadioButton);
+		bg1.add(rdbtnNewRadioButton_1);
+		bg1.add(rdbtnNewRadioButton_2);
 
 		JPanel buttonPane = new JPanel();
 		buttonPane.setBounds(0, 225, 434, 33);
@@ -60,29 +93,26 @@ public class AddObserverDialog extends JDialog {
 		getContentPane().add(buttonPane);
 
 		JButton okButton = new JButton("OK");
-		okButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				if(rdbtnNewRadioButton.isSelected()) {
-					radioButtonsValue[0] = true;
-				} else if(rdbtnNewRadioButton_1.isSelected()) {
-					radioButtonsValue[1] = true;
-				} else if(rdbtnNewRadioButton_2.isSelected()) {
-					radioButtonsValue[2] = true;
-				} else {
-					radioButtonsValue[0] = false;
-					radioButtonsValue[1] = false;
-					radioButtonsValue[2] = false;
-				}
-			}
-		});
 		okButton.setActionCommand("OK");
 		buttonPane.add(okButton);
 		getRootPane().setDefaultButton(okButton);
+		okButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					new AddStocksForms(new StockSymbolCSVParser().getStockSymbol());
+				} catch(Exception ex) {
+					ex.printStackTrace();
+				}
+				setVisible(false);
+				new PortfolioStockPricePanel().initialize(frmStockPriceMonitoring);
+			}
+		});
 
 		JButton cancelButton = new JButton("Cancel");
 		cancelButton.setActionCommand("Cancel");
 		buttonPane.add(cancelButton);
-		cancelButton.addActionListener(new ActionListener() {			
+		cancelButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);

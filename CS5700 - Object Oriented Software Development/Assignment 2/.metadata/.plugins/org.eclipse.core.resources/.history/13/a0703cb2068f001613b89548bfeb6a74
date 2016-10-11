@@ -1,0 +1,14 @@
+package com.usu.stockMonitoring.forms;
+
+import javax.swing.JPanel;
+
+public class PortfolioStockPricePanel extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public PortfolioStockPricePanel() {
+
+	}
+
+}
