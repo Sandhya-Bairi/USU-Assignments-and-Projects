@@ -1,9 +1,0 @@
-package com.usu.stocks;
-
-import java.util.ArrayList;
-
-public class Stock extends StockSubject {
-
-	private ArrayList<StocksObserver> observerList;
-
-}

@@ -1,0 +1,38 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import static org.hamcrest.CoreMatchers.instanceOf;
+
+import com.usu.stockMonitoring.observerForms.PortfolioStockPricePanelObserver;
+import com.usu.stocks.Stock;
+import com.usu.stocks.subjectObserver.StockSubject;
+
+public class StockObserverTest {
+
+	@Test
+	public void testPortfolioStockPricePanelObserver_stockRegister() {
+		new PortfolioStockPricePanelObserver();
+		
+		//make stockObserverList in Stock.class as public to execute
+		assertThat(Stock.stockObserverList.get(0), instanceOf(PortfolioStockPricePanelObserver.class));
+	}
+	
+	@Test
+	public void testStockUpdate() {
+		Stock stock = new Stock();
+		stock.symbol="AAPL";
+		stock.registerStockOberserver(new PortfolioStockPricePanelObserver());
+		stock.notifyStockObserver(stock);
+		//assertEquals(stock.symbol, PortfolioStockPricePanelObserver.stock1.symbol);//to run this create a static stock object and assign it with stock value
+	}
+	
+	@Test
+	public void testResgisterObserver_ForNullObserver() {
+		StockSubject ssTest = new Stock();
+		ssTest.registerStockOberserver(null);
+		assertEquals(0, Stock.stockObserverList.size());//For this test case make the stockObserverList as public
+	}
+
+}

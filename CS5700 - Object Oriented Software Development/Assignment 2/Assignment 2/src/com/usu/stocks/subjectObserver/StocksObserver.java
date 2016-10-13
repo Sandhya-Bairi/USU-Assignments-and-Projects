@@ -1,19 +1,29 @@
 package com.usu.stocks.subjectObserver;
 
-import com.usu.stockMonitoring.forms.StockPriceMonitoringSystemControlForm;
+import java.awt.Color;
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
 import com.usu.stocks.Stock;
 
-public abstract class StocksObserver extends StockPriceMonitoringSystemControlForm {
-
+public abstract class StocksObserver {
+	
+	public JFrame frmStockPriceMonitoring;
+	
 	public StockSubject stock;
 	
-	private int observerId = 0;
-
-	public abstract void update();
+	public abstract void update(Stock stock);
 	
-	public StocksObserver(Stock stock) {
-		observerId++;
-		this.stock = stock;
-		stock.registerStockOberserver(this);
+	public JPanel createPanel() {
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.WHITE);
+		panel.setForeground(Color.BLUE);
+		panel.setBounds(10, 40, 310, 230);
+		panel.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5));
+		panel.setVisible(true);
+		
+		return panel;
 	}
 }

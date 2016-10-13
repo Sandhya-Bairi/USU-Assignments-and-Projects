@@ -1,0 +1,10 @@
+package com.usu.stocks.subjectObserver;
+
+import com.usu.stocks.Stock;
+
+public abstract class StocksObserver{
+
+	public StockSubject stock = new Stock();
+	
+	public abstract void update(Stock stock);
+}

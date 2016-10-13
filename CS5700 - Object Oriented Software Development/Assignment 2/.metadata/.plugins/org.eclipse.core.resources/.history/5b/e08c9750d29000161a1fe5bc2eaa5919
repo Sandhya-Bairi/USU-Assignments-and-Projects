@@ -1,0 +1,14 @@
+package com.usu.stocks.subjectObserver;
+
+import javax.swing.JFrame;
+
+import com.usu.stocks.Stock;
+
+public abstract class StocksObserver {
+	
+	public JFrame frmStockPriceMonitoring;
+	
+	public StockSubject stock;
+	
+	public abstract void update(Stock stock);
+}

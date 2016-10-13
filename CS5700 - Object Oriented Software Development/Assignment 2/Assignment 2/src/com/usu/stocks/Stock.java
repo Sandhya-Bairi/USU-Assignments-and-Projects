@@ -1,5 +1,6 @@
 package com.usu.stocks;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.usu.simulatorCommunication.messages.TickerMessage;
@@ -8,17 +9,17 @@ import com.usu.stocks.subjectObserver.StocksObserver;
 
 public class Stock extends StockSubject {
 
-	private List<StocksObserver> stockObserverList;
-	
 	public String symbol;
-    public long messageTimestamp;
-    public int openingPrice;
-    public int previousClosingPrice;
-    public int currentPrice;
-    public int bidPrice;
-    public int askPrice;
-    public int currentVolume;
-    public int averageVolume;
+	public long messageTimestamp;
+	public int openingPrice;
+	public int previousClosingPrice;
+	public int currentPrice;
+	public int bidPrice;
+	public int askPrice;
+	public int currentVolume;
+	public int averageVolume;
+	
+	public static List<StocksObserver> stockObserverList = new ArrayList<>();
 
 	@Override
 	public void registerStockOberserver(StocksObserver addNewObserver) {
@@ -34,22 +35,18 @@ public class Stock extends StockSubject {
 	public void removeStockObserver(StocksObserver deleteObserver) {
 		synchronized (new Object()) {
 			stockObserverList.remove(deleteObserver);
-			}
+		}
 	}
 
 	@Override
-	public void notifyStockObserver() {
+	public void notifyStockObserver(Stock stock) {
 		for (StocksObserver stocksObserver : stockObserverList) {
-			stocksObserver.update();
+			stocksObserver.update(stock);
 		}
 	}
 
 	public List<StocksObserver> getStockObserverList() {
 		return stockObserverList;
-	}
-
-	public void setStockObserverList(List<StocksObserver> stockObserverList) {
-		this.stockObserverList = stockObserverList;
 	}
 
 	public String getSymbol() {
@@ -123,11 +120,24 @@ public class Stock extends StockSubject {
 	public void setAverageVolume(int averageVolume) {
 		this.averageVolume = averageVolume;
 	}
+
+	public void update(Stock stock) {
+		notifyStockObserver(stock);
+	}
+
+	public Stock(TickerMessage message) {
+		symbol = message.symbol;
+		messageTimestamp = message.messageTimestamp;
+		openingPrice = message.openingPrice;
+		previousClosingPrice = message.previousClosingPrice;
+		currentPrice = message.currentPrice;
+		bidPrice = message.bidPrice;
+		askPrice = message.askPrice;
+		currentVolume = message.currentVolume;
+		averageVolume = message.averageVolume;
+	}
 	
-	public void update(TickerMessage message) {
-		for (StocksObserver stocksObserver : stockObserverList) {
-			stocksObserver.update();
-		}
+	public Stock() {
 	}
 
 }

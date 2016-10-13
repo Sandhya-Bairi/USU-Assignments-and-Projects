@@ -5,7 +5,6 @@ import java.util.HashMap;
 import com.usu.simulatorCommunication.messages.TickerMessage;
 
 public class Portfolio extends HashMap<String, Stock> {
-
 	/**
 	 * 
 	 */
@@ -14,7 +13,13 @@ public class Portfolio extends HashMap<String, Stock> {
 	public void update(TickerMessage message) {
         if (message == null) return;
 
-        if (containsKey(message.symbol));
-        	this.get(message.symbol).update(message);
+        if (containsKey(message.symbol)) {
+        	Stock stock = new Stock(message);
+        	this.get(message.symbol).update(stock);
+        }
     }
+	
+	public Portfolio() {
+		
+	}
 }

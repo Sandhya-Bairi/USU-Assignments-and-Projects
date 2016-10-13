@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.usu.stocks.Portfolio;
-import com.usu.stocks.Stock;
 
 public class StockSymbolCSVParser {
 
@@ -26,7 +25,7 @@ public class StockSymbolCSVParser {
 	public Portfolio setPortfolio(List<String> stockSymbols) {
 		Portfolio selectedStocks = new Portfolio();
 		for (String stockSymbol : stockSymbols) {
-			selectedStocks.put(stockSymbol, new Stock());
+			selectedStocks.put(stockSymbol, null);
 		}
 		
 		return selectedStocks;

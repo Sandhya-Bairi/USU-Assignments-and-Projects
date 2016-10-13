@@ -1,0 +1,33 @@
+package test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertThat;
+
+import java.net.DatagramSocket;
+import java.net.SocketException;
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.Test;
+
+import com.usu.simulatorCommunication.messages.SimulatorCommunicator;
+import com.usu.simulatorCommunication.messages.StreamStocksMessage;
+import com.usu.stocks.Portfolio;
+
+public class CommunicatorTest {
+	
+	SimulatorCommunicator scTest = new SimulatorCommunicator(new Portfolio());	
+	
+	@Test
+	public void testMonitoring_StreamStockMessageIsMissing() {
+		try {
+			scTest.startUDPPacket();
+			StreamStocksMessage startMessage = new StreamStocksMessage();
+			scTest.
+			
+		} catch (SocketException e) {
+			e.printStackTrace();
+		}
+	}
+}

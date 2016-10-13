@@ -28,6 +28,7 @@ public class AddStocksForms {
 	/**
 	 * Initialize the contents of the frame.
 	 */
+	@SuppressWarnings("all")
 	private void initialize(Portfolio portfolios) {
 		frmSelectStocks = new JFrame();
 		frmSelectStocks.setTitle("Select Stocks");
@@ -38,7 +39,11 @@ public class AddStocksForms {
 		
 		JList<String> list = new JList(portfolios.keySet().toArray(new String[portfolios.size()]));
 		list.setBounds(10, 10, 160, 250);
-		frmSelectStocks.getContentPane().add(new JScrollPane(list));
+		frmSelectStocks.getContentPane().add(list);
+		
+		JScrollPane scrollPane = new JScrollPane(list);
+		scrollPane.setBounds(10, 10, 160, 250);
+		frmSelectStocks.getContentPane().add(scrollPane);
 		
 		JList<String> list_1 = new JList<String>(new DefaultListModel<>());
 		list_1.setBounds(230, 10, 160, 250);
@@ -52,6 +57,10 @@ public class AddStocksForms {
 				}
 			}
 		});
+		
+		JScrollPane scrollPane_1 = new JScrollPane(list_1);
+		scrollPane_1.setBounds(230, 10, 160, 250);
+		frmSelectStocks.getContentPane().add(scrollPane_1);
 		button.setBounds(180, 70, 45, 30);
 		frmSelectStocks.getContentPane().add(button);
 		
@@ -77,7 +86,7 @@ public class AddStocksForms {
 				}
 				frmSelectStocks.setVisible(false);
 				try {
-					new SimulatorCommunicator(selectedPortfolio).startUDPPacket();
+					new SimulatorCommunicator(selectedPortfolio).startUDPPacket();					
 				} catch(Exception e) {
 					e.printStackTrace();
 				}

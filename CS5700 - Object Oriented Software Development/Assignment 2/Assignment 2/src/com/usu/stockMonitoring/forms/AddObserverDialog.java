@@ -9,39 +9,38 @@ import java.awt.event.ItemListener;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.border.EmptyBorder;
 
+import com.usu.stockMonitoring.observerForms.IndividualStockPriceGraphObserver;
+import com.usu.stockMonitoring.observerForms.IndividualStockVolumeGraphObserver;
+import com.usu.stockMonitoring.observerForms.PortfolioStockPricePanelObserver;
 import com.usu.stockMonitoring.parser.StockSymbolCSVParser;
 
-public class AddObserverDialog extends JDialog {
+public class AddObserverDialog {
 	
-	public AddObserverDialog(JFrame frmStockPriceMonitoring) {
-		radioButtonsValue(frmStockPriceMonitoring);
+	public AddObserverDialog() {
+		radioButtonsValue();
 	}
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 3581910287982341819L;
+	private final JDialog dialog = new JDialog();
 	private final JPanel contentPanel = new JPanel();
 	
-	static boolean radioButtonsValue[] = new boolean[3];
+	public static boolean radioButtonsValue[] = new boolean[3];
 
 	/**
 	 * Create the dialog.
 	 */
-	private void radioButtonsValue(JFrame frmStockPriceMonitoring) {
-		setTitle("Select Observer");
-		setBounds(100, 100, 450, 300);
-		getContentPane().setLayout(null);
+	private void radioButtonsValue() {
+		dialog.setTitle("Select Observer");
+		dialog.setBounds(100, 100, 450, 300);
+		dialog.getContentPane().setLayout(null);
 		contentPanel.setBounds(0, 0, 434, 228);
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
-		getContentPane().add(contentPanel);
+		dialog.getContentPane().add(contentPanel);
 		contentPanel.setLayout(null);
-		setVisible(true);
+		dialog.setVisible(true);
 		
 		JRadioButton rdbtnNewRadioButton = new JRadioButton("Portfolio Stock Prices");
 		rdbtnNewRadioButton.setBounds(134, 75, 200, 23);
@@ -90,12 +89,12 @@ public class AddObserverDialog extends JDialog {
 		JPanel buttonPane = new JPanel();
 		buttonPane.setBounds(0, 225, 434, 33);
 		buttonPane.setLayout(new FlowLayout(FlowLayout.CENTER));
-		getContentPane().add(buttonPane);
+		dialog.getContentPane().add(buttonPane);
 
 		JButton okButton = new JButton("OK");
 		okButton.setActionCommand("OK");
 		buttonPane.add(okButton);
-		getRootPane().setDefaultButton(okButton);
+		dialog.getRootPane().setDefaultButton(okButton);
 		okButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -104,8 +103,14 @@ public class AddObserverDialog extends JDialog {
 				} catch(Exception ex) {
 					ex.printStackTrace();
 				}
-				setVisible(false);
-				new PortfolioStockPricePanel().initialize(frmStockPriceMonitoring);
+				dialog.setVisible(false);
+				if(radioButtonsValue[0]) {
+					new PortfolioStockPricePanelObserver();
+				} else if(radioButtonsValue[1]) {
+					new IndividualStockPriceGraphObserver();
+				} else if(radioButtonsValue[2]) {
+					new IndividualStockVolumeGraphObserver();
+				}
 			}
 		});
 
@@ -115,7 +120,7 @@ public class AddObserverDialog extends JDialog {
 		cancelButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				setVisible(false);
+				dialog.setVisible(false);
 			}
 		});
 	}

@@ -1,6 +1,12 @@
 package com.usu.stocks.subjectObserver;
 
+import java.util.List;
+
+import com.usu.stocks.Stock;
+
 public abstract class StockSubject {
+	protected List<StocksObserver> stockObserverList;
+	
 	/**
 	 * 
 	 * @param addNewObserver
@@ -16,6 +22,6 @@ public abstract class StockSubject {
 	/**
 	 * 
 	 */
-	public abstract void notifyStockObserver();
+	public abstract void notifyStockObserver(Stock stock);
 
 }

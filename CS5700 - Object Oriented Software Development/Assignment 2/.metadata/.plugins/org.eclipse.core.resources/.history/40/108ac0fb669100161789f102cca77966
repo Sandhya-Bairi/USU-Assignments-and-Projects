@@ -1,0 +1,27 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import java.net.SocketTimeoutException;
+
+import org.junit.Test;
+
+import com.usu.simulatorCommunication.messages.SimulatorCommunicator;
+import com.usu.stocks.Portfolio;
+import com.usu.stocks.Stock;
+
+public class PortfolioTest {
+
+	@Test(expected=SocketTimeoutException.class)
+	public void testPortfolioUpdate_WhenPortfolioIsNotEmptyButTickcerIsNull () {
+		Portfolio portfolio = new Portfolio();
+		portfolio.put("Anuj", new Stock());
+		SimulatorCommunicator scTest = new SimulatorCommunicator(portfolio);
+		try {
+			scTest.startUDPPacket();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

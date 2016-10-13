@@ -1,0 +1,47 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package model;
+
+import static com.sun.java.accessibility.util.SwingEventMonitor.addListSelectionListener;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import javax.swing.table.DefaultTableModel;
+import portfolio.Portfolio;
+
+/**
+ *
+ * @author Shobhit
+ */
+public class UserStockTableModel extends DefaultTableModel {
+    private Portfolio portfolio;
+    private Map <String , Integer > rowMapping ;
+    private int row = 0;
+    private final  String[] columns = new String[] {
+                "Stock", "Current" ,"Bid", "Ask","Previous"
+    };  
+   
+    public UserStockTableModel(){
+        setColumnIdentifiers(columns);
+        rowMapping =  new HashMap<>();
+        
+    }
+    
+    public void updateRow(String symbol,int currentPrice,Icon status,int bidPrice,int askPice,int previousPrice ,int volume){
+        Object object = new Object[]{symbol,currentPrice,bidPrice,askPice,previousPrice};
+        addRow(new Object[]{symbol,currentPrice,status,bidPrice,askPice,previousPrice});
+        
+        rowMapping.put(symbol,row++);
+    }
+    
+    public int getRow(String symbol){
+        return rowMapping.get(symbol);
+    }
+    

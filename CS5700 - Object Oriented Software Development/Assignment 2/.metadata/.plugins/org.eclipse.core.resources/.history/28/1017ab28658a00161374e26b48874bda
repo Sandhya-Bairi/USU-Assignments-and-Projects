@@ -1,8 +1,0 @@
-package com.usu.stocks;
-
-import com.usu.stockMonitoring.forms.StockPriceMonitoringSystemControlForm;
-
-public abstract class StocksObserver extends StockPriceMonitoringSystemControlForm {
-
-	public abstract void update();
-}

@@ -1,0 +1,17 @@
+package com.usu.stocks.subjectObserver;
+
+import com.usu.simulatorCommunication.messages.TickerMessage;
+import com.usu.stockMonitoring.forms.StockPriceMonitoringSystemControlForm;
+import com.usu.stocks.Stock;
+
+public abstract class StocksObserver extends StockPriceMonitoringSystemControlForm {
+
+	public StockSubject stock;
+	
+	public abstract void update(TickerMessage message);
+	
+	public StocksObserver(Stock stock) {
+		this.stock = stock;
+		stock.registerStockOberserver(this);
+	}
+}

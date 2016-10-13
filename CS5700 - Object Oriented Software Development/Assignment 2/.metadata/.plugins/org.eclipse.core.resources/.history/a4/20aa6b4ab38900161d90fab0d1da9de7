@@ -1,4 +1,0 @@
-import com.usu.stocks.StocksObserver;
-
-public class PortfolioStockPricePanel extends StocksObserver {
-}

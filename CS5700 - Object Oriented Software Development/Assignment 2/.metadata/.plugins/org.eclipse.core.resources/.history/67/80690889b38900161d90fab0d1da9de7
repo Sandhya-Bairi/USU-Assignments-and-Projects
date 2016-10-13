@@ -1,4 +1,0 @@
-import com.usu.stocks.StockDictionary;
-
-public class StockDecorator extends StockDictionary {
-}
