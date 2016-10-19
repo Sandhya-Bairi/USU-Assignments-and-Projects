@@ -1977,3 +1977,11 @@ java.lang.NullPointerException: null
 2016-09-30 19:45:23,614 [Worker-556] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignment\CS6600 - Intelligent Systems\Assignment 2\Assignment 2\src\main\resources
 2016-09-30 19:45:23,616 [Worker-556] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-09-30 19:45:23,620 [Worker-556] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignment\CS6600 - Intelligent Systems\Assignment 2\Assignment 2\src\test\resources
+2016-10-18 14:51:42,804 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 14:51:42,821 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS6600 - Intelligent Systems\Assignment 2\Assignment 2\src\main\resources
+2016-10-18 14:51:42,824 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 14:51:42,830 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS6600 - Intelligent Systems\Assignment 2\Assignment 2\src\test\resources
+2016-10-19 13:36:06,838 [Worker-427] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-19 13:36:06,878 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS6600 - Intelligent Systems\Assignment 2\Assignment 2\src\main\resources
+2016-10-19 13:36:06,879 [Worker-427] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-19 13:36:06,884 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS6600 - Intelligent Systems\Assignment 2\Assignment 2\src\test\resources

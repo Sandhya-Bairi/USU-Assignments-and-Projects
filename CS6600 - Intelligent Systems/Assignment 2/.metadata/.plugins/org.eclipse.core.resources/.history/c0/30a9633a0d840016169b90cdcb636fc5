@@ -1,4 +1,0 @@
-package com.usu;
-
-public class BadDecisionException extends Exception {
-}
