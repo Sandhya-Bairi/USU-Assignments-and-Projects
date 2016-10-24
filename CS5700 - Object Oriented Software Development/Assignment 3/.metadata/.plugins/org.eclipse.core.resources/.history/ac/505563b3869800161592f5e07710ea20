@@ -1,0 +1,17 @@
+package com.usu.draw;
+
+import java.awt.Graphics2D;
+
+public abstract class Shape {
+	
+	//public static Pen SelectedPen = new Pen(Color.DarkGray);
+    //public static Brush HandlesBrush = new SolidBrush(Color.Black);
+    public static int HandleHalfSize = 3;
+    public static Size ToolSize = new Size() { Width = 64, Height = 64};
+
+    public Point Location = new Point(0, 0);
+    public Size Size = new Size(0, 0);
+    public boolean IsSelected = false;
+
+    public abstract void draw(Graphics2D graphics);
+}

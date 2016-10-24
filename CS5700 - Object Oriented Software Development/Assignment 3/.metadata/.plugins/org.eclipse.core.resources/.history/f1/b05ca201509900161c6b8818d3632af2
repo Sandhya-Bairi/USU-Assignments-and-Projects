@@ -1,0 +1,11 @@
+package com.usu.command;
+
+public class AddCommand extends Command {
+
+	@Override
+	public void Execute() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

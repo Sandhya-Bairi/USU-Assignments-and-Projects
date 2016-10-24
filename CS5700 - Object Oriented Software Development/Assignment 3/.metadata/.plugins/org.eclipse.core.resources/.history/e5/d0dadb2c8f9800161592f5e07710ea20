@@ -1,0 +1,27 @@
+package com.usu.draw;
+
+import java.util.Dictionary;
+
+public class ShapeFactory {
+	
+	public String resourceNamePattern;
+//    public Type ReferenceType { get; set; }
+
+    private Dictionary<String, ShapeIntrinsicState> sharedShapes = new Dictionary<String, ShapeIntrinsicState>();
+
+    public ShapeWithAllState getShape(ShapeExtrinsicState extrinsicState) {
+        String resourceName = String.Format(resourceNamePattern, extrinsicState.TreeType);
+
+        ShapeIntrinsicState treeWithIntrinsicState;
+        if (sharedShapes.ContainsKey(extrinsicState.TreeType))
+            treeWithIntrinsicState = sharedShapes[extrinsicState.TreeType];
+        else
+        {
+            treeWithIntrinsicState = new TreeWithIntrinsicState();
+            treeWithIntrinsicState.LoadFromResource(resourceName, ReferenceType);
+            sharedShapes.Add(extrinsicState.TreeType, treeWithIntrinsicState);
+        }
+
+        return new ShapeWithAllState(treeWithIntrinsicState, extrinsicState);
+    }
+}

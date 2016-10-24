@@ -1,0 +1,47 @@
+package com.usu.draw;
+
+import java.awt.Dimension;
+import java.awt.Point;
+
+public class ShapeExtrinsicState {
+
+	public String treeType;
+
+	public Point location;
+
+	public Dimension size;
+
+	public boolean isSelected;
+
+	public String getTreeType() {
+		return treeType;
+	}
+
+	public void setTreeType(String treeType) {
+		this.treeType = treeType;
+	}
+
+	public Point getLocation() {
+		return location;
+	}
+
+	public void setLocation(Point location) {
+		this.location = location;
+	}
+
+	public Dimension getSize() {
+		return size;
+	}
+
+	public void setSize(Dimension size) {
+		this.size = size;
+	}
+
+	public boolean isSelected() {
+		return isSelected;
+	}
+
+	public void setSelected(boolean isSelected) {
+		this.isSelected = isSelected;
+	}
+}

@@ -1,0 +1,21 @@
+package com.usu.drawingGUI;
+
+import com.usu.draw.Shape;
+import com.usu.draw.ShapeFactory;
+
+public class DrawingPalette {
+
+	Shape shape;
+	
+	static DrawingPalette drawingPalette;
+	
+	public ShapeFactory shapeFactory;
+	
+	//private static JSONSerializer jsonSerializer = new JSONSerializer();
+	
+	public DrawingPalette() {		
+		shapeFactory = new ShapeFactory();
+	}
+	
+	
+}

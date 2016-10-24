@@ -1,0 +1,23 @@
+package com.usu.command;
+
+import java.awt.Point;
+
+public class AddCommand extends Command {
+
+	private int normalWidth = 80;
+    private int normalHeight = 80;
+	
+    private final String shapeType;
+    private Point location;
+    private final float scale;
+    
+	public AddCommand() {
+	}
+    
+    
+    @Override
+	public void Execute() {
+		// TODO Auto-generated method stub
+	}
+
+}

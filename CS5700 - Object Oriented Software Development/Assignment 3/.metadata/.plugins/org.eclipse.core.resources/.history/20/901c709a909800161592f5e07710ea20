@@ -1,0 +1,29 @@
+package com.usu.draw;
+
+import java.util.Dictionary;
+import java.util.HashMap;
+import java.util.Map;
+
+public class ShapeFactory {
+	
+	public String resourceNamePattern;
+//    public Type ReferenceType { get; set; }
+
+    private Map<String, ShapeIntrinsicState> sharedShapes = new HashMap<String, ShapeIntrinsicState>();
+
+    public ShapeWithAllState getShape(ShapeExtrinsicState extrinsicState) {
+        String resourceName = String.format(resourceNamePattern, extrinsicState.treeType);
+
+        ShapeIntrinsicState treeWithIntrinsicState;
+        if (sharedShapes.containsKey(extrinsicState.treeType))
+            treeWithIntrinsicState = sharedShapes[extrinsicState.treeType];
+        else
+        {
+            treeWithIntrinsicState = new ShapeIntrinsicState();
+            treeWithIntrinsicState.LoadFromResource(resourceName, ReferenceType);
+            sharedShapes.Add(extrinsicState.TreeType, treeWithIntrinsicState);
+        }
+
+        return new ShapeWithAllState(treeWithIntrinsicState, extrinsicState);
+    }
+}

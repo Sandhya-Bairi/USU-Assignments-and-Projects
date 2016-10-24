@@ -1,0 +1,31 @@
+package com.usu.drawingGUI;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.usu.draw.Shape;
+import com.usu.draw.ShapeFactory;
+
+public class DrawingPalette {
+
+	Shape shape;
+	
+	static DrawingPalette drawingPalette;
+	
+	public static ShapeFactory shapeFactory;
+	
+	//private static JSONSerializer jsonSerializer = new JSONSerializer();
+	
+	private List<Shape> shapes = new ArrayList<Shape>();
+	
+	public boolean isDirty;
+	
+	 public void add(Shape shape) {
+         if (shape != null) {
+        	 synchronized(this) {
+        		 shapes.add(shape);
+                 isDirty = true;
+             }
+         }
+     }
+}
