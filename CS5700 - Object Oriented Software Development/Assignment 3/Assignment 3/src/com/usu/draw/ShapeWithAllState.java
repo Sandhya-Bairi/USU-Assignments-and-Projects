@@ -1,34 +1,39 @@
 package com.usu.draw;
 
 import java.awt.Graphics2D;
-import java.awt.Rectangle;
+import java.io.File;
+import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
 public class ShapeWithAllState extends Shape {
 
 	private ShapeIntrinsicState intrinsicState;
-    public ShapeExtrinsicState extrinsicStatic;
+    public ShapeExtrinsicState extrinsicState;
     
 	@Override
 	public void draw(Graphics2D graphics) {
 		if (graphics == null || intrinsicState == null) return;
 
-        //graphics.draw(ImageIO.read(getClass().getResource("img/sun.jpeg")));
+        try {
+			graphics.drawImage(ImageIO.read(new File(intrinsicState.shapeName)), 0, 0, null);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-        if (extrinsicStatic.isSelected) {
-            graphics.drawRect(extrinsicStatic.location.x, extrinsicStatic.location.y, extrinsicStatic.size.width, extrinsicStatic.size.height);
+        if (extrinsicState.isSelected) {
+            graphics.drawRect(extrinsicState.location.x, extrinsicState.location.y, extrinsicState.size.width, extrinsicState.size.height);
 
-            DrawActionHandle(graphics, extrinsicStatic.location.x, extrinsicStatic.location.y);
-            DrawActionHandle(graphics, extrinsicStatic.location.x + extrinsicStatic.size.width, extrinsicStatic.location.y);
-            DrawActionHandle(graphics, extrinsicStatic.location.x, extrinsicStatic.location.y + extrinsicStatic.size.height);
-            DrawActionHandle(graphics, extrinsicStatic.location.x + extrinsicStatic.size.width, extrinsicStatic.location.y + extrinsicStatic.size.height);
+            DrawActionHandle(graphics, extrinsicState.location.x, extrinsicState.location.y);
+            DrawActionHandle(graphics, extrinsicState.location.x + extrinsicState.size.width, extrinsicState.location.y);
+            DrawActionHandle(graphics, extrinsicState.location.x, extrinsicState.location.y + extrinsicState.size.height);
+            DrawActionHandle(graphics, extrinsicState.location.x + extrinsicState.size.width, extrinsicState.location.y + extrinsicState.size.height);
         }
 	}
 	
 	ShapeWithAllState(ShapeIntrinsicState sharedPart, ShapeExtrinsicState nonsharedPart) {
         intrinsicState = sharedPart;
-        extrinsicStatic = nonsharedPart;
+        extrinsicState = nonsharedPart;
     }
 	
 	private void DrawActionHandle(Graphics2D graphics, int x, int y) {

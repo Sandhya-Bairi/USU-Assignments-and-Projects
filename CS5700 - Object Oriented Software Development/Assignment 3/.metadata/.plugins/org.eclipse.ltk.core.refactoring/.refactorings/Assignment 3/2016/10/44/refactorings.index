@@ -1,2 +1,6 @@
 1477262808550	Delete element
 1477326289735	Delete elements
+1477349055468	Rename field 'extrinsicStatic'
+1477349407349	Rename local variable 'treeWithIntrinsicState'
+1477349426844	Rename local variable 'extrinsicState'
+1477349621956	Rename local variable 'treeType'

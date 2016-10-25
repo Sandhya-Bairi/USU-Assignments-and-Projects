@@ -2,11 +2,15 @@ package com.usu.drawingGUI;
 
 import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -21,6 +25,8 @@ import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 import com.usu.command.CommandFactory;
+import com.usu.draw.ShapeFactory;
+import com.usu.draw.ShapeIntrinsicState;
 
 public class MainForm extends JFrame {
 	
@@ -39,6 +45,12 @@ public class MainForm extends JFrame {
 	
 	CommandFactory commandFactory;
 	
+	JPanel panel_1;
+	
+	private BufferedImage imageBuffer;
+    private Image imageBufferGraphics;
+    private Graphics2D panelGraphics;
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -55,7 +67,10 @@ public class MainForm extends JFrame {
 	public MainForm() {
 		createFrame();
 		commandFactory = new CommandFactory();
+		drawingPalette = new DrawingPalette();
 		commandFactory.targetDrawing = drawingPalette;
+		drawingPalette.shapeFactory = new ShapeFactory();
+		drawingPalette.shapeFactory.resourceNamePattern = "img/%s.jpg";
 	}
 	
 	private void createFrame() {
@@ -74,12 +89,15 @@ public class MainForm extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JPanel panel_1 = new JPanel();
+		panel_1 = new JPanel();
 		panel_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				if (currentShapeResourceSelected != null && !currentShapeResourceSelected.isEmpty()) {
                     commandFactory.create("add", currentShapeResourceSelected, arg0.getLocationOnScreen(), currentScale).execute();
+                    displayDrawing();
+				} else {
+					commandFactory.create("select", arg0.getLocationOnScreen()).execute();
 				}
 			}
 		});
@@ -108,6 +126,7 @@ public class MainForm extends JFrame {
 				Color newColor = JColorChooser.showDialog(null, "Choose a color", panel_1.getBackground());
 				if(newColor != null)
 					panel_1.setBackground(newColor);
+				ShapeIntrinsicState.selectedBackgroundColor = newColor;
 			}
 		});
 		
@@ -136,7 +155,7 @@ public class MainForm extends JFrame {
 			}
 		});
 		buttonSun.setBounds(15, 20, 70, 40);
-		buttonSun.setIcon(new ImageIcon(new ImageIcon("img/sun.jpeg").getImage().getScaledInstance(buttonSun.getWidth(), buttonSun.getHeight(), java.awt.Image.SCALE_SMOOTH)));
+		buttonSun.setIcon(new ImageIcon(new ImageIcon("img/sun.jpg").getImage().getScaledInstance(buttonSun.getWidth(), buttonSun.getHeight(), java.awt.Image.SCALE_SMOOTH)));
 		panel.add(buttonSun);
 		
 		//Cloud
@@ -148,7 +167,7 @@ public class MainForm extends JFrame {
 			}
 		});
 		buttonCloud.setBounds(15, 80, 70, 40);
-		buttonCloud.setIcon(new ImageIcon(new ImageIcon("img/cloud.jpeg").getImage().getScaledInstance(buttonCloud.getWidth(), buttonCloud.getHeight(), java.awt.Image.SCALE_SMOOTH)));
+		buttonCloud.setIcon(new ImageIcon(new ImageIcon("img/cloud.jpg").getImage().getScaledInstance(buttonCloud.getWidth(), buttonCloud.getHeight(), java.awt.Image.SCALE_SMOOTH)));
 		panel.add(buttonCloud);
 		
 		//Mountain
@@ -208,7 +227,7 @@ public class MainForm extends JFrame {
 			}
 		});
 		buttonPointer.setBounds(15, 380, 70, 40);
-		buttonPointer.setIcon(new ImageIcon(new ImageIcon("img/PointerIcon.png").getImage().getScaledInstance(buttonPointer.getWidth(), buttonPointer.getHeight(), java.awt.Image.SCALE_SMOOTH)));
+		buttonPointer.setIcon(new ImageIcon(new ImageIcon("img/pointerIcon.jpg").getImage().getScaledInstance(buttonPointer.getWidth(), buttonPointer.getHeight(), java.awt.Image.SCALE_SMOOTH)));
 		panel.add(buttonPointer);
 		
 		//Undo
@@ -219,7 +238,7 @@ public class MainForm extends JFrame {
 			}
 		});
 		buttonUndo.setBounds(15, 535, 70, 40);
-		buttonUndo.setIcon(new ImageIcon(new ImageIcon("img/undo.png").getImage().getScaledInstance(buttonUndo.getWidth(), buttonUndo.getHeight(), java.awt.Image.SCALE_SMOOTH)));
+		buttonUndo.setIcon(new ImageIcon(new ImageIcon("img/undo.jpg").getImage().getScaledInstance(buttonUndo.getWidth(), buttonUndo.getHeight(), java.awt.Image.SCALE_SMOOTH)));
 		panel.add(buttonUndo);
 		
 		//Reset
@@ -232,5 +251,16 @@ public class MainForm extends JFrame {
 		});
 		btnReset.setBounds(15, 600, 70, 25);
 		panel.add(btnReset);
+	}
+	
+	private void displayDrawing() {
+		if (imageBuffer == null) {
+            imageBuffer = new BufferedImage(panel_1.getWidth(), panel_1.getHeight(), BufferedImage.TYPE_INT_ARGB);
+            imageBufferGraphics = panel_1.createImage(panel_1.getWidth(), panel_1.getHeight());
+            panelGraphics = imageBuffer.createGraphics();
+        }
+
+        drawingPalette.draw(panelGraphics);
+//            panelGraphics.DrawImageUnscaled(imageBuffer, 0, 0);
 	}
 }

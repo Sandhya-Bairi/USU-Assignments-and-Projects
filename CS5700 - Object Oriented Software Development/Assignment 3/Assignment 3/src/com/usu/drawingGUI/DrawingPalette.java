@@ -11,8 +11,6 @@ public class DrawingPalette {
 
 	Shape shape;
 	
-	static DrawingPalette drawingPalette;
-	
 	public ShapeFactory shapeFactory;
 	
 	//private static JSONSerializer jsonSerializer = new JSONSerializer();

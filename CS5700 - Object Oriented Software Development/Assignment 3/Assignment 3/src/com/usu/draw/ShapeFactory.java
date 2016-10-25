@@ -11,18 +11,18 @@ public class ShapeFactory {
 
     private Map<String, ShapeIntrinsicState> sharedShapes = new HashMap<String, ShapeIntrinsicState>();
 
-    public ShapeWithAllState getShape(ShapeExtrinsicState extrinsicState) {
-        String resourceName = String.format(resourceNamePattern, extrinsicState.shapeType);
+    public ShapeWithAllState getShape(ShapeExtrinsicState shapeExtrinsicState) {
+        String resourceName = String.format(resourceNamePattern, shapeExtrinsicState.shapeType);
 
-        ShapeIntrinsicState treeWithIntrinsicState;
-        if (sharedShapes.containsKey(extrinsicState.shapeType))
-            treeWithIntrinsicState = sharedShapes.get(extrinsicState.shapeType);
+        ShapeIntrinsicState shapeIntrinsicState;
+        if (sharedShapes.containsKey(shapeExtrinsicState.shapeType))
+            shapeIntrinsicState = sharedShapes.get(shapeExtrinsicState.shapeType);
         else {
-            treeWithIntrinsicState = new ShapeIntrinsicState();
-            treeWithIntrinsicState.loadFromResource(resourceName, referenceType);
-            sharedShapes.put(extrinsicState.shapeType, treeWithIntrinsicState);
+            shapeIntrinsicState = new ShapeIntrinsicState();
+            shapeIntrinsicState.loadFromResource(resourceName, referenceType);
+            sharedShapes.put(shapeExtrinsicState.shapeType, shapeIntrinsicState);
         }
 
-        return new ShapeWithAllState(treeWithIntrinsicState, extrinsicState);
+        return new ShapeWithAllState(shapeIntrinsicState, shapeExtrinsicState);
     }
 }

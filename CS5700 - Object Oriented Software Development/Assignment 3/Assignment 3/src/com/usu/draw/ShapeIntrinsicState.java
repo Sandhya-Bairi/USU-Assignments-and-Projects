@@ -3,40 +3,44 @@ package com.usu.draw;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Type;
 
+import javax.imageio.ImageIO;
+
 public class ShapeIntrinsicState extends Shape {
+
+	public static Color selectedBackgroundColor;
+	public String shapeType;
+	public BufferedImage image;
+	public BufferedImage toolImage;
+	//public BufferedImage toolImageSelected;
 	
-	public static Color selectedBackgroundColor = Color.WHITE;
-    public String shapeType;
-    public BufferedImage image;
-    public BufferedImage toolImage;
-    public BufferedImage toolImageSelected;
-    
+	public String shapeName;
+
 	@Override
 	public void draw(Graphics2D graphics) {
 		//throw new Exception("Cannot draw a shape with only intrinsic state");		
 	}
-	
-	public void loadFromResource(String treeType, Type referenceTypeForAssembly) {
-        if (treeType == null || treeType.isEmpty()) return;
 
-       /* Assembly assembly = Assembly.GetAssembly(referenceTypeForAssembly);
+	public void loadFromResource(String shapeName, Type referenceTypeForAssembly) {
+		if (shapeName == null || shapeName.isEmpty()) return;
+		
+		this.shapeName = shapeName;
+		try {
+			image = ImageIO.read(new File(shapeName));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		toolImage = new BufferedImage(toolSize.width, toolSize.height, BufferedImage.TYPE_INT_RGB);
+		//toolImageSelected = new Bitmap(toolSize.width, toolSize.height);
+		
+		Graphics2D g = toolImage.createGraphics();
+		
+		/*Graphics.FromImage(ToolImageSelected);
+		g.Clear(SelectionBackgroundColor);*/
+		//g.drawImage(toolImage, 0, 0, null);
 
-        if (assembly == null) return;
-
-        using (Stream stream = assembly.GetManifestResourceStream(treeType))
-        {
-            if (stream != null)
-            {
-                Image = new Bitmap(stream);
-				ToolImage = new Bitmap(Image, ToolSize);
-                ToolImageSelected = new Bitmap(ToolSize.Width, ToolSize.Height);
-
-                Graphics g = Graphics.FromImage(ToolImageSelected);
-				g.Clear(SelectionBackgroundColor);
-				g.DrawImage(ToolImage, new Point() {X=0, Y = 0});
-            }
-        }*/
-    }
+	}
 }

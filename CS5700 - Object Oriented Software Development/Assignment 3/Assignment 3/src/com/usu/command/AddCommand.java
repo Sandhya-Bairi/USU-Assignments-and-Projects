@@ -30,7 +30,7 @@ public class AddCommand extends Command {
             scale = (float) commandParameters[2];
         else
             scale = 1.0F;
-	}    
+	}
     
     @Override
 	public void execute() {
