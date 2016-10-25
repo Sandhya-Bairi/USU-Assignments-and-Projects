@@ -257,8 +257,7 @@ public class MainForm extends JFrame {
         }
 
         drawingPalette.draw(panelGraphics);
-        panelGraphics.drawImage(imageBuffer, 0, 0, null);
-        panel_1.createImage(panel_1.getWidth(), panel_1.getHeight());
+        panel_1.repaint();
 //            panelGraphics.DrawImageUnscaled(imageBuffer, 0, 0);
 	}
 }

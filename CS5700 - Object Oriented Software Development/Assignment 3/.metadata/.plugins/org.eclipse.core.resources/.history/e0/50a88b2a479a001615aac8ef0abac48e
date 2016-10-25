@@ -16,7 +16,7 @@ public class ShapeWithAllState extends Shape {
 		if (graphics == null || intrinsicState == null) return;
 
         try {
-			graphics.drawImage(ImageIO.read(new File(intrinsicState.shapeName)), 80, 80, null);
+			graphics.drawImage(ImageIO.read(new File(intrinsicState.shapeName)), 0, 0, this);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

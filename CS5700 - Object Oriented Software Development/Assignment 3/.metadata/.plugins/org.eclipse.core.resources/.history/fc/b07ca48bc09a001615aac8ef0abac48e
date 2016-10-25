@@ -46,7 +46,8 @@ public class DrawingPalette {
          }
      }
 	 
-	 public boolean draw(Graphics2D graphics) {
+	 public boolean draw(Graphics2D graphics)
+     {
          boolean didARedraw = false;
          synchronized(this) {
              if (isDirty) {

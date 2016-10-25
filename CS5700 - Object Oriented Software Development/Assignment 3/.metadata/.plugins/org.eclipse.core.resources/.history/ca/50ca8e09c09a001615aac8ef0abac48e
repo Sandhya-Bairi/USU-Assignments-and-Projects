@@ -43,7 +43,7 @@ public class MainForm extends JFrame {
 	
 	CommandFactory commandFactory;
 	
-	JPanel panel_1;
+	ImagePanel panel_1;
 	
 	private BufferedImage imageBuffer;
     private Graphics2D panelGraphics;
@@ -86,7 +86,7 @@ public class MainForm extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		panel_1 = new JPanel();
+		panel_1 = new ImagePanel();
 		panel_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -257,8 +257,17 @@ public class MainForm extends JFrame {
         }
 
         drawingPalette.draw(panelGraphics);
-        panelGraphics.drawImage(imageBuffer, 0, 0, null);
-        panel_1.createImage(panel_1.getWidth(), panel_1.getHeight());
+        panel_1.repaint();
 //            panelGraphics.DrawImageUnscaled(imageBuffer, 0, 0);
+	}
+	
+	
+	private class ImagePanel extends JPanel {
+	
+		protected void paintComponent(Graphics2D graphics) {
+            super.paintComponent(graphics);
+            graphics.drawImage(imageBuffer, 0, 0, null);
+        }
+	
 	}
 }
