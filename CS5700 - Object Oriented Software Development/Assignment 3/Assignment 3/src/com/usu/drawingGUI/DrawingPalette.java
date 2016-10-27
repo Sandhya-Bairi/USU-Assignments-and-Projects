@@ -1,8 +1,11 @@
 package com.usu.drawingGUI;
 
+import java.awt.Color;
 import java.awt.Graphics2D;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.swing.JPanel;
 
 import com.usu.draw.Shape;
 import com.usu.draw.ShapeFactory;
@@ -17,11 +20,15 @@ public class DrawingPalette {
 	
 	private List<Shape> shapes = new ArrayList<Shape>();
 	
+	private Object lock = new Object();
+	
 	public boolean isDirty;
+	
+	public int shapeCount = shapes.size();
 	
 	 public void add(Shape shape) {
          if (shape != null) {
-        	 synchronized(this) {
+        	 synchronized(lock) {
         		 shapes.add(shape);
                  isDirty = true;
              }
@@ -29,7 +36,7 @@ public class DrawingPalette {
      }
 	 
 	 public void clear() {
-		 synchronized(this) {
+		 synchronized(lock) {
              shapes.clear();
              isDirty = true;
          }
@@ -37,7 +44,7 @@ public class DrawingPalette {
 	 
 	 public void removeShape(Shape shape) {
          if (shape != null) {
-        	 synchronized(this) {
+        	 synchronized(lock) {
                  if (this.shape == shape)
                 	 this.shape = null;
                  shapes.remove(shape);
@@ -46,17 +53,25 @@ public class DrawingPalette {
          }
      }
 	 
-	 public boolean draw(Graphics2D graphics) {
+	 public boolean draw(Graphics2D graphics, JPanel mainPanel) {
          boolean didARedraw = false;
-         synchronized(this) {
+         synchronized(lock) {
              if (isDirty) {
-                 //graphics.clear(Color.WHITE);
+                 graphics.setColor(Color.WHITE);
                  for(Shape shape : shapes)
-                	 shape.draw(graphics);
+                	 shape.draw(graphics, mainPanel);
                  isDirty = false;
                  didARedraw = true;
              }
          }
          return didARedraw;
      }
+	 
+/*	 public Shape FindTreeAtPosition(Point location) {
+         Shape result;
+         synchronized (lock) {
+        	 result = shapes.FindLast(t => location.x >= t.location.x && location.x < t.location.x + t.size.width && location.y >= t.location.y && location.y < t.location.y + t.size.height);
+         }
+         return result;
+     }*/
 }

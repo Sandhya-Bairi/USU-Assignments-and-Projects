@@ -19,7 +19,7 @@ public class ShapeFactory {
             shapeIntrinsicState = sharedShapes.get(shapeExtrinsicState.shapeType);
         else {
             shapeIntrinsicState = new ShapeIntrinsicState();
-            shapeIntrinsicState.loadFromResource(resourceName, referenceType);
+            shapeIntrinsicState.loadFromResource(resourceName);
             sharedShapes.put(shapeExtrinsicState.shapeType, shapeIntrinsicState);
         }
 

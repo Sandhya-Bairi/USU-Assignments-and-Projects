@@ -1,0 +1,76 @@
+package com.usu.drawingGUI;
+
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.Point;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.usu.draw.Shape;
+import com.usu.draw.ShapeFactory;
+
+public class DrawingPalette {
+
+	Shape shape;
+	
+	public ShapeFactory shapeFactory;
+	
+	//private static JSONSerializer jsonSerializer = new JSONSerializer();
+	
+	private List<Shape> shapes = new ArrayList<Shape>();
+	
+	private Object lock = new Object();
+	
+	public boolean isDirty;
+	
+	public int shapeCount = shapes.size();
+	
+	 public void add(Shape shape) {
+         if (shape != null) {
+        	 synchronized(lock) {
+        		 shapes.add(shape);
+                 isDirty = true;
+             }
+         }
+     }
+	 
+	 public void clear() {
+		 synchronized(lock) {
+             shapes.clear();
+             isDirty = true;
+         }
+     }
+	 
+	 public void removeShape(Shape shape) {
+         if (shape != null) {
+        	 synchronized(lock) {
+                 if (this.shape == shape)
+                	 this.shape = null;
+                 shapes.remove(shape);
+                 isDirty = true;
+             }
+         }
+     }
+	 
+	 public boolean draw(Graphics2D graphics) {
+         boolean didARedraw = false;
+         synchronized(lock) {
+             if (isDirty) {
+                 graphics.clear(Color.WHITE);
+                 for(Shape shape : shapes)
+                	 shape.draw(graphics);
+                 isDirty = false;
+                 didARedraw = true;
+             }
+         }
+         return didARedraw;
+     }
+	 
+/*	 public Shape FindTreeAtPosition(Point location) {
+         Shape result;
+         synchronized (lock) {
+        	 result = shapes.FindLast(t => location.x >= t.location.x && location.x < t.location.x + t.size.width && location.y >= t.location.y && location.y < t.location.y + t.size.height);
+         }
+         return result;
+     }*/
+}

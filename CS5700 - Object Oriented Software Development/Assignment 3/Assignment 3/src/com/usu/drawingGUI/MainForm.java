@@ -10,10 +10,12 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JColorChooser;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -43,7 +45,9 @@ public class MainForm extends JFrame {
 	
 	CommandFactory commandFactory;
 	
-	JPanel panel_1;
+	DrawPanel panel_1;
+	
+	JLabel imgLabel = new JLabel((Icon)null);
 	
 	private BufferedImage imageBuffer;
     private Graphics2D panelGraphics;
@@ -86,13 +90,14 @@ public class MainForm extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		panel_1 = new JPanel();
+		panel_1 = new DrawPanel();
 		panel_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				if (currentShapeResourceSelected != null && !currentShapeResourceSelected.isEmpty()) {
-                    commandFactory.create("add", currentShapeResourceSelected, arg0.getLocationOnScreen(), currentScale).execute();
+                    commandFactory.create("add", currentShapeResourceSelected, arg0.getPoint(), currentScale).execute();
                     displayDrawing();
+                    /*panel_1.repaint();*/
 				} else {
 					commandFactory.create("select", arg0.getLocationOnScreen()).execute();
 				}
@@ -102,6 +107,8 @@ public class MainForm extends JFrame {
 		panel_1.setBackground(Color.WHITE);
 		//graphics = (Graphics2D)panel_1.getGraphics();
 		contentPane.add(panel_1);
+		
+		panel_1.add(imgLabel);
 		
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setBounds(10, 10, 40, 20);
@@ -145,9 +152,7 @@ public class MainForm extends JFrame {
 		JButton buttonSun = new JButton();
 		buttonSun.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//clearOtherSelectedTools(btnSun);
-
-            	currentShapeResourceSelected = "sun";
+				currentShapeResourceSelected = "sun";
             	buttonSun.getModel().setPressed(true);
 			}
 		});
@@ -252,13 +257,13 @@ public class MainForm extends JFrame {
 	
 	private void displayDrawing() {
 		if (imageBuffer == null) {
-            imageBuffer = new BufferedImage(panel_1.getWidth(), panel_1.getHeight(), BufferedImage.TYPE_INT_ARGB);
+            imageBuffer = new BufferedImage(panel_1.getWidth(), panel_1.getHeight(), BufferedImage.TYPE_INT_RGB);
             panelGraphics = imageBuffer.createGraphics();
+            panelGraphics.setColor(Color.RED);
         }
 
-        drawingPalette.draw(panelGraphics);
+        drawingPalette.draw(panelGraphics, panel_1);
         panelGraphics.drawImage(imageBuffer, 0, 0, null);
         panel_1.createImage(panel_1.getWidth(), panel_1.getHeight());
-//            panelGraphics.DrawImageUnscaled(imageBuffer, 0, 0);
 	}
 }
