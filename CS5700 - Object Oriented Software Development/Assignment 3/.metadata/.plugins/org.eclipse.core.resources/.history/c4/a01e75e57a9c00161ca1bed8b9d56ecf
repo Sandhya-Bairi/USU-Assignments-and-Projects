@@ -104,6 +104,7 @@ public class MainForm extends JFrame {
 		});
 		panel_1.setBounds(120, 40, 825, 640);
 		panel_1.setBackground(Color.WHITE);
+		//graphics = (Graphics2D)panel_1.getGraphics();
 		contentPane.add(panel_1);
 		
 		panel_1.add(imgLabel);

@@ -97,6 +97,7 @@ public class MainForm extends JFrame {
 				if (currentShapeResourceSelected != null && !currentShapeResourceSelected.isEmpty()) {
                     commandFactory.create("add", currentShapeResourceSelected, arg0.getPoint(), currentScale).execute();
                     displayDrawing();
+                    panel_1.repaint();
 				} else {
 					commandFactory.create("select", arg0.getLocationOnScreen()).execute();
 				}

@@ -1,5 +1,6 @@
 package com.usu.draw;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -9,6 +10,8 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class ShapeWithAllState extends Shape {
@@ -22,15 +25,31 @@ public class ShapeWithAllState extends Shape {
 
         try {
 			//graphics.drawImage(ImageIO.read( new File(intrinsicState.shapeName)), 80, 80, null);
-
+        	Image tmpImg=ImageIO.read( new File(intrinsicState.shapeName));
+			//graphics.drawImage(tmpImg, 80, 80, drawPannel);
+			//graphics.drawImage(tmpImg, 80, 80, drawPanel);
+			graphics.setColor(Color.RED);
+			//drawPanel.add(createLabel());
+					
 			//drawPanel.getGraphics().drawOval(12, 12, 40, 60);
-        	Image image = ImageIO.read(new File(intrinsicState.shapeName));
-        	drawPanel.getGraphics().drawImage(image, (int)extrinsicState.getLocation().x, (int)extrinsicState.getLocation().y, (int)extrinsicState.getSize().width, (int)extrinsicState.getSize().height, new ImageObserver() {
+			int x = (int)extrinsicState.getLocation().getX();
+			int y = (int)extrinsicState.getLocation().getY();
+			
+			drawPanel.getGraphics().drawImage(tmpImg, x, y, 50, 50, new ImageObserver() {
+				
 				@Override
 				public boolean imageUpdate(Image img, int infoflags, int x, int y, int width, int height) {
+					// TODO Auto-generated method stub
+					img=tmpImg;
+					/*x=10;
+					y=10;
+					width=100;
+					height=100;*/
 					return false;
 				}
 			});
+			
+			//drawPanel.repaint();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -51,7 +70,7 @@ public class ShapeWithAllState extends Shape {
     }
 	
 	private void DrawActionHandle(Graphics2D graphics, int x, int y) {
-        graphics.fillRect(x - handleHalfSize, y - handleHalfSize, handleHalfSize*2, handleHalfSize*2);
+        graphics.fillRect(x/* - HandleHalfSize*/, y - handleHalfSize, handleHalfSize*2, handleHalfSize*2);
     }
 	
 	@Override
@@ -83,4 +102,21 @@ public class ShapeWithAllState extends Shape {
     public void setSize(Dimension value) {
 		extrinsicState.size = value;
     }
+	
+	public JLabel createLabel() {
+		JLabel imgLabel = new JLabel();
+		try {
+			ImageIcon icon = new ImageIcon(ImageIO.read(new File("img/sun.jpg")));
+			imgLabel.setIcon(icon);
+			
+			imgLabel.setToolTipText("Anuj");
+			imgLabel.setText("Hello");
+			imgLabel.setBackground(Color.GREEN);
+			imgLabel.setVisible(true);
+			imgLabel.setBounds(20, 20, 120, 120);
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+		return imgLabel;
+	}
 }

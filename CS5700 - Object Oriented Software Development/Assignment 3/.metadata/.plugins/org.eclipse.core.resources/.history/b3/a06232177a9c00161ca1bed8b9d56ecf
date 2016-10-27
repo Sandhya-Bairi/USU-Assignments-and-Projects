@@ -45,7 +45,7 @@ public class MainForm extends JFrame {
 	
 	CommandFactory commandFactory;
 	
-	JPanel panel_1;
+	DrawPanel panel_1;
 	
 	JLabel imgLabel = new JLabel((Icon)null);
 	
@@ -90,13 +90,14 @@ public class MainForm extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		panel_1 = new JPanel();
+		panel_1 = new DrawPanel();
 		panel_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				if (currentShapeResourceSelected != null && !currentShapeResourceSelected.isEmpty()) {
                     commandFactory.create("add", currentShapeResourceSelected, arg0.getPoint(), currentScale).execute();
                     displayDrawing();
+                    /*panel_1.repaint();*/
 				} else {
 					commandFactory.create("select", arg0.getLocationOnScreen()).execute();
 				}
@@ -104,6 +105,7 @@ public class MainForm extends JFrame {
 		});
 		panel_1.setBounds(120, 40, 825, 640);
 		panel_1.setBackground(Color.WHITE);
+		//graphics = (Graphics2D)panel_1.getGraphics();
 		contentPane.add(panel_1);
 		
 		panel_1.add(imgLabel);

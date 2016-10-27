@@ -28,6 +28,7 @@ public class ShapeWithAllState extends Shape {
         	drawPanel.getGraphics().drawImage(image, (int)extrinsicState.getLocation().x, (int)extrinsicState.getLocation().y, (int)extrinsicState.getSize().width, (int)extrinsicState.getSize().height, new ImageObserver() {
 				@Override
 				public boolean imageUpdate(Image img, int infoflags, int x, int y, int width, int height) {
+					img = image;
 					return false;
 				}
 			});
