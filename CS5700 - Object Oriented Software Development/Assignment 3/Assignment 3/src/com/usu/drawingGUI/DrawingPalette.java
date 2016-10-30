@@ -2,9 +2,14 @@ package com.usu.drawingGUI;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
+import java.awt.Point;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 import com.usu.draw.Shape;
@@ -16,15 +21,13 @@ public class DrawingPalette {
 	
 	public ShapeFactory shapeFactory;
 	
-	//private static JSONSerializer jsonSerializer = new JSONSerializer();
-	
 	private List<Shape> shapes = new ArrayList<Shape>();
 	
 	private Object lock = new Object();
 	
 	public boolean isDirty;
 	
-	public int shapeCount = shapes.size();
+	//public int shapeCount = shapes.size();
 	
 	 public void add(Shape shape) {
          if (shape != null) {
@@ -57,21 +60,82 @@ public class DrawingPalette {
          boolean didARedraw = false;
          synchronized(lock) {
              if (isDirty) {
-                 graphics.setColor(Color.WHITE);
+                 //graphics.setColor(Color.WHITE);
                  for(Shape shape : shapes)
                 	 shape.draw(graphics, mainPanel);
-                 isDirty = false;
+                 isDirty = true;
                  didARedraw = true;
              }
          }
          return didARedraw;
      }
 	 
-/*	 public Shape FindTreeAtPosition(Point location) {
+	 public Shape findShapeAtPosition(Point location) {
          Shape result;
-         synchronized (lock) {
-        	 result = shapes.FindLast(t => location.x >= t.location.x && location.x < t.location.x + t.size.width && location.y >= t.location.y && location.y < t.location.y + t.size.height);
+         synchronized(lock) {
+        	 for(Shape shape : shapes){
+        		if(location.x >= shape.getLocation().x && location.x < (shape.getLocation().x + shape.getSize().width) && location.y >= shape.getLocation().y && location.y < (shape.getLocation().y + shape.getSize().height)) {
+        			result = shape;
+        			return result;
+        		}
+        	 }
          }
-         return result;
-     }*/
+         return null;
+     }
+	 
+	 public void deleteAllSelected() {
+		 synchronized(lock) {
+             shapes.removeIf(s -> s.isSelected);
+             isDirty = true;
+         }
+     }
+	 
+	 public void loadFromString(String stream) {
+		 /*ShapeExtrinsicState extrinsicStates = (List<ShapeExtrinsicState>)JsonSerializer.ReadObject(stream);
+         if (extrinsicStates == null) return;
+
+         synchronized(lock) {
+             shapes.clear();
+             for(ShapeExtrinsicState extrinsicState : extrinsicStates) {
+                 Shape shape = shapeFactory.getShape(extrinsicState);
+                 shapes.add(shape);
+             }
+             isDirty = true;
+         }*/
+     }
+	 
+	 public void save(String fileName, JPanel panel) {
+         /*List<ShapeExtrinsicState> extrinsicStates = new ArrayList<ShapeExtrinsicState>();
+         synchronized(lock) {
+             for(Shape shape : shapes) {
+                 ShapeWithAllState shapewithAllState = (ShapeWithAllState)shape;
+                 if(shapewithAllState != null)
+                     extrinsicStates.add(shapewithAllState.extrinsicState);                    
+             }
+         }*/
+		 BufferedImage saveImage = new BufferedImage(panel.getWidth(), panel.getHeight(), BufferedImage.TYPE_INT_RGB);
+		 panel.paintAll(saveImage.getGraphics());
+		 try {
+			ImageIO.write(saveImage, fileName.split("\\.")[1], new File(fileName));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		 
+     }
+	 
+	 public void deselectAll() {
+		 synchronized(lock) {
+             for(Shape shape : shapes)
+                 shape.isSelected = false;
+             isDirty = true;
+         }    
+     }
+	 
+	 public void drawRectangle(Point location, JPanel mainPanel) {
+		 for(Shape shape : shapes){
+     		if(location.x >= shape.getLocation().x && location.x < (shape.getLocation().x + shape.getSize().width) && location.y >= shape.getLocation().y && location.y < (shape.getLocation().y + shape.getSize().height)) {
+     			mainPanel.getGraphics().drawRect(shape.getLocation().x, shape.getLocation().y, shape.getSize().width, shape.getSize().height);
+     		}
+     	 }
+	 }
 }

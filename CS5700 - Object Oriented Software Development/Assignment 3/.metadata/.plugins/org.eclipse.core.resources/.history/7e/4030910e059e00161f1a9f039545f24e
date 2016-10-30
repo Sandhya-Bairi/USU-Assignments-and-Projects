@@ -1,0 +1,24 @@
+package com.usu.command;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+import javax.swing.JPanel;
+
+public class SaveCommand extends Command {
+
+	private String filename;
+	private JPanel panel;
+	
+    SaveCommand(Object[] commandParameters) {
+    	if (commandParameters.length > 0)
+            filename = (String)commandParameters[0];
+    }      
+	
+	@Override
+	public void execute() {
+		if(targetDrawing!=null)
+			targetDrawing.save(filename);
+	}
+
+}

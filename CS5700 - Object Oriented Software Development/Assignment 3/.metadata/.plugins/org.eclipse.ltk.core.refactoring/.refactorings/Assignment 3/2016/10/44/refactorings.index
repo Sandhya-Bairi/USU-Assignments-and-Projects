@@ -10,3 +10,6 @@
 1477525219007	Change method 'draw'
 1477526571012	Rename local variable 'drawPannel'
 1477595908991	Delete element
+1477693264635	Delete element
+1477705646059	Rename local variable 'btnZoom'
+1477705704194	Rename local variable 'btnZoomIn'

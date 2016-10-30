@@ -1,0 +1,25 @@
+package com.usu.command;
+
+import javax.xml.stream.util.StreamReaderDelegate;
+
+public class LoadCommand extends Command {
+
+	private String filename;
+	
+	public LoadCommand() {
+		
+	}
+	
+    public LoadCommand(Object[] commandParameters) {
+        if (commandParameters.length > 0)
+            filename = (String)commandParameters[0];
+    }
+    
+	@Override
+	public void execute() {
+		StreamReader reader = new StreamReader(filename);
+        if(targetDrawing != null)
+        	targetDrawing.loadFromStream(reader.BaseStream);
+        reader.Close();
+	}
+}

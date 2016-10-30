@@ -1,0 +1,17 @@
+package com.usu.command;
+
+import com.usu.draw.Shape;
+
+public class SelectCommand extends Command {
+
+	@Override
+	public void execute() {
+		Shape shape = targetDrawing!=null?targetDrawing.findTreeAtPosition(location) : null;
+        if (shape != null)
+        {
+        	shape.isSelected = !shape.isSelected;
+            targetDrawing.isDirty = true;
+        }
+	}
+
+}

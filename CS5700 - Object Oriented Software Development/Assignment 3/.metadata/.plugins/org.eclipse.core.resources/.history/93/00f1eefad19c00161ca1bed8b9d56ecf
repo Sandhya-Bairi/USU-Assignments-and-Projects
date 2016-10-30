@@ -1,0 +1,18 @@
+package com.usu.command;
+
+public class SaveCommand extends Command {
+
+	private String filename;
+    SaveCommand(Object[] commandParameters) {
+    	if (commandParameters.length > 0)
+            filename = (String)commandParameters[0];
+    }      
+	
+	@Override
+	public void execute() {
+		StreamWriter writer = new StreamWriter(filename);
+        (targetDrawing != null) ? targetDrawing.saveToStream(writer.BaseStream);
+        writer.Close();
+	}
+
+}

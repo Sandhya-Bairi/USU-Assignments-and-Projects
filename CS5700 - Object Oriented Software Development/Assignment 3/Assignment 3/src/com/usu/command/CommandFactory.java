@@ -17,26 +17,28 @@ public class CommandFactory {
         if (commandType == null || commandType.isEmpty()) return null;
 
         Command command=null;
-        switch (commandType.trim().toUpperCase())
-        {
+        switch (commandType.trim().toUpperCase()) {
+	        case "NEW":
+	        	command = new NewCommand();
+	        	break;
         	case "ADD":
                 command = new AddCommand(commandParameters);
                 break;
-            /*case "REMOVE":
+            case "REMOVE":
                 command = new RemoveSelectedCommand();
                 break;
             case "SELECT":
                 command = new SelectCommand(commandParameters);
                 break;
             case "DESELECT":
-                command = new DeselectAllCommand();
+                command = new DeselectCommand();
                 break;
             case "LOAD":
                 command = new LoadCommand(commandParameters);
                 break;
             case "SAVE":
                 command = new SaveCommand(commandParameters);
-                break;*/
+                break;
         }
 
         if (command!=null)
