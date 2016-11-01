@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RemoveSelectedTest.RemoveSelectedExecuteTest" project="Assignment 3" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="RemoveSelectedExecuteTest" classname="com.usu.command.test.RemoveSelectedTest" time="3.987"/>
+</testrun>

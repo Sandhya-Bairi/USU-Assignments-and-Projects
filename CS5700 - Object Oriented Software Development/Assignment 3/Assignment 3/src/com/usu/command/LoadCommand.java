@@ -1,8 +1,5 @@
 package com.usu.command;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-
 public class LoadCommand extends Command {
 
 	private String filename;

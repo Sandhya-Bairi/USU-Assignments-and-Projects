@@ -2,13 +2,13 @@ package com.usu.drawingGUI;
 
 import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 
 import javax.swing.ImageIcon;
@@ -77,7 +77,7 @@ public class MainForm extends JFrame {
 		setTitle("Drawing");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 960, 740);
+		setBounds(100, 100, 960, 780);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -85,7 +85,7 @@ public class MainForm extends JFrame {
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.WHITE);
-		panel.setBounds(10, 40, 100, 660);
+		panel.setBounds(10, 40, 100, 700);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
@@ -102,7 +102,7 @@ public class MainForm extends JFrame {
 				}
 			}
 		});
-		panel_1.setBounds(120, 40, 825, 660);
+		panel_1.setBounds(120, 40, 825, 700);
 		panel_1.setBackground(Color.WHITE);
 		contentPane.add(panel_1);
 		
@@ -246,7 +246,7 @@ public class MainForm extends JFrame {
 				buttonUndo.getModel().setPressed(true);
 			}
 		});
-		buttonUndo.setBounds(15, 560, 70, 40);
+		buttonUndo.setBounds(15, 600, 70, 40);
 		buttonUndo.setIcon(new ImageIcon(new ImageIcon("img/undo.jpg").getImage().getScaledInstance(buttonUndo.getWidth(), buttonUndo.getHeight(), java.awt.Image.SCALE_SMOOTH)));
 		panel.add(buttonUndo);
 		
@@ -258,14 +258,15 @@ public class MainForm extends JFrame {
 				panel_1.setBackground(Color.WHITE);
 			}
 		});
-		btnReset.setBounds(15, 620, 70, 20);
+		btnReset.setBounds(15, 660, 70, 20);
 		panel.add(btnReset);
 		
 		//Zoom
 		JButton btnZoomIn = new JButton("+");
 		btnZoomIn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				//((Graphics2D)panel_1.getGraphics()).transform(new AffineTransform().translate(5.0f, 2.0f));
+				commandFactory.create("zoom", currentScale+0.5f).execute();
+				displayDrawing();
 			}
 		});
 		btnZoomIn.setBounds(15, 440, 70, 20);
@@ -275,12 +276,14 @@ public class MainForm extends JFrame {
 		JButton btnZoomOut = new JButton("-");
 		btnZoomOut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
+				commandFactory.create("zoom", currentScale-0.5f).execute();
+				displayDrawing();
 			}
 		});
 		btnZoomOut.setBounds(15, 480, 70, 20);
 		panel.add(btnZoomOut);
 		
+		//Delete
 		JButton btnDelete = new JButton("Delete");
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -289,6 +292,19 @@ public class MainForm extends JFrame {
 		});
 		btnDelete.setBounds(15, 520, 70, 20);
 		panel.add(btnDelete);
+		
+		//Deselect
+		JButton btnDeselect = new JButton("Deselect");
+		btnDeselect.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		btnDeselect.setHorizontalAlignment(SwingConstants.LEFT);
+		btnDeselect.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				commandFactory.create("deselect").execute();
+				displayDrawing();
+			}
+		});
+		btnDeselect.setBounds(15, 560, 70, 20);
+		panel.add(btnDeselect);
 	}
 	
 	private void displayDrawing() {

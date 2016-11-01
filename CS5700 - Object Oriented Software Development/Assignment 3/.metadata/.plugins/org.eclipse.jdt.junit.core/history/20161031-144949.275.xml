@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AddCommandTest.AddCommandTest_EmptyLocation" project="Assignment 3" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="AddCommandTest_EmptyLocation" classname="com.usu.command.test.AddCommandTest" time="22.415"/>
+</testrun>

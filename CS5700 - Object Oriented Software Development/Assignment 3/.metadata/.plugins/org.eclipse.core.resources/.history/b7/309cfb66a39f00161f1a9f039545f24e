@@ -1,0 +1,20 @@
+package com.usu.command.test;
+
+import static org.junit.Assert.*;
+
+import java.awt.Point;
+
+import org.junit.Test;
+
+import com.usu.command.AddCommand;
+
+public class AddCommandTest {
+
+	@Test
+	public void AddCommandTest_NullShapeType() {
+		String shapeType = null;
+		Object[] commandParameters={shapeType, new Point(40, 60), 1.0};
+		AddCommand addCommandTest = new AddCommand();
+	}
+
+}

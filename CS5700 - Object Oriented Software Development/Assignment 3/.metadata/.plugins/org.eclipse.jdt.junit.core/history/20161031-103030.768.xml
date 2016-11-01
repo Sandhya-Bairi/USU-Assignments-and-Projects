@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun com.usu.drawingGUI.test.DrawingPaletteTest" project="Assignment 3" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.usu.drawingGUI.test.DrawingPaletteTest" time="4.094">
+    <testcase name="clearTest" classname="com.usu.drawingGUI.test.DrawingPaletteTest" time="4.09"/>
+    <testcase name="findShapeAtPositionTest" classname="com.usu.drawingGUI.test.DrawingPaletteTest" time="0.002"/>
+    <testcase name="addShapeTest_Shape" classname="com.usu.drawingGUI.test.DrawingPaletteTest" time="0.001"/>
+    <testcase name="addShapeTest_ShapeNull" classname="com.usu.drawingGUI.test.DrawingPaletteTest" time="0.001"/>
+  </testsuite>
+</testrun>

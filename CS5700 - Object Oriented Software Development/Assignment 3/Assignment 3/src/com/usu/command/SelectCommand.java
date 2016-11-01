@@ -21,4 +21,8 @@ public class SelectCommand extends Command {
 		if (commandParameters.length > 0)
             location = (Point) commandParameters[0];
 	}
+
+	public Point getLocation() {
+		return location;
+	}
 }

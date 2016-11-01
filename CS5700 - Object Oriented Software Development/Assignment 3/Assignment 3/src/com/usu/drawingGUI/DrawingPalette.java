@@ -1,6 +1,6 @@
 package com.usu.drawingGUI;
 
-import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
@@ -13,7 +13,9 @@ import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 import com.usu.draw.Shape;
+import com.usu.draw.ShapeExtrinsicState;
 import com.usu.draw.ShapeFactory;
+import com.usu.draw.ShapeWithAllState;
 
 public class DrawingPalette {
 
@@ -26,8 +28,6 @@ public class DrawingPalette {
 	private Object lock = new Object();
 	
 	public boolean isDirty;
-	
-	//public int shapeCount = shapes.size();
 	
 	 public void add(Shape shape) {
          if (shape != null) {
@@ -60,7 +60,6 @@ public class DrawingPalette {
          boolean didARedraw = false;
          synchronized(lock) {
              if (isDirty) {
-                 //graphics.setColor(Color.WHITE);
                  for(Shape shape : shapes)
                 	 shape.draw(graphics, mainPanel);
                  isDirty = true;
@@ -125,8 +124,9 @@ public class DrawingPalette {
 	 
 	 public void deselectAll() {
 		 synchronized(lock) {
-             for(Shape shape : shapes)
+             for(Shape shape : shapes) {
                  shape.isSelected = false;
+             }
              isDirty = true;
          }    
      }
@@ -138,4 +138,29 @@ public class DrawingPalette {
      		}
      	 }
 	 }
+
+	public List<Shape> getShapes() {
+		return shapes;
+	}
+	
+	/*private void removeRectangle(Shape shape, JPanel mainPanel) {
+		mainPanel.getGraphics().drawRect(shape.getLocation().x, shape.getLocation().y, shape.getSize().width, shape.getSize().height);
+		((Graphics2D)mainPanel.getGraphics()).setStroke(((Graphics2D)mainPanel.getGraphics()).getStroke());
+	}*/
+	
+	public void changeScale(float newScale) {
+		Shape newShape = null;
+		int index = 0;
+		Dimension shapeSize = new Dimension((int)Math.round(80 * newScale), (int)Math.round(80 * newScale));
+
+		for (Shape shape : shapes) {
+			index++;
+			if(shape.isSelected) {
+				newShape = shapeFactory.getShape(new ShapeExtrinsicState(((ShapeWithAllState)shape).extrinsicState.shapeType, new Point(shape.getLocation().x - shapeSize.width / 2, shape.getLocation().y - shapeSize.height / 2), shapeSize));
+			}
+		}
+		
+		if(newShape != null)
+			shapes.add(index, newShape);
+	}
 }

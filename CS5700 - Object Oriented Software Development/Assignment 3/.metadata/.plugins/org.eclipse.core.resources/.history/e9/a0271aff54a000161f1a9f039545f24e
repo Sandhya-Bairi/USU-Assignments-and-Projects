@@ -1,0 +1,14 @@
+package com.usu.command;
+
+public class ZoomCommand extends Command {
+
+	public ZoomCommand(Object[] commandParameters) {
+		
+	}
+	
+	@Override
+	public void execute() {
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.usu.command.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DeselctCommandTest {
+
+	@Test
+	public void testExecute() {
+		fail("Not yet implemented");
+	}
+
+}

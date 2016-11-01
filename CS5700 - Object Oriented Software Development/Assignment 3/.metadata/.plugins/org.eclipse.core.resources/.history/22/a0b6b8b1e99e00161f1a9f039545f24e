@@ -1,0 +1,14 @@
+package com.usu.drawingGUI.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DrawingPaletteTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

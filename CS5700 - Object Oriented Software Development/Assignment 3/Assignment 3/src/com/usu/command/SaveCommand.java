@@ -1,8 +1,5 @@
 package com.usu.command;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-
 import javax.swing.JPanel;
 
 public class SaveCommand extends Command {

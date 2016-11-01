@@ -39,6 +39,9 @@ public class CommandFactory {
             case "SAVE":
                 command = new SaveCommand(commandParameters);
                 break;
+            case "ZOOM":
+                command = new ZoomCommand(commandParameters);
+                break;
         }
 
         if (command!=null)
