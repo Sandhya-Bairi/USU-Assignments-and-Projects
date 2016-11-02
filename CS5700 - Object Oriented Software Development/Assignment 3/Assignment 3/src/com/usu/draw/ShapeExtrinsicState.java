@@ -3,11 +3,17 @@ package com.usu.draw;
 import java.awt.Dimension;
 import java.awt.Point;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class ShapeExtrinsicState {
 
+	@JsonProperty("shapeType")
 	public String shapeType;
+	@JsonProperty("location")
 	public Point location;
+	@JsonProperty("size")
 	public Dimension size;
+	@JsonProperty("isSelected")
 	public boolean isSelected;
 
 	public String getShapeType() {

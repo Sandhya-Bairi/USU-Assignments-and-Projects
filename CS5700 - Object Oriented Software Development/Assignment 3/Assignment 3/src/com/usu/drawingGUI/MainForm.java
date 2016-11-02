@@ -137,6 +137,18 @@ public class MainForm extends JFrame {
 		KeyStroke keyStrokeToOpen = KeyStroke.getKeyStroke(KeyEvent.VK_O, KeyEvent.CTRL_DOWN_MASK);
 		mntmNewMenuItem.setAccelerator(keyStrokeToOpen);
 		mnDraw.add(mntmNewMenuItem);
+		mntmNewMenuItem.addActionListener(new ActionListener() {			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JFileChooser fc = new JFileChooser();
+				fc.addChoosableFileFilter(new FileNameExtensionFilter("JSON Files", "json"));
+				fc.setAcceptAllFileFilterUsed(false);
+				if(fc.showOpenDialog(contentPane) == JFileChooser.APPROVE_OPTION) {
+					commandFactory.create("load", fc.getSelectedFile().getAbsolutePath(), panel_1).execute();
+					displayDrawing();
+				}
+			}
+		});
 		
 		//Save menu item
 		JMenuItem mntmNewMenuItem_1 = new JMenuItem("Save");
@@ -148,10 +160,15 @@ public class MainForm extends JFrame {
 		mntmNewMenuItem_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				JFileChooser fc = new JFileChooser();
-				fc.addChoosableFileFilter(new FileNameExtensionFilter("Image Files", "jpg"));
+				//fc.addChoosableFileFilter(new FileNameExtensionFilter("JSON Files", "json"));
+				fc.setFileFilter(new FileNameExtensionFilter("JSON Files", "json"));
 				fc.setAcceptAllFileFilterUsed(false);
-				fc.showSaveDialog(contentPane);
-				commandFactory.create("save", fc.getSelectedFile().getAbsolutePath(), panel_1).execute();				
+				if(fc.showSaveDialog(contentPane) == JFileChooser.APPROVE_OPTION) {
+					if(fc.getSelectedFile().getAbsolutePath().endsWith(".json"))
+						commandFactory.create("save", fc.getSelectedFile().getAbsolutePath(), panel_1).execute();
+					else
+						commandFactory.create("save", fc.getSelectedFile().getAbsolutePath()+".json", panel_1).execute();
+				}
 			}
 		});
 		
