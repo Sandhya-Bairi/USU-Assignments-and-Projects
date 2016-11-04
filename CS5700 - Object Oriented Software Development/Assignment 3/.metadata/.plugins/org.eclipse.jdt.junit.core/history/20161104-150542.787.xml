@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun com.usu.command.test.MoveVerticalCommandTest" project="Assignment 3" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.usu.command.test.MoveVerticalCommandTest" time="0.588">
-    <testcase name="MoveVerticalTest_MoveValue" classname="com.usu.command.test.MoveVerticalCommandTest" time="0.431"/>
-    <testcase name="MoveVerticalTest_MoveValue0" classname="com.usu.command.test.MoveVerticalCommandTest" time="0.157"/>
-  </testsuite>
-</testrun>

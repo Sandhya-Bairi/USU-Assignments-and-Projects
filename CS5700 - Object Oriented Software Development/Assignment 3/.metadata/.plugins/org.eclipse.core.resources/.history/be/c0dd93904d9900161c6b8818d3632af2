@@ -1,5 +1,0 @@
-package com.usu.command;
-
-public abstract class Command {
-
-}

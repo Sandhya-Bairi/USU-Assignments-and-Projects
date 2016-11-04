@@ -1,5 +1,0 @@
-package com.usu.draw;
-
-public abstract class Shape {
-
-}

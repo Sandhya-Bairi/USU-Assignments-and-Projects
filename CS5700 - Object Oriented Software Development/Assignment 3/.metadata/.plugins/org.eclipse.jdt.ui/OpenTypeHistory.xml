@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=Assignment 3/C:\/Program Files\/Java\/jre1.8.0_102\/lib\/ext\/jfxrt.jar&lt;com.sun.javafx.iio.bmp(BitmapInfoHeader.class[BitmapInfoHeader" modifiers="48" timestamp="1473344776170"/>
+<typeInfo handle="=Assignment 3/src&lt;com.usu.command{AddCommand.java[AddCommand" modifiers="1" timestamp="1477599620469"/>
+<typeInfo handle="=Assignment 3/src&lt;com.usu.command{DeselectCommand.java[DeselectCommand" modifiers="1" timestamp="1478027579057"/>
+<typeInfo handle="=Assignment 3/src&lt;com.usu.command{NewCommand.java[NewCommand" modifiers="1" timestamp="1477601056273"/>
+<typeInfo handle="=Assignment 3/src&lt;com.usu.command{RemoveSelectedCommand.java[RemoveSelectedCommand" modifiers="1" timestamp="1477627739244"/>
 <typeInfo handle="=Assignment 3/src&lt;com.usu.command{Command.java[Command" modifiers="1025" timestamp="1477262055725"/>
+<typeInfo handle="=Assignment 3/src&lt;com.usu.command{LoadCommand.java[LoadCommand" modifiers="1" timestamp="1478049402572"/>
 </typeInfoHistroy>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="LoadCommandTest" project="Assignment 3" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="com.usu.command.test.LoadCommandTest" time="1.763">
-    <testcase name="LoadCommandTest_FileCorrect" classname="com.usu.command.test.LoadCommandTest" time="1.351"/>
-    <testcase name="LoadCommandTest_FileNameEmpty" classname="com.usu.command.test.LoadCommandTest" time="0.409"/>
-    <testcase name="LoadCommandTest_FileNameNull" classname="com.usu.command.test.LoadCommandTest" time="0.003"/>
-  </testsuite>
-</testrun>

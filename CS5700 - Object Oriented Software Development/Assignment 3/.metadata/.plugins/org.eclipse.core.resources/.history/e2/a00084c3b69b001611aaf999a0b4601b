@@ -1,7 +1,0 @@
-package com.usu.drawingGUI;
-
-import javax.swing.JPanel;
-
-public class DrawPanel extends JPanel {
-
-}
