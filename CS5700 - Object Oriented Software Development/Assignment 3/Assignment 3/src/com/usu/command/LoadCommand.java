@@ -22,6 +22,6 @@ public class LoadCommand extends Command {
 	@Override
 	public void execute() {
 		if(targetDrawing != null)
-        	targetDrawing.load(filename, drawPanel);
+        	targetDrawing.load(filename);
 	}
 }

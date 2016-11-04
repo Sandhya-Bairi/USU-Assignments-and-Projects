@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun com.usu.command.test.MoveHorizontalCommandTest" project="Assignment 3" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.usu.command.test.MoveHorizontalCommandTest" incomplete="true">
+    <testcase name="MoveHorizontalTest_MoveValue0" classname="com.usu.command.test.MoveHorizontalCommandTest" time="0.48"/>
+    <testcase name="MoveHorizontalTest_MoveValue" classname="com.usu.command.test.MoveHorizontalCommandTest" incomplete="true"/>
+  </testsuite>
+</testrun>

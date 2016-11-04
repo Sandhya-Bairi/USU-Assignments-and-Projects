@@ -1,0 +1,41 @@
+package com.usu.command.test;
+
+import static org.junit.Assert.*;
+
+import java.awt.Point;
+
+import org.json.simple.parser.ParseException;
+import org.junit.Test;
+
+import com.usu.draw.ShapeFactory;
+import com.usu.drawingGUI.DrawingPalette;
+
+public class LoadCommandTest {
+
+	@Test(expected=IllegalArgumentException.class)
+	public void LoadCommandTest_FileNameNull() {
+		DrawingPalette dp = new DrawingPalette();
+		dp.shapeFactory = new ShapeFactory();
+				
+		String fileName = null;
+		dp.load(fileName);
+	}
+
+	@Test
+	public void LoadCommandTest_FileNameEmpty() {
+		DrawingPalette dp = new DrawingPalette();
+		dp.shapeFactory = new ShapeFactory();
+		
+		String fileName = "";
+		dp.load(fileName);
+	}
+	
+	@Test
+	public void LoadCommandTest_FileNotFound() {
+		DrawingPalette dp = new DrawingPalette();
+		dp.shapeFactory = new ShapeFactory();
+		
+		String fileName = "b.json";
+		dp.load(fileName);
+	}
+}

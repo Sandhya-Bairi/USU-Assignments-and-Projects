@@ -7,7 +7,7 @@ public class SaveCommand extends Command {
 	private String filename;
 	private JPanel panel;
 	
-    SaveCommand(Object[] commandParameters) {
+    public SaveCommand(Object[] commandParameters) {
     	if (commandParameters.length > 0)
             filename = (String)commandParameters[0];
     	if (commandParameters.length > 1)
@@ -17,7 +17,7 @@ public class SaveCommand extends Command {
 	@Override
 	public void execute() {
 		if(targetDrawing!=null)
-			targetDrawing.save(filename, panel);
+			targetDrawing.save(filename);
 	}
 
 }

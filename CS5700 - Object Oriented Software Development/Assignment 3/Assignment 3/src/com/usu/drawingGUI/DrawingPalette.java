@@ -5,8 +5,8 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +17,11 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import com.amazonaws.auth.profile.ProfileCredentialsProvider;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.GetObjectRequest;
+import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -99,11 +104,13 @@ public class DrawingPalette {
 		}
 	}
 
-	public void load(String fileName, JPanel drawPanel) {
+	public void load(String fileName) {
+		AmazonS3 s3client = new AmazonS3Client(new ProfileCredentialsProvider());
+				
 		JSONParser parser = new JSONParser();
 		JSONArray shapesArray = new JSONArray();
 		try {
-			shapesArray = (JSONArray)parser.parse(new FileReader(fileName));
+			shapesArray = (JSONArray)parser.parse(new InputStreamReader(s3client.getObject(new GetObjectRequest("oosd-assignment", fileName)).getObjectContent()));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -136,7 +143,7 @@ public class DrawingPalette {
 		}
 	}
 
-	public void save(String fileName, JPanel panel) {
+	public void save(String fileName) {
 		try {
 			mapper.writeValue(new File(fileName), shapes);
 		} catch (JsonGenerationException e1) {
@@ -145,7 +152,10 @@ public class DrawingPalette {
 			e1.printStackTrace();
 		} catch (IOException e1) {
 			e1.printStackTrace();
-		}		 
+		}
+
+		AmazonS3 s3client = new AmazonS3Client(new ProfileCredentialsProvider());
+		s3client.putObject(new PutObjectRequest("oosd-assignment", fileName.split("\\\\")[(fileName.split("\\\\").length - 1)], new File(fileName)));
 	}
 
 	public void deselectAll() {
@@ -187,6 +197,36 @@ public class DrawingPalette {
 		}
 
 		if(newShape != null)
-			shapes.add(index, newShape);
+			shapes.set(index-1, newShape);
+	}
+	
+	public void moveh(int moveBy) {
+		Shape newShape = null;
+		int index = 0;
+
+		for (Shape shape : shapes) {
+			if(shape.isSelected) {
+				newShape = shapeFactory.getShape(new ShapeExtrinsicState(((ShapeWithAllState)shape).extrinsicState.shapeType, new Point(shape.getLocation().x + moveBy, shape.getLocation().y), shape.getSize()));
+			}
+			index++;
+		}
+
+		if(newShape != null)
+			shapes.set(index-1, newShape);
+	}
+	
+	public void movev(int moveBy) {
+		Shape newShape = null;
+		int index = 0;
+
+		for (Shape shape : shapes) {
+			index++;
+			if(shape.isSelected) {
+				newShape = shapeFactory.getShape(new ShapeExtrinsicState(((ShapeWithAllState)shape).extrinsicState.shapeType, new Point(shape.getLocation().x, shape.getLocation().y + moveBy), shape.getSize()));
+			}
+		}
+
+		if(newShape != null)
+			shapes.set(index-1, newShape);
 	}
 }

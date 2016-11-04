@@ -1,9 +1,13 @@
 package com.usu.command;
 
+import java.util.Stack;
+
 import com.usu.drawingGUI.DrawingPalette;
 
 public class CommandFactory {
 	public DrawingPalette targetDrawing;
+	
+	Stack<Command> undoCommandStack = new Stack<Command>();
 
 	public DrawingPalette getTargetDrawing() {
 		return targetDrawing;
@@ -42,10 +46,22 @@ public class CommandFactory {
             case "ZOOM":
                 command = new ZoomCommand(commandParameters);
                 break;
+            case "UNDO":
+            	command = new UndoCommand(commandParameters);
+            	break;
+            case "MOVEH":
+            	command = new MoveHorizontalCommand(commandParameters);
+            	break;
+            case "MOVEV":
+            	command = new MoveVerticalCommand(commandParameters);
         }
 
-        if (command!=null)
-            command.targetDrawing = targetDrawing;
+        if (command!=null) {
+            if(!(command instanceof UndoCommand)) {
+            	command.targetDrawing = targetDrawing;
+            	undoCommandStack.push(command);
+            }
+        }
 
         return command;
     }

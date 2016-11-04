@@ -1,0 +1,16 @@
+package com.usu.command;
+
+public class MoveCommand extends Command {
+	float newScale;
+
+	public MoveCommand(Object[] commandParameters) {
+		if (commandParameters.length > 0)
+            newScale = (float)commandParameters[0];
+	}
+	
+	@Override
+	public void execute() {
+		targetDrawing.changeScale(newScale);
+	}
+
+}

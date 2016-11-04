@@ -1,0 +1,14 @@
+package com.usu.command.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MoveHorizontalCommandTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

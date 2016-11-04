@@ -1,5 +1,0 @@
-package com.usu.stockMonitoring.parser;
-
-public class StockSymbolCSVParser {
-
-}

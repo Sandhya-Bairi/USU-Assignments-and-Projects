@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoadCommandTest.LoadCommandTest_FileCorrect" project="Assignment 3" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="LoadCommandTest_FileCorrect" classname="com.usu.command.test.LoadCommandTest" time="1.349"/>
+</testrun>

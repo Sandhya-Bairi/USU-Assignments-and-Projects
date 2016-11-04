@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SaveCommandTest" project="Assignment 3" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.usu.command.test.SaveCommandTest" time="1.154">
+    <testcase name="SaveCommandTest_FileNameEmpty" classname="com.usu.command.test.SaveCommandTest" time="0.53"/>
+    <testcase name="SaveCommandTest_FileCorrect" classname="com.usu.command.test.SaveCommandTest" time="0.624"/>
+    <testcase name="SaveCommandTest_FileNameNull" classname="com.usu.command.test.SaveCommandTest" time="0.0"/>
+  </testsuite>
+</testrun>

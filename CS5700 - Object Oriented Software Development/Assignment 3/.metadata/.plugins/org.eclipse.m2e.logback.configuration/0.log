@@ -1144,3 +1144,1002 @@
 2016-11-01 13:12:59,226 [Worker-1599] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
 2016-11-01 13:12:59,230 [Worker-1599] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-11-01 13:12:59,235 [Worker-1599] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 13:23:43,043 [Worker-1594] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:23:43,085 [Worker-1594] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 13:23:43,088 [Worker-1594] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:23:43,092 [Worker-1594] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 13:23:56,072 [Worker-1594] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:23:56,079 [Worker-1594] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 13:23:56,081 [Worker-1594] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:23:56,085 [Worker-1594] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 13:43:00,183 [Worker-1614] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:43:00,190 [Worker-1614] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 13:43:00,192 [Worker-1614] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:43:00,197 [Worker-1614] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 13:48:13,780 [Worker-1614] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:48:13,791 [Worker-1614] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 13:48:13,793 [Worker-1614] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:48:13,800 [Worker-1614] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 13:50:49,873 [Worker-1614] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:50:49,880 [Worker-1614] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 13:50:49,882 [Worker-1614] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:50:49,887 [Worker-1614] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 13:51:12,930 [Worker-1614] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:51:12,937 [Worker-1614] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 13:51:12,939 [Worker-1614] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:51:12,945 [Worker-1614] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 13:52:36,633 [Worker-1619] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:52:36,640 [Worker-1619] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 13:52:36,643 [Worker-1619] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:52:36,648 [Worker-1619] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 13:56:27,144 [Worker-1623] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:56:27,149 [Worker-1623] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 13:56:27,151 [Worker-1623] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 13:56:27,156 [Worker-1623] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 14:01:35,169 [Worker-1624] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:01:35,178 [Worker-1624] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 14:01:35,180 [Worker-1624] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:01:35,185 [Worker-1624] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 14:01:54,264 [Worker-1611] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:01:54,307 [Worker-1611] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 14:01:54,313 [Worker-1611] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:01:54,320 [Worker-1611] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 14:05:12,381 [Worker-1611] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:05:12,425 [Worker-1611] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 14:05:12,428 [Worker-1611] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:05:12,432 [Worker-1611] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 14:05:55,992 [Worker-1631] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:05:56,000 [Worker-1631] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 14:05:56,002 [Worker-1631] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:05:56,008 [Worker-1631] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 14:06:15,976 [Worker-1624] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:06:15,983 [Worker-1624] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 14:06:15,986 [Worker-1624] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:06:15,991 [Worker-1624] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 14:12:35,794 [Worker-1630] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:12:35,849 [Worker-1630] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 14:12:35,852 [Worker-1630] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:12:35,857 [Worker-1630] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 14:17:01,549 [Worker-1641] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:17:01,600 [Worker-1641] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 14:17:01,602 [Worker-1641] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:17:01,607 [Worker-1641] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 14:24:35,253 [Worker-1644] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:24:35,288 [Worker-1644] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 14:24:35,291 [Worker-1644] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:24:35,295 [Worker-1644] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 14:25:07,299 [Worker-1637] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:25:07,306 [Worker-1637] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 14:25:07,308 [Worker-1637] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:25:07,312 [Worker-1637] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 14:29:37,986 [Worker-1655] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:29:38,025 [Worker-1655] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 14:29:38,027 [Worker-1655] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 14:29:38,032 [Worker-1655] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 17:19:16,869 [Worker-1705] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 17:19:16,905 [Worker-1705] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 17:19:16,907 [Worker-1705] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 17:19:16,912 [Worker-1705] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 17:21:01,818 [Worker-1709] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 17:21:01,824 [Worker-1709] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 17:21:01,827 [Worker-1709] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 17:21:01,831 [Worker-1709] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 17:21:12,857 [Worker-1705] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 17:21:12,863 [Worker-1705] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 17:21:12,865 [Worker-1705] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 17:21:12,869 [Worker-1705] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 17:24:25,296 [Worker-1710] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 17:24:25,301 [Worker-1710] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 17:24:25,304 [Worker-1710] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 17:24:25,308 [Worker-1710] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 17:52:57,774 [Worker-1726] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 17:52:57,780 [Worker-1726] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 17:52:57,782 [Worker-1726] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 17:52:57,786 [Worker-1726] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:02:30,178 [Worker-1732] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:02:30,184 [Worker-1732] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:02:30,186 [Worker-1732] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:02:30,190 [Worker-1732] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:10:34,591 [Worker-1737] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:10:34,597 [Worker-1737] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:10:34,600 [Worker-1737] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:10:34,604 [Worker-1737] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:12:20,338 [Worker-1740] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:12:20,344 [Worker-1740] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:12:20,346 [Worker-1740] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:12:20,351 [Worker-1740] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:16:06,693 [Worker-1736] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Assignment3:Assignment3:0.0.1-SNAPSHOT @ D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\pom.xml.
+2016-11-01 18:16:07,364 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom
+2016-11-01 18:16:07,476 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom
+2016-11-01 18:16:07,524 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.pom
+2016-11-01 18:16:07,570 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.pom
+2016-11-01 18:16:07,615 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+2016-11-01 18:16:07,661 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+2016-11-01 18:16:07,707 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+2016-11-01 18:16:07,776 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+2016-11-01 18:16:07,859 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar
+2016-11-01 18:16:08,010 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar
+2016-11-01 18:16:08,047 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.jar
+2016-11-01 18:16:08,243 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.jar
+2016-11-01 18:16:08,277 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+2016-11-01 18:16:08,337 [Worker-1736] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+2016-11-01 18:16:10,833 [Worker-1736] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:16:10,841 [Worker-1736] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-01 18:16:10,843 [Worker-1736] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:16:10,848 [Worker-1736] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:16:12,873 [Worker-1736] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:16:12,882 [Worker-1736] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:16:12,927 [Worker-1736] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:16:12,932 [Worker-1736] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:18:57,693 [Worker-1744] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:18:57,699 [Worker-1744] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:18:57,702 [Worker-1744] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:18:57,706 [Worker-1744] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:19:11,058 [Worker-1742] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:19:11,066 [Worker-1742] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:19:11,068 [Worker-1742] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:19:11,074 [Worker-1742] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:19:56,385 [Worker-1748] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:19:56,391 [Worker-1748] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:19:56,393 [Worker-1748] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:19:56,402 [Worker-1748] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:23:09,288 [Worker-1745] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:23:09,297 [Worker-1745] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:23:09,299 [Worker-1745] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:23:09,314 [Worker-1745] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:23:46,190 [Worker-1736] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:23:46,199 [Worker-1736] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:23:46,202 [Worker-1736] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:23:46,207 [Worker-1736] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:23:59,270 [Worker-1747] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:23:59,277 [Worker-1747] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:23:59,280 [Worker-1747] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:23:59,285 [Worker-1747] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:28:04,309 [Worker-1743] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:28:04,315 [Worker-1743] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:28:04,318 [Worker-1743] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:28:04,324 [Worker-1743] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:31:51,627 [Worker-1745] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:31:51,633 [Worker-1745] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:31:51,635 [Worker-1745] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:31:51,640 [Worker-1745] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:37:56,240 [Worker-1741] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:37:56,280 [Worker-1741] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:37:56,282 [Worker-1741] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:37:56,287 [Worker-1741] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:39:56,328 [Worker-1650] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:39:56,336 [Worker-1650] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:39:56,339 [Worker-1650] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:39:56,343 [Worker-1650] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:44:33,807 [Worker-1736] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:44:33,850 [Worker-1736] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:44:33,852 [Worker-1736] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:44:33,857 [Worker-1736] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:46:28,834 [Worker-1741] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:46:28,841 [Worker-1741] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:46:28,844 [Worker-1741] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:46:28,849 [Worker-1741] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:48:12,208 [Worker-1650] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:48:12,215 [Worker-1650] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:48:12,217 [Worker-1650] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:48:12,223 [Worker-1650] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:49:30,734 [Worker-1736] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:49:30,740 [Worker-1736] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:49:30,743 [Worker-1736] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:49:30,748 [Worker-1736] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 18:51:39,910 [Worker-1743] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:51:39,929 [Worker-1743] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 18:51:39,932 [Worker-1743] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 18:51:39,943 [Worker-1743] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 19:16:34,101 [Worker-1754] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 19:16:34,203 [Worker-1754] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 19:16:34,206 [Worker-1754] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 19:16:34,210 [Worker-1754] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 19:16:42,732 [Worker-1757] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 19:16:42,739 [Worker-1757] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 19:16:42,741 [Worker-1757] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 19:16:42,745 [Worker-1757] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 19:25:56,715 [Worker-1762] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 19:25:56,727 [Worker-1762] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 19:25:56,729 [Worker-1762] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 19:25:56,736 [Worker-1762] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-01 19:40:45,672 [Worker-1767] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 19:40:45,679 [Worker-1767] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-01 19:40:45,681 [Worker-1767] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-01 19:40:45,685 [Worker-1767] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 11:05:28,547 [Worker-2037] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:05:28,605 [Worker-2037] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 11:05:28,608 [Worker-2037] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:05:28,613 [Worker-2037] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 11:07:36,544 [Worker-2034] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:07:36,550 [Worker-2034] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 11:07:36,552 [Worker-2034] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:07:36,556 [Worker-2034] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 11:23:55,747 [Worker-2043] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:23:55,753 [Worker-2043] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 11:23:55,756 [Worker-2043] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:23:55,760 [Worker-2043] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 11:24:37,984 [Worker-2049] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:24:37,990 [Worker-2049] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 11:24:37,992 [Worker-2049] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:24:37,996 [Worker-2049] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 11:29:22,033 [Worker-2052] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:29:22,039 [Worker-2052] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 11:29:22,041 [Worker-2052] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:29:22,045 [Worker-2052] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 11:31:15,835 [Worker-2050] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:31:15,841 [Worker-2050] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 11:31:15,842 [Worker-2050] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:31:15,846 [Worker-2050] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 11:40:39,978 [Worker-2060] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:40:39,983 [Worker-2060] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 11:40:39,986 [Worker-2060] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 11:40:39,990 [Worker-2060] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 12:01:16,299 [Worker-2069] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:01:16,308 [Worker-2069] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 12:01:16,310 [Worker-2069] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:01:16,318 [Worker-2069] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 12:07:11,144 [Worker-2074] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:07:11,151 [Worker-2074] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 12:07:11,154 [Worker-2074] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:07:11,161 [Worker-2074] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 12:08:29,357 [Worker-2053] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:08:29,363 [Worker-2053] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 12:08:29,366 [Worker-2053] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:08:29,370 [Worker-2053] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 12:10:32,877 [Worker-2078] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:10:32,883 [Worker-2078] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 12:10:32,886 [Worker-2078] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:10:32,891 [Worker-2078] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 12:11:33,894 [Worker-2053] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:11:33,900 [Worker-2053] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 12:11:33,902 [Worker-2053] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:11:33,906 [Worker-2053] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 12:13:49,343 [Worker-2077] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:13:49,349 [Worker-2077] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 12:13:49,351 [Worker-2077] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 12:13:49,355 [Worker-2077] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-02 14:20:10,110 [Worker-2114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 14:20:10,189 [Worker-2114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-02 14:20:10,192 [Worker-2114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-02 14:20:10,214 [Worker-2114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 11:05:44,806 [Worker-2437] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:05:44,873 [Worker-2437] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 11:05:44,876 [Worker-2437] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:05:44,883 [Worker-2437] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 11:10:04,293 [Worker-2437] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:10:04,303 [Worker-2437] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 11:10:04,305 [Worker-2437] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:10:04,310 [Worker-2437] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 11:37:31,929 [Worker-2450] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Assignment3:Assignment3:0.0.1-SNAPSHOT @ D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\pom.xml.
+2016-11-03 11:37:33,136 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk/1.9.2/aws-java-sdk-1.9.2.pom
+2016-11-03 11:37:33,278 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk/1.9.2/aws-java-sdk-1.9.2.pom
+2016-11-03 11:37:33,378 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-pom/1.9.2/aws-java-sdk-pom-1.9.2.pom
+2016-11-03 11:37:33,639 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-pom/1.9.2/aws-java-sdk-pom-1.9.2.pom
+2016-11-03 11:37:33,785 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-logs/1.9.2/aws-java-sdk-logs-1.9.2.pom
+2016-11-03 11:37:34,027 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-logs/1.9.2/aws-java-sdk-logs-1.9.2.pom
+2016-11-03 11:37:34,130 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-core/1.9.2/aws-java-sdk-core-1.9.2.pom
+2016-11-03 11:37:34,244 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-core/1.9.2/aws-java-sdk-core-1.9.2.pom
+2016-11-03 11:37:34,580 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom
+2016-11-03 11:37:34,686 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom
+2016-11-03 11:37:34,744 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/28/commons-parent-28.pom
+2016-11-03 11:37:34,985 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/28/commons-parent-28.pom
+2016-11-03 11:37:35,057 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3.pom
+2016-11-03 11:37:35,229 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3.pom
+2016-11-03 11:37:35,293 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3/httpcomponents-client-4.3.pom
+2016-11-03 11:37:35,386 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3/httpcomponents-client-4.3.pom
+2016-11-03 11:37:35,435 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/7/project-7.pom
+2016-11-03 11:37:35,537 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/7/project-7.pom
+2016-11-03 11:37:35,663 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.pom
+2016-11-03 11:37:35,750 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.pom
+2016-11-03 11:37:35,800 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.3/httpcomponents-core-4.3.pom
+2016-11-03 11:37:35,860 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.3/httpcomponents-core-4.3.pom
+2016-11-03 11:37:35,919 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+2016-11-03 11:37:35,978 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+2016-11-03 11:37:36,117 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2.pom
+2016-11-03 11:37:36,172 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2.pom
+2016-11-03 11:37:36,436 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2.pom
+2016-11-03 11:37:36,534 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2.pom
+2016-11-03 11:37:36,888 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/maven-metadata.xml
+2016-11-03 11:37:36,935 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/maven-metadata.xml
+2016-11-03 11:37:37,015 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.2/joda-time-2.2.pom
+2016-11-03 11:37:37,083 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.2/joda-time-2.2.pom
+2016-11-03 11:37:37,135 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.pom
+2016-11-03 11:37:37,218 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.pom
+2016-11-03 11:37:37,287 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.4/joda-time-2.4.pom
+2016-11-03 11:37:37,359 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.4/joda-time-2.4.pom
+2016-11-03 11:37:37,470 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.5/joda-time-2.5.pom
+2016-11-03 11:37:37,561 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.5/joda-time-2.5.pom
+2016-11-03 11:37:37,609 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.6/joda-time-2.6.pom
+2016-11-03 11:37:37,663 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.6/joda-time-2.6.pom
+2016-11-03 11:37:37,712 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.pom
+2016-11-03 11:37:37,793 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.pom
+2016-11-03 11:37:37,841 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.8/joda-time-2.8.pom
+2016-11-03 11:37:37,896 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.8/joda-time-2.8.pom
+2016-11-03 11:37:37,942 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.pom
+2016-11-03 11:37:37,999 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.pom
+2016-11-03 11:37:38,054 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9/joda-time-2.9.pom
+2016-11-03 11:37:38,407 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9/joda-time-2.9.pom
+2016-11-03 11:37:38,471 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.pom
+2016-11-03 11:37:38,551 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.pom
+2016-11-03 11:37:38,599 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.2/joda-time-2.9.2.pom
+2016-11-03 11:37:38,707 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.2/joda-time-2.9.2.pom
+2016-11-03 11:37:38,763 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.3/joda-time-2.9.3.pom
+2016-11-03 11:37:38,818 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.3/joda-time-2.9.3.pom
+2016-11-03 11:37:38,898 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.4/joda-time-2.9.4.pom
+2016-11-03 11:37:38,967 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.4/joda-time-2.9.4.pom
+2016-11-03 11:37:39,015 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.5/joda-time-2.9.5.pom
+2016-11-03 11:37:39,077 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.5/joda-time-2.9.5.pom
+2016-11-03 11:37:39,178 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticache/1.9.2/aws-java-sdk-elasticache-1.9.2.pom
+2016-11-03 11:37:39,279 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticache/1.9.2/aws-java-sdk-elasticache-1.9.2.pom
+2016-11-03 11:37:39,391 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elastictranscoder/1.9.2/aws-java-sdk-elastictranscoder-1.9.2.pom
+2016-11-03 11:37:39,523 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elastictranscoder/1.9.2/aws-java-sdk-elastictranscoder-1.9.2.pom
+2016-11-03 11:37:39,653 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-route53/1.9.2/aws-java-sdk-route53-1.9.2.pom
+2016-11-03 11:37:39,789 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-route53/1.9.2/aws-java-sdk-route53-1.9.2.pom
+2016-11-03 11:37:39,891 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-datapipeline/1.9.2/aws-java-sdk-datapipeline-1.9.2.pom
+2016-11-03 11:37:39,995 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-datapipeline/1.9.2/aws-java-sdk-datapipeline-1.9.2.pom
+2016-11-03 11:37:40,115 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudwatchmetrics/1.9.2/aws-java-sdk-cloudwatchmetrics-1.9.2.pom
+2016-11-03 11:37:40,237 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudwatchmetrics/1.9.2/aws-java-sdk-cloudwatchmetrics-1.9.2.pom
+2016-11-03 11:37:40,339 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudwatch/1.9.2/aws-java-sdk-cloudwatch-1.9.2.pom
+2016-11-03 11:37:40,452 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudwatch/1.9.2/aws-java-sdk-cloudwatch-1.9.2.pom
+2016-11-03 11:37:40,562 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.9.2/aws-java-sdk-dynamodb-1.9.2.pom
+2016-11-03 11:37:40,663 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.9.2/aws-java-sdk-dynamodb-1.9.2.pom
+2016-11-03 11:37:40,761 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-s3/1.9.2/aws-java-sdk-s3-1.9.2.pom
+2016-11-03 11:37:40,858 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-s3/1.9.2/aws-java-sdk-s3-1.9.2.pom
+2016-11-03 11:37:40,956 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-rds/1.9.2/aws-java-sdk-rds-1.9.2.pom
+2016-11-03 11:37:41,053 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-rds/1.9.2/aws-java-sdk-rds-1.9.2.pom
+2016-11-03 11:37:41,155 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-storagegateway/1.9.2/aws-java-sdk-storagegateway-1.9.2.pom
+2016-11-03 11:37:41,265 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-storagegateway/1.9.2/aws-java-sdk-storagegateway-1.9.2.pom
+2016-11-03 11:37:41,362 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-swf-libraries/1.9.2/aws-java-sdk-swf-libraries-1.9.2.pom
+2016-11-03 11:37:41,464 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-swf-libraries/1.9.2/aws-java-sdk-swf-libraries-1.9.2.pom
+2016-11-03 11:37:41,568 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-simpleworkflow/1.9.2/aws-java-sdk-simpleworkflow-1.9.2.pom
+2016-11-03 11:37:41,665 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-simpleworkflow/1.9.2/aws-java-sdk-simpleworkflow-1.9.2.pom
+2016-11-03 11:37:41,764 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-directconnect/1.9.2/aws-java-sdk-directconnect-1.9.2.pom
+2016-11-03 11:37:41,884 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-directconnect/1.9.2/aws-java-sdk-directconnect-1.9.2.pom
+2016-11-03 11:37:41,978 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-iam/1.9.2/aws-java-sdk-iam-1.9.2.pom
+2016-11-03 11:37:42,080 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-iam/1.9.2/aws-java-sdk-iam-1.9.2.pom
+2016-11-03 11:37:42,177 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.9.2/aws-java-sdk-ec2-1.9.2.pom
+2016-11-03 11:37:42,274 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.9.2/aws-java-sdk-ec2-1.9.2.pom
+2016-11-03 11:37:42,369 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudformation/1.9.2/aws-java-sdk-cloudformation-1.9.2.pom
+2016-11-03 11:37:42,466 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudformation/1.9.2/aws-java-sdk-cloudformation-1.9.2.pom
+2016-11-03 11:37:42,563 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-ses/1.9.2/aws-java-sdk-ses-1.9.2.pom
+2016-11-03 11:37:42,661 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-ses/1.9.2/aws-java-sdk-ses-1.9.2.pom
+2016-11-03 11:37:42,759 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticloadbalancing/1.9.2/aws-java-sdk-elasticloadbalancing-1.9.2.pom
+2016-11-03 11:37:42,859 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticloadbalancing/1.9.2/aws-java-sdk-elasticloadbalancing-1.9.2.pom
+2016-11-03 11:37:42,954 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cognitosync/1.9.2/aws-java-sdk-cognitosync-1.9.2.pom
+2016-11-03 11:37:43,326 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cognitosync/1.9.2/aws-java-sdk-cognitosync-1.9.2.pom
+2016-11-03 11:37:43,423 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudtrail/1.9.2/aws-java-sdk-cloudtrail-1.9.2.pom
+2016-11-03 11:37:43,569 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudtrail/1.9.2/aws-java-sdk-cloudtrail-1.9.2.pom
+2016-11-03 11:37:43,670 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticbeanstalk/1.9.2/aws-java-sdk-elasticbeanstalk-1.9.2.pom
+2016-11-03 11:37:43,768 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticbeanstalk/1.9.2/aws-java-sdk-elasticbeanstalk-1.9.2.pom
+2016-11-03 11:37:43,863 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.9.2/aws-java-sdk-simpledb-1.9.2.pom
+2016-11-03 11:37:43,965 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.9.2/aws-java-sdk-simpledb-1.9.2.pom
+2016-11-03 11:37:44,074 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-opsworks/1.9.2/aws-java-sdk-opsworks-1.9.2.pom
+2016-11-03 11:37:44,190 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-opsworks/1.9.2/aws-java-sdk-opsworks-1.9.2.pom
+2016-11-03 11:37:44,308 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-autoscaling/1.9.2/aws-java-sdk-autoscaling-1.9.2.pom
+2016-11-03 11:37:44,418 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-autoscaling/1.9.2/aws-java-sdk-autoscaling-1.9.2.pom
+2016-11-03 11:37:44,526 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sts/1.9.2/aws-java-sdk-sts-1.9.2.pom
+2016-11-03 11:37:44,623 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sts/1.9.2/aws-java-sdk-sts-1.9.2.pom
+2016-11-03 11:37:44,721 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudfront/1.9.2/aws-java-sdk-cloudfront-1.9.2.pom
+2016-11-03 11:37:44,916 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudfront/1.9.2/aws-java-sdk-cloudfront-1.9.2.pom
+2016-11-03 11:37:45,039 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-importexport/1.9.2/aws-java-sdk-importexport-1.9.2.pom
+2016-11-03 11:37:45,310 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-importexport/1.9.2/aws-java-sdk-importexport-1.9.2.pom
+2016-11-03 11:37:45,728 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-emr/1.9.2/aws-java-sdk-emr-1.9.2.pom
+2016-11-03 11:37:45,893 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-emr/1.9.2/aws-java-sdk-emr-1.9.2.pom
+2016-11-03 11:37:46,285 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudsearch/1.9.2/aws-java-sdk-cloudsearch-1.9.2.pom
+2016-11-03 11:37:46,527 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudsearch/1.9.2/aws-java-sdk-cloudsearch-1.9.2.pom
+2016-11-03 11:37:46,663 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-glacier/1.9.2/aws-java-sdk-glacier-1.9.2.pom
+2016-11-03 11:37:46,786 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-glacier/1.9.2/aws-java-sdk-glacier-1.9.2.pom
+2016-11-03 11:37:46,918 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.9.2/aws-java-sdk-sqs-1.9.2.pom
+2016-11-03 11:37:47,020 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.9.2/aws-java-sdk-sqs-1.9.2.pom
+2016-11-03 11:37:47,125 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sns/1.9.2/aws-java-sdk-sns-1.9.2.pom
+2016-11-03 11:37:47,227 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sns/1.9.2/aws-java-sdk-sns-1.9.2.pom
+2016-11-03 11:37:47,323 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-kinesis/1.9.2/aws-java-sdk-kinesis-1.9.2.pom
+2016-11-03 11:37:47,447 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-kinesis/1.9.2/aws-java-sdk-kinesis-1.9.2.pom
+2016-11-03 11:37:47,609 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.9.2/aws-java-sdk-redshift-1.9.2.pom
+2016-11-03 11:37:47,759 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.9.2/aws-java-sdk-redshift-1.9.2.pom
+2016-11-03 11:37:47,974 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-support/1.9.2/aws-java-sdk-support-1.9.2.pom
+2016-11-03 11:37:48,090 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-support/1.9.2/aws-java-sdk-support-1.9.2.pom
+2016-11-03 11:37:48,202 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cognitoidentity/1.9.2/aws-java-sdk-cognitoidentity-1.9.2.pom
+2016-11-03 11:37:48,320 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cognitoidentity/1.9.2/aws-java-sdk-cognitoidentity-1.9.2.pom
+2016-11-03 11:37:48,497 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk/1.9.2/aws-java-sdk-1.9.2.jar
+2016-11-03 11:37:48,605 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk/1.9.2/aws-java-sdk-1.9.2.jar
+2016-11-03 11:37:48,693 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-logs/1.9.2/aws-java-sdk-logs-1.9.2.jar
+2016-11-03 11:37:48,884 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-logs/1.9.2/aws-java-sdk-logs-1.9.2.jar
+2016-11-03 11:37:48,981 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-core/1.9.2/aws-java-sdk-core-1.9.2.jar
+2016-11-03 11:37:49,306 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-core/1.9.2/aws-java-sdk-core-1.9.2.jar
+2016-11-03 11:37:49,349 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+2016-11-03 11:37:49,413 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+2016-11-03 11:37:49,472 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3.jar
+2016-11-03 11:37:49,791 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3.jar
+2016-11-03 11:37:49,826 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.jar
+2016-11-03 11:37:50,027 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.jar
+2016-11-03 11:37:50,062 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+2016-11-03 11:37:50,267 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+2016-11-03 11:37:50,304 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.5/joda-time-2.9.5.jar
+2016-11-03 11:37:50,653 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/joda-time/joda-time/2.9.5/joda-time-2.9.5.jar
+2016-11-03 11:37:50,765 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticache/1.9.2/aws-java-sdk-elasticache-1.9.2.jar
+2016-11-03 11:37:51,009 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticache/1.9.2/aws-java-sdk-elasticache-1.9.2.jar
+2016-11-03 11:37:51,105 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elastictranscoder/1.9.2/aws-java-sdk-elastictranscoder-1.9.2.jar
+2016-11-03 11:37:51,298 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elastictranscoder/1.9.2/aws-java-sdk-elastictranscoder-1.9.2.jar
+2016-11-03 11:37:51,392 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-route53/1.9.2/aws-java-sdk-route53-1.9.2.jar
+2016-11-03 11:37:51,648 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-route53/1.9.2/aws-java-sdk-route53-1.9.2.jar
+2016-11-03 11:37:51,754 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-datapipeline/1.9.2/aws-java-sdk-datapipeline-1.9.2.jar
+2016-11-03 11:37:51,914 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-datapipeline/1.9.2/aws-java-sdk-datapipeline-1.9.2.jar
+2016-11-03 11:37:52,002 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudwatchmetrics/1.9.2/aws-java-sdk-cloudwatchmetrics-1.9.2.jar
+2016-11-03 11:37:52,217 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudwatchmetrics/1.9.2/aws-java-sdk-cloudwatchmetrics-1.9.2.jar
+2016-11-03 11:37:52,310 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudwatch/1.9.2/aws-java-sdk-cloudwatch-1.9.2.jar
+2016-11-03 11:37:52,446 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudwatch/1.9.2/aws-java-sdk-cloudwatch-1.9.2.jar
+2016-11-03 11:37:52,545 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.9.2/aws-java-sdk-dynamodb-1.9.2.jar
+2016-11-03 11:37:52,843 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.9.2/aws-java-sdk-dynamodb-1.9.2.jar
+2016-11-03 11:37:52,940 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-rds/1.9.2/aws-java-sdk-rds-1.9.2.jar
+2016-11-03 11:37:53,234 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-rds/1.9.2/aws-java-sdk-rds-1.9.2.jar
+2016-11-03 11:37:53,341 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-storagegateway/1.9.2/aws-java-sdk-storagegateway-1.9.2.jar
+2016-11-03 11:37:53,586 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-storagegateway/1.9.2/aws-java-sdk-storagegateway-1.9.2.jar
+2016-11-03 11:37:53,699 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-swf-libraries/1.9.2/aws-java-sdk-swf-libraries-1.9.2.jar
+2016-11-03 11:37:53,944 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-swf-libraries/1.9.2/aws-java-sdk-swf-libraries-1.9.2.jar
+2016-11-03 11:37:54,060 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-simpleworkflow/1.9.2/aws-java-sdk-simpleworkflow-1.9.2.jar
+2016-11-03 11:37:54,346 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-simpleworkflow/1.9.2/aws-java-sdk-simpleworkflow-1.9.2.jar
+2016-11-03 11:37:54,458 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-directconnect/1.9.2/aws-java-sdk-directconnect-1.9.2.jar
+2016-11-03 11:37:54,623 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-directconnect/1.9.2/aws-java-sdk-directconnect-1.9.2.jar
+2016-11-03 11:37:54,722 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-iam/1.9.2/aws-java-sdk-iam-1.9.2.jar
+2016-11-03 11:37:54,989 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-iam/1.9.2/aws-java-sdk-iam-1.9.2.jar
+2016-11-03 11:37:55,158 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.9.2/aws-java-sdk-ec2-1.9.2.jar
+2016-11-03 11:37:55,701 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.9.2/aws-java-sdk-ec2-1.9.2.jar
+2016-11-03 11:37:55,791 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudformation/1.9.2/aws-java-sdk-cloudformation-1.9.2.jar
+2016-11-03 11:37:55,927 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudformation/1.9.2/aws-java-sdk-cloudformation-1.9.2.jar
+2016-11-03 11:37:56,019 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-ses/1.9.2/aws-java-sdk-ses-1.9.2.jar
+2016-11-03 11:37:56,168 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-ses/1.9.2/aws-java-sdk-ses-1.9.2.jar
+2016-11-03 11:37:56,270 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticloadbalancing/1.9.2/aws-java-sdk-elasticloadbalancing-1.9.2.jar
+2016-11-03 11:37:56,459 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticloadbalancing/1.9.2/aws-java-sdk-elasticloadbalancing-1.9.2.jar
+2016-11-03 11:37:56,554 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cognitosync/1.9.2/aws-java-sdk-cognitosync-1.9.2.jar
+2016-11-03 11:37:56,687 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cognitosync/1.9.2/aws-java-sdk-cognitosync-1.9.2.jar
+2016-11-03 11:37:56,778 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudtrail/1.9.2/aws-java-sdk-cloudtrail-1.9.2.jar
+2016-11-03 11:37:56,895 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudtrail/1.9.2/aws-java-sdk-cloudtrail-1.9.2.jar
+2016-11-03 11:37:56,988 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticbeanstalk/1.9.2/aws-java-sdk-elasticbeanstalk-1.9.2.jar
+2016-11-03 11:37:57,168 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-elasticbeanstalk/1.9.2/aws-java-sdk-elasticbeanstalk-1.9.2.jar
+2016-11-03 11:37:57,258 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.9.2/aws-java-sdk-simpledb-1.9.2.jar
+2016-11-03 11:37:57,457 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.9.2/aws-java-sdk-simpledb-1.9.2.jar
+2016-11-03 11:37:57,558 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-opsworks/1.9.2/aws-java-sdk-opsworks-1.9.2.jar
+2016-11-03 11:37:57,830 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-opsworks/1.9.2/aws-java-sdk-opsworks-1.9.2.jar
+2016-11-03 11:37:57,927 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-autoscaling/1.9.2/aws-java-sdk-autoscaling-1.9.2.jar
+2016-11-03 11:37:58,116 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-autoscaling/1.9.2/aws-java-sdk-autoscaling-1.9.2.jar
+2016-11-03 11:37:58,204 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sts/1.9.2/aws-java-sdk-sts-1.9.2.jar
+2016-11-03 11:37:58,490 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sts/1.9.2/aws-java-sdk-sts-1.9.2.jar
+2016-11-03 11:37:58,590 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudfront/1.9.2/aws-java-sdk-cloudfront-1.9.2.jar
+2016-11-03 11:37:58,865 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudfront/1.9.2/aws-java-sdk-cloudfront-1.9.2.jar
+2016-11-03 11:37:58,960 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-importexport/1.9.2/aws-java-sdk-importexport-1.9.2.jar
+2016-11-03 11:37:59,084 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-importexport/1.9.2/aws-java-sdk-importexport-1.9.2.jar
+2016-11-03 11:37:59,176 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-emr/1.9.2/aws-java-sdk-emr-1.9.2.jar
+2016-11-03 11:37:59,591 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-emr/1.9.2/aws-java-sdk-emr-1.9.2.jar
+2016-11-03 11:37:59,787 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudsearch/1.9.2/aws-java-sdk-cloudsearch-1.9.2.jar
+2016-11-03 11:38:00,078 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cloudsearch/1.9.2/aws-java-sdk-cloudsearch-1.9.2.jar
+2016-11-03 11:38:00,175 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-glacier/1.9.2/aws-java-sdk-glacier-1.9.2.jar
+2016-11-03 11:38:00,341 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-glacier/1.9.2/aws-java-sdk-glacier-1.9.2.jar
+2016-11-03 11:38:00,438 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.9.2/aws-java-sdk-sqs-1.9.2.jar
+2016-11-03 11:38:00,627 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.9.2/aws-java-sdk-sqs-1.9.2.jar
+2016-11-03 11:38:00,725 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sns/1.9.2/aws-java-sdk-sns-1.9.2.jar
+2016-11-03 11:38:00,880 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-sns/1.9.2/aws-java-sdk-sns-1.9.2.jar
+2016-11-03 11:38:00,975 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-s3/1.9.2/aws-java-sdk-s3-1.9.2.jar
+2016-11-03 11:38:01,204 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-s3/1.9.2/aws-java-sdk-s3-1.9.2.jar
+2016-11-03 11:38:01,292 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-kinesis/1.9.2/aws-java-sdk-kinesis-1.9.2.jar
+2016-11-03 11:38:01,616 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-kinesis/1.9.2/aws-java-sdk-kinesis-1.9.2.jar
+2016-11-03 11:38:01,750 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.9.2/aws-java-sdk-redshift-1.9.2.jar
+2016-11-03 11:38:02,016 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.9.2/aws-java-sdk-redshift-1.9.2.jar
+2016-11-03 11:38:02,134 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-support/1.9.2/aws-java-sdk-support-1.9.2.jar
+2016-11-03 11:38:02,332 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-support/1.9.2/aws-java-sdk-support-1.9.2.jar
+2016-11-03 11:38:02,423 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cognitoidentity/1.9.2/aws-java-sdk-cognitoidentity-1.9.2.jar
+2016-11-03 11:38:02,554 [Worker-2450] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-cognitoidentity/1.9.2/aws-java-sdk-cognitoidentity-1.9.2.jar
+2016-11-03 11:38:20,667 [Worker-2450] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:38:20,737 [Worker-2450] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 11:38:20,744 [Worker-2450] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:38:20,750 [Worker-2450] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 11:38:23,991 [Worker-2447] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:38:23,997 [Worker-2447] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 11:38:24,048 [Worker-2447] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:38:24,057 [Worker-2447] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 11:52:08,498 [Worker-2458] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:52:08,520 [Worker-2458] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 11:52:08,523 [Worker-2458] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:52:08,533 [Worker-2458] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 11:55:05,847 [Worker-2465] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:55:05,863 [Worker-2465] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 11:55:05,865 [Worker-2465] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:55:05,873 [Worker-2465] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 11:56:08,894 [Worker-2464] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:56:08,949 [Worker-2464] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 11:56:08,951 [Worker-2464] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:56:08,957 [Worker-2464] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 11:56:33,041 [Worker-2464] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:56:33,050 [Worker-2464] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 11:56:33,052 [Worker-2464] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:56:33,057 [Worker-2464] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 11:57:23,044 [Worker-2468] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:57:23,055 [Worker-2468] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 11:57:23,056 [Worker-2468] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 11:57:23,067 [Worker-2468] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 12:13:11,962 [Worker-2470] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 12:13:11,969 [Worker-2470] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 12:13:11,974 [Worker-2470] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 12:13:11,979 [Worker-2470] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 13:57:48,388 [Worker-2502] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 13:57:48,467 [Worker-2502] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 13:57:48,469 [Worker-2502] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 13:57:48,474 [Worker-2502] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 14:24:44,683 [Worker-2521] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-s3/1.9.2/aws-java-sdk-s3-1.9.2-sources.jar
+2016-11-03 14:24:45,180 [Worker-2521] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-s3/1.9.2/aws-java-sdk-s3-1.9.2-sources.jar
+2016-11-03 14:24:45,514 [Worker-2521] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.amazonaws:aws-java-sdk-s3:1.9.2
+2016-11-03 14:24:45,958 [Worker-2523] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 14:24:46,069 [Worker-2523] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-03 14:24:46,070 [Worker-2523] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 14:24:46,081 [Worker-2523] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 14:40:25,424 [Worker-2529] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 14:40:25,432 [Worker-2529] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 14:40:25,439 [Worker-2529] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 14:40:25,444 [Worker-2529] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 14:43:15,954 [Worker-2532] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 14:43:15,961 [Worker-2532] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 14:43:15,963 [Worker-2532] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 14:43:15,976 [Worker-2532] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 21:29:39,109 [Worker-2635] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:29:39,149 [Worker-2635] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 21:29:39,159 [Worker-2635] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:29:39,167 [Worker-2635] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 21:33:14,627 [Worker-2637] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:33:14,633 [Worker-2637] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 21:33:14,635 [Worker-2637] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:33:14,639 [Worker-2637] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 21:34:49,365 [Worker-2640] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:34:49,371 [Worker-2640] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 21:34:49,374 [Worker-2640] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:34:49,378 [Worker-2640] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 21:38:02,455 [Worker-2637] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:38:02,471 [Worker-2637] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 21:38:02,473 [Worker-2637] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:38:02,478 [Worker-2637] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 21:41:10,069 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:41:10,101 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 21:41:10,103 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:41:10,115 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 21:41:21,198 [Worker-2647] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:41:21,204 [Worker-2647] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 21:41:21,206 [Worker-2647] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:41:21,210 [Worker-2647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 21:43:54,650 [Worker-2640] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:43:54,656 [Worker-2640] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 21:43:54,658 [Worker-2640] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:43:54,662 [Worker-2640] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 21:59:57,033 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:59:57,040 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 21:59:57,043 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 21:59:57,048 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:00:20,620 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:00:20,638 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:00:20,641 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:00:20,645 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:01:43,637 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:01:43,643 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:01:43,645 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:01:43,650 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:04:22,912 [Worker-2653] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:04:22,917 [Worker-2653] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:04:22,922 [Worker-2653] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:04:22,927 [Worker-2653] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:05:09,788 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:05:09,794 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:05:09,796 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:05:09,801 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:06:18,334 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:06:18,342 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:06:18,344 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:06:18,349 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:06:39,977 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:06:40,009 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:06:40,012 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:06:40,022 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:06:57,067 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:06:57,073 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:06:57,075 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:06:57,081 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:07:13,380 [Worker-2653] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:07:13,386 [Worker-2653] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:07:13,389 [Worker-2653] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:07:13,395 [Worker-2653] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:07:36,673 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:07:36,679 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:07:36,681 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:07:36,685 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:08:16,370 [Worker-2654] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:08:16,375 [Worker-2654] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:08:16,377 [Worker-2654] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:08:16,382 [Worker-2654] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:08:59,327 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:08:59,338 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:08:59,340 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:08:59,344 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:09:32,511 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:09:32,517 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:09:32,520 [Worker-2634] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:09:32,525 [Worker-2634] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:10:21,397 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:10:21,403 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:10:21,405 [Worker-2645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:10:21,410 [Worker-2645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:10:49,276 [Worker-2651] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:10:49,287 [Worker-2651] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:10:49,289 [Worker-2651] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:10:49,293 [Worker-2651] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:13:26,053 [Worker-2656] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:13:26,059 [Worker-2656] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:13:26,061 [Worker-2656] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:13:26,065 [Worker-2656] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:14:16,178 [Worker-2657] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:14:16,183 [Worker-2657] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:14:16,185 [Worker-2657] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:14:16,190 [Worker-2657] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:44:18,550 [Worker-2664] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:44:18,570 [Worker-2664] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:44:18,575 [Worker-2664] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:44:18,586 [Worker-2664] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-03 22:45:35,097 [Worker-2673] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:45:35,105 [Worker-2673] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-03 22:45:35,107 [Worker-2673] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-03 22:45:35,111 [Worker-2673] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:00:38,878 [Worker-2900] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:00:38,926 [Worker-2900] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:00:38,928 [Worker-2900] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:00:38,932 [Worker-2900] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:00:46,706 [Worker-2903] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:00:46,712 [Worker-2903] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:00:46,714 [Worker-2903] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:00:46,719 [Worker-2903] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:01:04,981 [Worker-2902] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:01:04,989 [Worker-2902] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:01:04,991 [Worker-2902] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:01:04,995 [Worker-2902] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:01:19,089 [Worker-2904] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:01:19,096 [Worker-2904] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:01:19,098 [Worker-2904] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:01:19,103 [Worker-2904] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:01:46,933 [Worker-2905] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:01:46,939 [Worker-2905] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:01:46,941 [Worker-2905] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:01:46,945 [Worker-2905] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:02:27,764 [Worker-2903] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:02:27,789 [Worker-2903] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:02:27,791 [Worker-2903] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:02:27,796 [Worker-2903] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:07:04,719 [Worker-2902] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:07:04,725 [Worker-2902] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:07:04,727 [Worker-2902] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:07:04,731 [Worker-2902] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:09:35,356 [Worker-2909] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:09:35,361 [Worker-2909] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:09:35,365 [Worker-2909] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:09:35,369 [Worker-2909] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:14:19,202 [Worker-2908] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:14:19,208 [Worker-2908] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:14:19,210 [Worker-2908] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:14:19,214 [Worker-2908] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:15:29,762 [Worker-2910] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:15:29,767 [Worker-2910] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:15:29,769 [Worker-2910] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:15:29,773 [Worker-2910] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:17:05,184 [Worker-2902] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:17:05,191 [Worker-2902] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:17:05,193 [Worker-2902] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:17:05,198 [Worker-2902] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:17:30,267 [Worker-2912] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:17:30,273 [Worker-2912] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:17:30,275 [Worker-2912] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:17:30,279 [Worker-2912] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:18:54,173 [Worker-2912] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:18:54,180 [Worker-2912] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:18:54,182 [Worker-2912] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:18:54,186 [Worker-2912] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:19:05,634 [Worker-2909] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:19:05,639 [Worker-2909] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:19:05,641 [Worker-2909] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:19:05,646 [Worker-2909] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:19:23,793 [Worker-2912] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:19:23,799 [Worker-2912] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:19:23,801 [Worker-2912] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:19:23,805 [Worker-2912] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:19:39,809 [Worker-2910] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:19:39,815 [Worker-2910] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:19:39,818 [Worker-2910] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:19:39,823 [Worker-2910] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 11:20:24,929 [Worker-2908] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:20:24,935 [Worker-2908] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 11:20:24,938 [Worker-2908] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 11:20:24,944 [Worker-2908] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:08:19,720 [Worker-2967] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:08:19,746 [Worker-2967] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:08:19,748 [Worker-2967] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:08:19,753 [Worker-2967] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:10:26,858 [Worker-2965] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:10:26,877 [Worker-2965] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:10:26,879 [Worker-2965] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:10:26,883 [Worker-2965] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:16:00,347 [Worker-2965] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:16:00,353 [Worker-2965] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:16:00,355 [Worker-2965] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:16:00,360 [Worker-2965] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:18:11,014 [Worker-2975] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:18:11,020 [Worker-2975] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:18:11,023 [Worker-2975] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:18:11,027 [Worker-2975] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:20:42,246 [Worker-2964] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:20:42,251 [Worker-2964] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:20:42,253 [Worker-2964] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:20:42,257 [Worker-2964] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:21:01,468 [Worker-2965] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:21:01,474 [Worker-2965] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:21:01,475 [Worker-2965] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:21:01,480 [Worker-2965] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:22:24,354 [Worker-2973] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:22:24,359 [Worker-2973] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:22:24,361 [Worker-2973] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:22:24,366 [Worker-2973] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:23:07,193 [Worker-2965] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:23:07,200 [Worker-2965] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:23:07,202 [Worker-2965] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:23:07,207 [Worker-2965] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:23:17,434 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:23:17,441 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:23:17,443 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:23:17,448 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:24:05,605 [Worker-2965] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-sources.jar
+2016-11-04 14:24:05,777 [Worker-2965] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-sources.jar
+2016-11-04 14:24:06,133 [Worker-2965] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.googlecode.json-simple:json-simple:1.1.1
+2016-11-04 14:24:06,376 [Worker-2964] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:24:06,381 [Worker-2964] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 14:24:06,382 [Worker-2964] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:24:06,389 [Worker-2964] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:25:52,766 [Worker-2964] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:25:52,773 [Worker-2964] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:25:52,775 [Worker-2964] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:25:52,783 [Worker-2964] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:26:11,676 [Worker-2977] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:26:11,682 [Worker-2977] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:26:11,684 [Worker-2977] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:26:11,688 [Worker-2977] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:33:03,657 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:33:03,663 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:33:03,665 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:33:03,670 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:34:10,487 [Worker-2984] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:34:10,493 [Worker-2984] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:34:10,495 [Worker-2984] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:34:10,500 [Worker-2984] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:34:19,292 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:34:19,298 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:34:19,300 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:34:19,304 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:34:53,039 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:34:53,045 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:34:53,048 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:34:53,052 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:35:40,237 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:35:40,243 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:35:40,245 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:35:40,250 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:35:55,191 [Worker-2984] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:35:55,198 [Worker-2984] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:35:55,200 [Worker-2984] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:35:55,205 [Worker-2984] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:35:59,549 [Worker-2984] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:35:59,558 [Worker-2984] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:35:59,560 [Worker-2984] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:35:59,565 [Worker-2984] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:36:26,704 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:36:26,710 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:36:26,712 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:36:26,717 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:37:00,379 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:37:00,386 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:37:00,389 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:37:00,393 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:38:31,128 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:38:31,134 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:38:31,137 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:38:31,141 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:39:05,773 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:39:05,779 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:39:05,781 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:39:05,786 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:39:11,627 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:39:11,633 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:39:11,635 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:39:11,640 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:40:08,175 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:40:08,182 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:40:08,184 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:40:08,188 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:40:46,594 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:40:46,600 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:40:46,602 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:40:46,607 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:41:53,561 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:41:53,568 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:41:53,570 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:41:53,576 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:42:37,804 [Worker-2986] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:42:37,811 [Worker-2986] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:42:37,814 [Worker-2986] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:42:37,818 [Worker-2986] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:43:53,853 [Worker-2985] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:43:53,858 [Worker-2985] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:43:53,860 [Worker-2985] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:43:53,864 [Worker-2985] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:44:39,618 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:44:39,625 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:44:39,627 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:44:39,631 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:48:34,355 [Worker-2985] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:48:34,361 [Worker-2985] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:48:34,363 [Worker-2985] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:48:34,367 [Worker-2985] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:51:55,230 [Worker-2987] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:51:55,236 [Worker-2987] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:51:55,238 [Worker-2987] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:51:55,243 [Worker-2987] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:52:06,879 [Worker-2986] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:52:06,885 [Worker-2986] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:52:06,887 [Worker-2986] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:52:06,891 [Worker-2986] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:53:11,462 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:53:11,467 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:53:11,469 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:53:11,474 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:55:22,857 [Worker-2980] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:55:22,863 [Worker-2980] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:55:22,865 [Worker-2980] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:55:22,870 [Worker-2980] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:56:43,521 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:56:43,527 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:56:43,529 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:56:43,533 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:57:16,099 [Worker-2987] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:57:16,105 [Worker-2987] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:57:16,107 [Worker-2987] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:57:16,112 [Worker-2987] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:57:47,777 [Worker-2985] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:57:47,783 [Worker-2985] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:57:47,785 [Worker-2985] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:57:47,789 [Worker-2985] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 14:58:52,393 [Worker-2986] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:58:52,399 [Worker-2986] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 14:58:52,401 [Worker-2986] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 14:58:52,406 [Worker-2986] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:00:14,999 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:00:15,005 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:00:15,007 [Worker-2974] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:00:15,012 [Worker-2974] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:00:50,711 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:00:50,717 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:00:50,719 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:00:50,723 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:02:09,854 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:02:09,860 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:02:09,862 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:02:09,866 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:02:21,581 [Worker-2984] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:02:21,586 [Worker-2984] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:02:21,588 [Worker-2984] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:02:21,593 [Worker-2984] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:04:04,233 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:04:04,239 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:04:04,241 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:04:04,246 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:05:33,343 [Worker-2985] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:05:33,349 [Worker-2985] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:05:33,351 [Worker-2985] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:05:33,355 [Worker-2985] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:07:06,378 [Worker-2989] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:07:06,386 [Worker-2989] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:07:06,389 [Worker-2989] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:07:06,406 [Worker-2989] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:07:34,316 [Worker-2974] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10-sources.jar
+2016-11-04 15:07:34,513 [Worker-2974] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10-sources.jar
+2016-11-04 15:07:34,635 [Worker-2974] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for junit:junit:4.10
+2016-11-04 15:07:35,300 [Worker-2985] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:07:35,305 [Worker-2985] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 15:07:35,306 [Worker-2985] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:07:35,310 [Worker-2985] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:09:19,561 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:09:19,566 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:09:19,569 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:09:19,573 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:10:36,506 [Worker-2989] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:10:36,512 [Worker-2989] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:10:36,513 [Worker-2989] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:10:36,517 [Worker-2989] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:13:34,504 [Worker-2989] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:13:34,510 [Worker-2989] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:13:34,512 [Worker-2989] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:13:34,517 [Worker-2989] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:13:47,269 [Worker-2984] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:13:47,275 [Worker-2984] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:13:47,277 [Worker-2984] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:13:47,282 [Worker-2984] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:14:51,740 [Worker-2986] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:14:51,745 [Worker-2986] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:14:51,747 [Worker-2986] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:14:51,752 [Worker-2986] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:15:56,394 [Worker-2989] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:15:56,400 [Worker-2989] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:15:56,402 [Worker-2989] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:15:56,406 [Worker-2989] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:16:44,322 [Worker-2988] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:16:44,327 [Worker-2988] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:16:44,330 [Worker-2988] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:16:44,334 [Worker-2988] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:18:01,149 [Worker-2987] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:18:01,155 [Worker-2987] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:18:01,157 [Worker-2987] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:18:01,162 [Worker-2987] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:18:17,181 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:18:17,187 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:18:17,189 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:18:17,194 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:19:23,649 [Worker-2990] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:19:23,656 [Worker-2990] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:19:23,659 [Worker-2990] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:19:23,663 [Worker-2990] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:20:59,932 [Worker-2980] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:20:59,938 [Worker-2980] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:20:59,940 [Worker-2980] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:20:59,944 [Worker-2980] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:21:41,134 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:21:41,140 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:21:41,141 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:21:41,145 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:22:26,508 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:22:26,514 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:22:26,516 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:22:26,521 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:22:59,386 [Worker-2980] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:22:59,392 [Worker-2980] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:22:59,394 [Worker-2980] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:22:59,398 [Worker-2980] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:24:22,413 [Worker-2989] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:24:22,419 [Worker-2989] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:24:22,421 [Worker-2989] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:24:22,426 [Worker-2989] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:24:48,238 [Worker-2986] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:24:48,244 [Worker-2986] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:24:48,246 [Worker-2986] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:24:48,250 [Worker-2986] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:25:39,155 [Worker-2988] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:25:39,163 [Worker-2988] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:25:39,165 [Worker-2988] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:25:39,169 [Worker-2988] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:28:15,807 [Worker-2990] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:28:15,813 [Worker-2990] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:28:15,815 [Worker-2990] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:28:15,820 [Worker-2990] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:29:06,926 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:29:06,932 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:29:06,934 [Worker-2981] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:29:06,938 [Worker-2981] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:29:49,754 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:29:49,764 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 15:29:49,765 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:29:49,776 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:31:05,382 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:31:05,387 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:31:05,390 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:31:05,394 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:31:12,011 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:31:12,017 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:31:12,019 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:31:12,023 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:31:17,260 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:31:17,266 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:31:17,268 [Worker-2983] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:31:17,272 [Worker-2983] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources
+2016-11-04 15:31:21,834 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:31:21,840 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-11-04 15:31:21,842 [Worker-2982] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-11-04 15:31:21,846 [Worker-2982] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 3\Assignment 3\src\test\resources

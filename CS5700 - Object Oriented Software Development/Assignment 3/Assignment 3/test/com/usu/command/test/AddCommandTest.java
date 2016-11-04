@@ -57,6 +57,7 @@ public class AddCommandTest {
 		dp.shapeFactory = new ShapeFactory();
 		dp.shapeFactory.resourceNamePattern = "img/%s.jpg";
 		AddCommand addCommandTest = new AddCommand(commandParameters);
+		addCommandTest.targetDrawing = dp;
 		addCommandTest.execute();
 		assertEquals(1, dp.getShapes().size());
 	}
