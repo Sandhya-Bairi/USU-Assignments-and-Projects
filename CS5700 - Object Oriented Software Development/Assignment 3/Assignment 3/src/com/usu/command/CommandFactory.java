@@ -8,6 +8,8 @@ public class CommandFactory {
 	public DrawingPalette targetDrawing;
 	
 	Stack<Command> undoCommandStack = new Stack<Command>();
+	
+	private static CommandFactory commandFactory;
 
 	public DrawingPalette getTargetDrawing() {
 		return targetDrawing;
@@ -65,4 +67,14 @@ public class CommandFactory {
 
         return command;
     }
+	
+	private CommandFactory() {
+
+	}
+	
+	public static synchronized CommandFactory getInstance() {
+		if(commandFactory == null)
+			commandFactory = new CommandFactory();
+		return commandFactory;
+	}
 }

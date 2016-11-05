@@ -27,7 +27,6 @@
 <fullyQualifiedTypeName name="com.usu.draw.ShapeExtrinsicState"/>
 <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
-<fullyQualifiedTypeName name="com.usu.command.CommandFactory"/>
 <fullyQualifiedTypeName name="com.usu.command.UndoCommand"/>
 <fullyQualifiedTypeName name="com.usu.command.NewCommand"/>
 <fullyQualifiedTypeName name="com.amazonaws.services.s3.AmazonS3"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="com.usu.command.ZoomCommand"/>
+<fullyQualifiedTypeName name="com.usu.command.CommandFactory"/>
 </qualifiedTypeNameHistroy>

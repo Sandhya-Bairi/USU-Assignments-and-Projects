@@ -74,7 +74,7 @@ public class MainForm extends JFrame {
 	}
 
 	public MainForm() {
-		commandFactory = new CommandFactory();
+		commandFactory = CommandFactory.getInstance();
 		drawingPalette = new DrawingPalette();
 		commandFactory.targetDrawing = drawingPalette;
 		drawingPalette.shapeFactory = new ShapeFactory();
