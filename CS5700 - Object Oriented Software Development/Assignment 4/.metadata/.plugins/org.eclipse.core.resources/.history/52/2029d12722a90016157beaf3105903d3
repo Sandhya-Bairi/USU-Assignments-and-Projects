@@ -1,0 +1,10 @@
+package com.usu.sudokuSolver.main;
+
+public class PuzzleSelector {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
