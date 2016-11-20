@@ -5,7 +5,10 @@ package com.usu.sudokuSolver.template;
  *
  */
 public abstract class SudokuSolver {
+	
+	public static String outputFileName = null;
+	
+	public static String[] symbols = null;
 
     public abstract boolean solve(int row, int column);
-
 }

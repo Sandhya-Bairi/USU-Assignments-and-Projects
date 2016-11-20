@@ -29,16 +29,14 @@ public class SudokuBoardParser {
             int size = lines.size() - 2;
             symbols = new String[size];
             String[][] board = new String[size][size];
-            for(int i = 1; i <= size; i++) {
+            for(int i = 1; i <= size + 1; i++) {
             	if(i == 1) {
-            		StringTokenizer st = new StringTokenizer(lines.get(1));
-	                for(int j = 0; j < st.countTokens(); j++) {
-	                    symbols[j] = st.nextToken();
+            		for(int j = 0; j < lines.get(1).split(" ").length; j++) {
+	                    symbols[j] = lines.get(1).split(" ")[j];
 	                }
             	} else {
-	                StringTokenizer st = new StringTokenizer(lines.get(i));
-	                for(int j = 0; j < st.countTokens(); j++) {
-	                    board[i - 1][j] = st.nextToken();
+	                for(int j = 0; j < lines.get(i).split(" ").length; j++) {
+	                    board[i - 2][j] = lines.get(i).split(" ")[j];
 	                }
             	}
             }

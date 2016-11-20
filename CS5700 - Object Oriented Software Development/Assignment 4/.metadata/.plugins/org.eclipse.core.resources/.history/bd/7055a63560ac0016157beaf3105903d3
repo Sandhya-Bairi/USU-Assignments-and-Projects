@@ -1,0 +1,16 @@
+package com.usu.sudokuSolver.template;
+
+/**
+ * @author Anuj Khasgiwala
+ *
+ */
+public abstract class SudokuSolver {
+	
+	String outputFileName = null;
+
+    public abstract boolean solve(int row, int column);
+
+	public void setOutputFileName(String outputFileName) {
+		this.outputFileName = outputFileName;
+	}
+}

@@ -37,7 +37,7 @@ public class RecursiveBruteSudokuSolver extends SudokuSolver {
                         if (! solve(0, 0)) {
                             JOptionPane.showMessageDialog(frame, "This puzzle cannot be solved!");
                         } else {
-                            sb.export();
+                            sb.export(outputFileName);
                         }
                     }
                 };
@@ -62,16 +62,16 @@ public class RecursiveBruteSudokuSolver extends SudokuSolver {
         int nextRow = (nextCol == 0) ? row + 1 : row;
 
         try {
-            if (sb.getCell(row, col) != sb.EMPTY)
+            if (!sb.getCell(row, col).equals("-"))
                 return solve(nextRow, nextCol);
         }
         catch (ArrayIndexOutOfBoundsException e) {
             return true;
         }
 
-        for (int i = 1; i <= sb.size; i++) {
-            if (check(i, row, col)) {
-                sb.setCell(i, row, col);
+        for (int i = 0; i < sb.size; i++) {
+            if (check(symbols[i], row, col)) {
+            	sb.setCell(symbols[i], row, col);
                 if (solve(nextRow, nextCol)) {
                     return true;
                 }
@@ -81,12 +81,12 @@ public class RecursiveBruteSudokuSolver extends SudokuSolver {
         return false;
     }
 
-    private boolean check(int num, int row, int col) {
+    private boolean check(String num, int row, int col) {
         int r = (row / sb.box_size) * sb.box_size;
         int c = (col / sb.box_size) * sb.box_size;
 
         for (int i = 0; i < sb.size; i++) {
-            if (sb.getCell(row, i) == num || sb.getCell(i, col) == num || sb.getCell(r + (i % sb.box_size), c + (i / sb.box_size)) == num) {
+            if (sb.getCell(row, i).equals(num) || sb.getCell(i, col).equals(num) || sb.getCell(r + (i % sb.box_size), c + (i / sb.box_size)).equals(num)) {
                 return false;
             }
         }

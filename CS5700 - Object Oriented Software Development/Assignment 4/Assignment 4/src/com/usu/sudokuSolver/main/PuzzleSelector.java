@@ -11,6 +11,8 @@ import javax.swing.JTextField;
 
 import com.usu.sudokuSolver.board.SudokuBoard;
 import com.usu.sudokuSolver.board.SudokuBoardParser;
+import com.usu.sudokuSolver.solution.RecursiveBruteSudokuSolver;
+import com.usu.sudokuSolver.template.SudokuSolver;
 
 /**
  * @author Anuj Khasgiwala
@@ -22,10 +24,10 @@ public class PuzzleSelector {
 		List<String> dialogInputs = getInputOutputFileName();
 		if(!dialogInputs.get(0).isEmpty() && !dialogInputs.get(1).isEmpty()) {
 			String[][] board = SudokuBoardParser.parse(dialogInputs.get(0));
-			String[] symbols = SudokuBoardParser.getSymbols();
-			//
-		}
-		//new RecursiveBruteSudokuSolver(new SudokuBoard(board));
+			SudokuSolver.symbols = SudokuBoardParser.getSymbols();
+			SudokuSolver.outputFileName = dialogInputs.get(1);
+			new RecursiveBruteSudokuSolver(new SudokuBoard(board));
+		}		
 	}
 
 	private static List<String> getInputOutputFileName() {

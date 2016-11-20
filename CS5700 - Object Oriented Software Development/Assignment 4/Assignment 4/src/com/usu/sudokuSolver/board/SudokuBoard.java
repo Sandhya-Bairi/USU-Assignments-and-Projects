@@ -78,6 +78,6 @@ public class SudokuBoard {
 
 	public void export(String outputFileName) {
 		Utilities.exportSolution(outputFileName, board);
-		JOptionPane.showMessageDialog(new JFrame(), "Solution saved at: Solved/Sudoku_Solved.txt");
+		JOptionPane.showMessageDialog(new JFrame(), "Solution saved at: "+outputFileName);
 	}
 }
