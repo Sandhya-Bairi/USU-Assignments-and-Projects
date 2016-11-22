@@ -41,12 +41,12 @@ public class SudokuBoardTest {
     @Test(expected = NullPointerException.class)
     public void testGetCell_NullValue() {
     	Integer row = null, col = null;
-        assertEquals(8, sb.getCell(row.intValue(), col.intValue()));
+        assertEquals("8", sb.getCell(row.intValue(), col.intValue()));
     }
     
     @Test
-    public void testGetCell() {
-        assertEquals(8, sb.getCell(0, 0));
+    public void testGetCell_Correct() {
+        assertEquals("8", sb.getCell(0, 0));
     }
 
     @Test(expected = NullPointerException.class)
@@ -65,6 +65,6 @@ public class SudokuBoardTest {
     @Test
     public void testSetCell() {
         sb.setCell("3", 0, 5);
-        assertEquals(3, sb.getCell(0, 5));
+        assertEquals("3", sb.getCell(0, 5));
     }
 }

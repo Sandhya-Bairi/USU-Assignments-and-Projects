@@ -1,0 +1,33 @@
+package com.usu.sudokuSolver.utils.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.usu.sudokuSolver.utils.Utilities;
+
+public class UtilitiesTest {
+	
+	String[][] sudoku = {
+    		{"8","6","-","-","2","-","-","-","-"},
+    		{"-","-","-","7","-","-","-","5","9"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","-","-","-","6","-","8","-","-"},
+    		{"-","4","-","-","-","-","-","-","-"},
+    		{"-","-","5","3","-","-","-","-","7"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","2","-","-","-","-","6","-","-"},
+    		{"-","-","7","5","-","9","-","-","-"}
+    };
+
+	@Test(expected = NullPointerException.class)
+	public void testExportSolution_NullFileName() {
+		Utilities.exportSolution(null, sudoku);
+	}
+	
+	@Test
+	public void testExportSolution_NullBoard() {
+		String[][] sudoku1 = null;
+		Utilities.exportSolution("output\\a.txt", sudoku1);
+	}
+}

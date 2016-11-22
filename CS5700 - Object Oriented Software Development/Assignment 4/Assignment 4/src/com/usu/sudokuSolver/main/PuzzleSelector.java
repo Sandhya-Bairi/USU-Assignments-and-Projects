@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JComboBox;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -26,7 +27,7 @@ public class PuzzleSelector {
 	
 	public static void main(String[] args) {
 		List<String> dialogInputs = getInputOutputFileNameAndAlgorithm();
-		if(!dialogInputs.get(0).isEmpty() && !dialogInputs.get(1).isEmpty()) {
+		if(!dialogInputs.get(0).isEmpty() && !dialogInputs.get(1).isEmpty() && !dialogInputs.get(2).isEmpty()) {
 			String[][] board = SudokuBoardParser.parse(dialogInputs.get(0));
 			SudokuSolver.symbols = SudokuBoardParser.getSymbols();
 			SudokuSolver.outputFileName = dialogInputs.get(1);
@@ -34,7 +35,8 @@ public class PuzzleSelector {
 				sudokuSolver = new BackTrackingSudokuSolver(new SudokuBoard(board));
 			else if(dialogInputs.get(2).equals("Brute Force"))
 				sudokuSolver = new RecursiveBruteSudokuSolver(new SudokuBoard(board));
-		} else {	
+		} else {
+			JOptionPane.showMessageDialog(new JFrame(), "Missing inputs!!");
 		}
 	}
 
@@ -53,7 +55,7 @@ public class PuzzleSelector {
 	    myPanel.add(outputFileName);
 	    JLabel algorithmLabel = new JLabel("Please select an Algorithm: ");
 		myPanel.add(algorithmLabel);
-	    JComboBox<String> algorithmSelection = new JComboBox<String>(new String[] {"Back Tracking","Brute Force"});
+	    JComboBox<String> algorithmSelection = new JComboBox<String>(new String[] {"", "Back Tracking","Brute Force"});
 	    myPanel.add(algorithmSelection);
 	    
 	    JOptionPane.showMessageDialog(null, myPanel);

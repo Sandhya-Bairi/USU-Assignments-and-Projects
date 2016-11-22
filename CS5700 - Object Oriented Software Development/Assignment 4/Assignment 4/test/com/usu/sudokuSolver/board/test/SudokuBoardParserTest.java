@@ -23,7 +23,7 @@ public class SudokuBoardParserTest {
     	ExpectedException expectedException = ExpectedException.none();
     	expectedException.expect(FileNotFoundException.class);
     	expectedException.expect(IOException.class);
-    	SudokuBoardParser.parse("");        
+    	SudokuBoardParser.parse("");
     }
     
     @Test

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SudokuBoardTest" project="Assignment 4" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="com.usu.sudokuSolver.board.test.SudokuBoardTest" time="0.034">
+    <testcase name="testRows" classname="com.usu.sudokuSolver.board.test.SudokuBoardTest" time="0.003"/>
+    <testcase name="testGetCell_Correct" classname="com.usu.sudokuSolver.board.test.SudokuBoardTest" time="0.007"/>
+    <testcase name="testSetCell_NullValue" classname="com.usu.sudokuSolver.board.test.SudokuBoardTest" time="0.005"/>
+    <testcase name="testColumns" classname="com.usu.sudokuSolver.board.test.SudokuBoardTest" time="0.006"/>
+    <testcase name="testSetCell_SymbolNullValue" classname="com.usu.sudokuSolver.board.test.SudokuBoardTest" time="0.007"/>
+    <testcase name="testGetCell_NullValue" classname="com.usu.sudokuSolver.board.test.SudokuBoardTest" time="0.006"/>
+    <testcase name="testSetCell" classname="com.usu.sudokuSolver.board.test.SudokuBoardTest" time="0.0"/>
+  </testsuite>
+</testrun>
