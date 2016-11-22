@@ -1,11 +1,11 @@
 package com.usu.sudokuSolver.board;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringTokenizer;
 
 /**
  * @author Anuj Khasgiwala
@@ -41,8 +41,11 @@ public class SudokuBoardParser {
             	}
             }
             return board;
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (FileNotFoundException fnfe) {
+        	fnfe.printStackTrace();
+            return null;
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
             return null;
         }
     }

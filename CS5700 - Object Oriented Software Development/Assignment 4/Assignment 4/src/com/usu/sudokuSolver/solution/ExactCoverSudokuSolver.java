@@ -3,7 +3,8 @@ package com.usu.sudokuSolver.solution;
 import com.usu.sudokuSolver.template.SudokuSolver;
 
 /**
- * Created by Aditya on 11/16/2015.
+ * @author Anuj Khasgiwala
+ *
  */
 public class ExactCoverSudokuSolver extends SudokuSolver {
 
@@ -11,5 +12,4 @@ public class ExactCoverSudokuSolver extends SudokuSolver {
     public boolean solve(int row, int column) {
         return false;
     }
-
 }

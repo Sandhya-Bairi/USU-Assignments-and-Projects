@@ -1,0 +1,112 @@
+package com.usu.sudokuSolver.solution;
+
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
+
+import java.awt.EventQueue;
+import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import com.usu.sudokuSolver.board.SudokuBoard;
+import com.usu.sudokuSolver.template.SudokuSolver;
+
+/**
+ * @author Anuj Khasgiwala
+ *
+ */
+public class BackTrackingSudokuSolver extends SudokuSolver {
+
+	SudokuBoard sb;
+
+	public BackTrackingSudokuSolver(SudokuBoard sudokuBoard) {
+		this.sb = sudokuBoard;
+		final JPanel panel = sudokuBoard.getPanel();
+
+		Runnable runner = new Runnable() {
+			public void run() {
+				final JFrame frame = new JFrame("Sudoku Solver");
+				frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+				ActionListener solveBtnListener = new ActionListener() {
+					public void actionPerformed(ActionEvent ae) {
+						if (! solve(0, 0)) {
+							sb.export(outputFileName, "This puzzle cannot be solved!");
+						} else {
+							sb.export(outputFileName);
+						}
+					}
+				};
+			}
+		};
+		EventQueue.invokeLater(runner);
+	}
+
+	@Override
+	public boolean solve(int row, int col) {
+		if (row == sb.size) {
+			row = 0;
+			if (++col == sb.size)
+				return true;
+		}
+		if (!sb.getCell(row, col).equals("-"))  // skip filled cells
+			return solve(row+1,col);
+
+		for (int i = 0; i < sb.size; ++i) {
+			if (legal(row,col,i,cells)) {
+				sb.setCell(i, row, col);
+				if (solve(row+1,col,cells))
+					return true;
+			}
+		}
+		cells[i][j] = 0; // reset on backtrack
+		return false;
+	}
+
+	static boolean legal(int i, int j, int val, String[][] cells) {
+		for (int k = 0; k < 9; ++k)  // row
+			if (val.equals(cells[k][j]))
+				return false;
+
+		for (int k = 0; k < 9; ++k) // col
+			if (val == cells[i][k])
+				return false;
+
+		int boxRowOffset = (i / 3)*3;
+		int boxColOffset = (j / 3)*3;
+		for (int k = 0; k < 3; ++k)
+			for (int m = 0; m < 3; ++m)
+				if (val == cells[boxRowOffset+k][boxColOffset+m])
+					return false;
+
+		return true;
+	}
+
+	static int[][] parseProblem(String[] args) {
+		int[][] problem = new int[9][9]; // default 0 vals
+		for (int n = 0; n < args.length; ++n) {
+			int i = Integer.parseInt(args[n].substring(0,1));
+			int j = Integer.parseInt(args[n].substring(1,2));
+			int val = Integer.parseInt(args[n].substring(2,3));
+			problem[i][j] = val;
+		}
+		return problem;
+	}
+
+	static void writeMatrix(int[][] solution) {
+		for (int i = 0; i < 9; ++i) {
+			if (i % 3 == 0)
+				System.out.println(" -----------------------");
+			for (int j = 0; j < 9; ++j) {
+				if (j % 3 == 0) System.out.print("| ");
+				System.out.print(solution[i][j] == 0 ? " " : Integer.toString(solution[i][j]));
+				System.out.print(' ');
+			}
+			System.out.println("|");
+		}
+		System.out.println(" -----------------------");
+	}
+}

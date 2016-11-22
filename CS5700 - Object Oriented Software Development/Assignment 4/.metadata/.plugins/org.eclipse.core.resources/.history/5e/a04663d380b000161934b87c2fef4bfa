@@ -1,0 +1,14 @@
+package com.usu.sudokuSolver.utils.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class UtilitiesTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

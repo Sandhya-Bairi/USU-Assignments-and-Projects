@@ -2,16 +2,8 @@
 <ProjectTreeState projectID="xqrTxhqECewO8gAQ" projectPath="D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 4\Assignment 4\diagrams\Assignment 4 Diagram.vpp">
 	<TreeState name="ModelRepository" viewX="0" viewY="0"/>
 	<TreeState name="DiagramNavigator" viewX="0" viewY="0"/>
-	<TreeState name="ClassBrowser" viewX="47" viewY="0">
+	<TreeState name="ClassBrowser" viewX="0" viewY="0">
 		<ExpandedPath>ClassBrowser</ExpandedPath>
-		<ExpandedPath>ClassBrowser,ClassBrowser</ExpandedPath>
-		<ExpandedPath>ClassBrowser,Java Round-trip</ExpandedPath>
-		<ExpandedPath>ClassBrowser,Java Round-trip,D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 4\Assignment 4\src</ExpandedPath>
-		<ExpandedPath>ClassBrowser,Java Round-trip,D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 4\Assignment 4\src,com</ExpandedPath>
-		<ExpandedPath>ClassBrowser,Java Round-trip,D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 4\Assignment 4\src,com,usu</ExpandedPath>
-		<ExpandedPath>ClassBrowser,Java Round-trip,D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 4\Assignment 4\src,com,usu,sudokuSolver</ExpandedPath>
-		<ExpandedPath>ClassBrowser,Java Round-trip,D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 4\Assignment 4\src,com,usu,sudokuSolver,board</ExpandedPath>
-		<SelectedPath>ClassBrowser,Java Round-trip,D:\workspace\USU Assignment\USU-Assignments\CS5700 - Object Oriented Software Development\Assignment 4\Assignment 4\src,com,usu,sudokuSolver,board,SudokuBoard.java</SelectedPath>
 	</TreeState>
 	<TreeState name="LogicalView" viewX="0" viewY="0"/>
 </ProjectTreeState>

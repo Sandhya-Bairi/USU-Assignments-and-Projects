@@ -1,0 +1,8 @@
+1479684658232	Rename local variable 'column'
+1479755554648	Rename method 'getInputOutputFileName'
+1479772867278	Delete element
+1479777745319	Rename type 'TestBoard'
+1479780427683	Rename type 'TestParser'
+1479780446207	Rename type 'SudokuParserTest'
+1479795570665	Rename local variable 'e'
+1479795608257	Rename local variable 'ioe'

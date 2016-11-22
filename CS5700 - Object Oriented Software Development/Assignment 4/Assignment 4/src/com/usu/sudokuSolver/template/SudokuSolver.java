@@ -10,5 +10,5 @@ public abstract class SudokuSolver {
 	
 	public static String[] symbols = null;
 
-    public abstract boolean solve(int row, int column);
+    protected abstract boolean solve(int row, int column);
 }

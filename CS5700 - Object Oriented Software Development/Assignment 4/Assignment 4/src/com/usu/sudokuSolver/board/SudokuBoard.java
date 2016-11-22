@@ -80,4 +80,8 @@ public class SudokuBoard {
 		Utilities.exportSolution(outputFileName, board);
 		JOptionPane.showMessageDialog(new JFrame(), "Solution saved at: "+outputFileName);
 	}
+	
+	public void export(String outputFileName, String Message) {
+		Utilities.exportSolution(outputFileName, board);
+	}
 }
