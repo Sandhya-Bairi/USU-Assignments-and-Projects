@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun com.usu.sudokuSolver.utils.test.UtilitiesTest" project="Assignment 4" tests="5" started="5" failures="0" errors="0" ignored="0">
-  <testsuite name="com.usu.sudokuSolver.utils.test.UtilitiesTest" time="2.548">
-    <testcase name="testExportSolution_NullBoard" classname="com.usu.sudokuSolver.utils.test.UtilitiesTest" time="0.0"/>
-    <testcase name="testExportSolution_AllCorrect" classname="com.usu.sudokuSolver.utils.test.UtilitiesTest" time="0.0"/>
-    <testcase name="testExportSolution_EmptyBoard" classname="com.usu.sudokuSolver.utils.test.UtilitiesTest" time="0.0"/>
-    <testcase name="testExportSolution_EmptyFileName" classname="com.usu.sudokuSolver.utils.test.UtilitiesTest" time="2.546"/>
-    <testcase name="testExportSolution_NullFileName" classname="com.usu.sudokuSolver.utils.test.UtilitiesTest" time="0.002"/>
-  </testsuite>
-</testrun>
