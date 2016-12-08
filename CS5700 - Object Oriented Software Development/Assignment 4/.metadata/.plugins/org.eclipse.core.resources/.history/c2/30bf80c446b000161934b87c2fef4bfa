@@ -1,8 +1,0 @@
-package com.usu.sudokuSolver.board.test;
-
-public class Snippet {
-	public static void main(String[] args) {
-		com.usu.sudokuSolver.board.test
-	}
-}
-

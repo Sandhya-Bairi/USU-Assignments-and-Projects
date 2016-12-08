@@ -1,0 +1,75 @@
+package com.usu.sudokuSolver.template;
+
+/**
+ * @author Anuj Khasgiwala
+ *
+ */
+public abstract class SudokuSolver {
+
+	public static String outputFileName = null;
+
+	public static String[] symbols = null;
+
+	protected abstract boolean solve(int row, int column);
+
+	protected boolean isSudokuBoardValid(String board[][]) {
+		// use checkRow to check each row
+		for(int i = 0; i < 9;i++) {
+			if(!checkRow(board, i)) {
+				return false;
+			}
+		}
+
+		// use checkColumn to check each column
+		for(int i = 0; i < 9;i++) {
+			if(!checkColumn(i)) {
+				return false;
+			}
+		}
+
+		// use checkSquare to check each of the 9 blocks
+		for(int i = 0; i < 9;i += 3) {
+			for(int j = 0; j < 9;j += 3) {
+				if(!checkSquare(i, j)) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
+	public boolean checkRow(String board[][], int row) {
+	   resetCheck();
+	   for(int col = 0; col < 9; col++) {
+	    	if( !digitCheck(board[row][col])) {
+	    		return false;
+	   	}
+	   }
+		return true;
+	}
+	
+	public boolean checkColumn(String board[][], int col) {
+		resetCheck();
+		for(int row = 0; row < 9; row++) {
+			if( !digitCheck(board[row][col])) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public boolean checkSquare(String board[][], int row, int col) {
+		resetCheck();
+		for(int r = 0; r < 3; r++) {
+			for(int c = 0; c < 3; c++) {
+				if( !digitCheck(board[r + row][c + col] ) )
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public void resetCheck() {
+		digits = new boolean[10];
+	}
+}
