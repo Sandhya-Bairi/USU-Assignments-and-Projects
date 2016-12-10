@@ -96,7 +96,7 @@ public abstract class SudokuSolver {
 	}
 	
 	private static boolean validBoardSize(String board[][]) {
-		if(!boardSizes.contains((int)Math.sqrt(board.length))) {
+		if(!boardSizes.contains(Math.sqrt(board.length))) {
 			return false;
 		}
 		

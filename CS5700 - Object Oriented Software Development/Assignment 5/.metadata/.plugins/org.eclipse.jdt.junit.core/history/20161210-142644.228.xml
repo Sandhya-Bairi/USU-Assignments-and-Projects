@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SudokuSolver25x25Test" project="Assignment 5" tests="10" started="10" failures="1" errors="1" ignored="0">
+  <testsuite name="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="1.897">
+    <testcase name="testSizeColumn_CorrectValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="0.0">
+      <failure>java.lang.AssertionError&#13;
+	at org.junit.Assert.fail(Assert.java:86)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at org.junit.Assert.assertFalse(Assert.java:64)&#13;
+	at org.junit.Assert.assertFalse(Assert.java:74)&#13;
+	at com.usu.sudokuSolver.board.test.SudokuSolver25x25Test.testSizeColumn_CorrectValue(SudokuSolver25x25Test.java:133)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testIsSolved_NullValues" classname="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="0.185"/>
+    <testcase name="testContainDuplicateColumn_CorrectValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="0.368"/>
+    <testcase name="testSizeRow_CorrectValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="0.0">
+      <error>java.lang.NullPointerException&#13;
+	at com.usu.sudokuSolver.template.SudokuSolver.containsDuplicate(SudokuSolver.java:53)&#13;
+	at com.usu.sudokuSolver.template.SudokuSolver.isSudokuBoardValid(SudokuSolver.java:37)&#13;
+	at com.usu.sudokuSolver.board.test.SudokuSolver25x25Test.testSizeRow_CorrectValue(SudokuSolver25x25Test.java:98)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testContainDuplicateColumn_NullValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="0.238"/>
+    <testcase name="testIsSolved_NullValues_WrongValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="0.164"/>
+    <testcase name="testContainOutlier_CorrectValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="0.164"/>
+    <testcase name="testContainOutlier_NullValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="0.136"/>
+    <testcase name="testContainDuplicateRow_CorrectValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="0.128"/>
+    <testcase name="testContainDuplicateRow_NullValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver25x25Test" time="0.001"/>
+  </testsuite>
+</testrun>

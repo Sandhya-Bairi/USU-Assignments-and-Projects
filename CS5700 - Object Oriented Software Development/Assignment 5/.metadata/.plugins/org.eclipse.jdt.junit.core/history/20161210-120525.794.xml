@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SudokuSolver16x16Test" project="Assignment 5" tests="11" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" incomplete="true">
+    <testcase name="testSizeColumn_CorrectValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" time="0.034"/>
+    <testcase name="testIsSolved_NullValues" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" time="0.019"/>
+    <testcase name="testContainDuplicateColumn_CorrectValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" time="0.019"/>
+    <testcase name="testSizeRow_CorrectValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" time="0.231"/>
+    <testcase name="testContainDuplicateColumn_NullValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" time="0.014"/>
+    <testcase name="testIsSolved_NullValues_WrongValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" time="0.013"/>
+    <testcase name="testContainOutlier_CorrectValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" time="0.006"/>
+    <testcase name="testContainOutlier_NullValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" time="0.01"/>
+    <testcase name="testIsSolved_Correct_WrongValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" incomplete="true"/>
+    <testcase name="testContainDuplicateRow_CorrectValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" incomplete="true"/>
+    <testcase name="testContainDuplicateRow_NullValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver16x16Test" incomplete="true"/>
+  </testsuite>
+</testrun>
