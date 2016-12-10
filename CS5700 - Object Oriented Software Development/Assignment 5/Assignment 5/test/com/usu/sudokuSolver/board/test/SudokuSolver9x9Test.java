@@ -13,6 +13,7 @@ import static org.junit.Assert.assertTrue;
 
 public class SudokuSolver9x9Test {
 
+    //Test cases for correct array
     String[][] sudoku = {
     		{"8","6","-","-","2","-","-","-","-"},
     		{"-","-","-","7","-","-","-","5","9"},
@@ -52,7 +53,8 @@ public class SudokuSolver9x9Test {
         Arrays.sort(copy);
         return Arrays.equals(sortedLine, copy);
     }
-    
+
+    //Test cases for invalid symbol
     String[][] sudoku1 = {
     		{"8","A","-","-","2","-","-","-","-"},
     		{"-","-","-","7","-","-","-","5","9"},
@@ -76,7 +78,8 @@ public class SudokuSolver9x9Test {
     	SudokuSolver.symbols = sortedLine;
     	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku1));
     }
-    
+
+    //Test cases for duplicate value in row
     String[][] sudoku2 = {
     		{"8","6","-","6","2","-","-","-","-"},
     		{"-","-","-","7","-","-","-","5","9"},
@@ -100,7 +103,8 @@ public class SudokuSolver9x9Test {
     	SudokuSolver.symbols = sortedLine;
     	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku4));
     }
-    
+
+    //Test cases for duplicate value in column
     String[][] sudoku3 = {
     		{"8","4","-","-","2","-","-","-","-"},
     		{"-","-","-","7","-","-","-","5","9"},
@@ -124,7 +128,8 @@ public class SudokuSolver9x9Test {
     	SudokuSolver.symbols = sortedLine;
     	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku4));
     }
-    
+
+    //Test cases for extra row or invalid row size
     String[][] sudoku4 = {
     		{"8","6","-","-","2","-","-","-","-"},
     		{"-","-","-","7","-","-","-","5","9"},
@@ -143,7 +148,8 @@ public class SudokuSolver9x9Test {
     	SudokuSolver.symbols = sortedLine;
     	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku4));
     }
-    
+
+    //Test cases for extra column or invalid column size
     String[][] sudoku5 = {
     		{"8","6","-","-","2","-","-","-","-"},
     		{"-","-","-","7","-","-","-","5","9", "1"},
@@ -161,7 +167,8 @@ public class SudokuSolver9x9Test {
     	SudokuSolver.symbols = sortedLine;
     	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku5));
     }
-    
+
+    //Test cases for wrong value
     String[][] sudoku6 = {
     		{"8","6","-","-","2","-","-","-","-"},
     		{"-","-","-","7","-","-","-","5","9"},

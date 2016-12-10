@@ -13,6 +13,7 @@ import static org.junit.Assert.assertFalse;
 
 public class SudokuSolver4x4Test {
 
+    //Test cases for correct array
     String[][] sudoku = {
     		{"2", "-", "-", "1"},
     		{"1", "-", "-", "4"},
@@ -46,7 +47,8 @@ public class SudokuSolver4x4Test {
         Arrays.sort(copy);
         return Arrays.equals(sortedLine, copy);
     }
-    
+
+    //Test cases for invalid symbol
     String[][] sudoku1 = {
     		{"4", "9", "-", "1"},
     		{"-", "-", "-", "2"},
@@ -67,7 +69,8 @@ public class SudokuSolver4x4Test {
     	SudokuSolver.symbols = sortedLine;
     	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku1));
     }
-    
+
+    //Test cases for duplicates in row
     String[][] sudoku2 = {
     		{"4", "1", "-", "1"},
     		{"-", "-", "-", "2"},
@@ -86,7 +89,8 @@ public class SudokuSolver4x4Test {
     	SudokuSolver.symbols = sortedLine;
     	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku2));
     }
-    
+
+    //Test cases for duplicates in column
     String[][] sudoku6 = {
     		{"4", "-", "2", "1"},
     		{"-", "-", "-", "2"},
@@ -105,7 +109,8 @@ public class SudokuSolver4x4Test {
     	SudokuSolver.symbols = sortedLine;
     	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku6));
     }
-    
+
+    //Test cases for extra row or invalid row size
     String[][] sudoku3 = {
     		{"2", "-", "-", "1"},
     		{"1", "-", "-", "4"},
@@ -119,7 +124,8 @@ public class SudokuSolver4x4Test {
     	SudokuSolver.symbols = sortedLine;
     	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku3));
     }
-    
+
+    //Test cases for extra column or invalid column size
     String[][] sudoku4 = {
     		{"2", "-", "-", "1"},
     		{"1", "-", "-", "4", "2"},
@@ -132,7 +138,8 @@ public class SudokuSolver4x4Test {
     	SudokuSolver.symbols = sortedLine;
     	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku4));
     }
-    
+
+    //Test cases for wrong value
     String[][] sudoku5 = {
     		{"4", "-", "-", "1"},
     		{"-", "-", "-", "-"},
