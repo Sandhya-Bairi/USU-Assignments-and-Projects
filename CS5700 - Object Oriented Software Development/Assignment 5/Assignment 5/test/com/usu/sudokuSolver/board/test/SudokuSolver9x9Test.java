@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class SudokuSolver9x9Test {
@@ -50,5 +51,141 @@ public class SudokuSolver9x9Test {
         String[] copy = Arrays.copyOf(toVerify, 9);
         Arrays.sort(copy);
         return Arrays.equals(sortedLine, copy);
+    }
+    
+    String[][] sudoku1 = {
+    		{"8","A","-","-","2","-","-","-","-"},
+    		{"-","-","-","7","-","-","-","5","9"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","-","-","-","6","-","8","-","-"},
+    		{"-","4","-","-","-","-","-","-","-"},
+    		{"-","-","5","3","-","-","-","-","7"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","2","-","-","-","-","6","-","-"},
+    		{"-","-","7","5","-","9","-","-","-"}
+    };
+    
+    @Test
+    public void testContainOutlier_NullValue() {
+    	SudokuSolver.symbols = sortedLine;
+    	assertFalse(SudokuSolver.isSudokuBoardValid(null));
+    }
+    
+    @Test
+    public void testContainOutlier_CorrectValue() {
+    	SudokuSolver.symbols = sortedLine;
+    	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku1));
+    }
+    
+    String[][] sudoku2 = {
+    		{"8","6","-","6","2","-","-","-","-"},
+    		{"-","-","-","7","-","-","-","5","9"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","-","-","-","6","-","8","-","-"},
+    		{"-","4","-","-","-","-","-","-","-"},
+    		{"-","-","5","3","-","-","-","-","7"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","2","-","-","-","-","6","-","-"},
+    		{"-","-","7","5","-","9","-","-","-"}
+    };
+    
+    @Test
+    public void testContainDuplicateRow_NullValue() {
+    	SudokuSolver.symbols = sortedLine;
+    	assertFalse(SudokuSolver.isSudokuBoardValid(null));
+    }
+    
+    @Test
+    public void testContainDuplicateRow_CorrectValue() {
+    	SudokuSolver.symbols = sortedLine;
+    	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku4));
+    }
+    
+    String[][] sudoku3 = {
+    		{"8","4","-","-","2","-","-","-","-"},
+    		{"-","-","-","7","-","-","-","5","9"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","-","-","-","6","-","8","-","-"},
+    		{"-","4","-","-","-","-","-","-","-"},
+    		{"-","-","5","3","-","-","-","-","7"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","2","-","-","-","-","6","-","-"},
+    		{"-","-","7","5","-","9","-","-","-"}
+    };
+    
+    @Test
+    public void testContainDuplicateColumn_NullValue() {
+    	SudokuSolver.symbols = sortedLine;
+    	assertFalse(SudokuSolver.isSudokuBoardValid(null));
+    }
+    
+    @Test
+    public void testContainDuplicateColumn_CorrectValue() {
+    	SudokuSolver.symbols = sortedLine;
+    	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku4));
+    }
+    
+    String[][] sudoku4 = {
+    		{"8","6","-","-","2","-","-","-","-"},
+    		{"-","-","-","7","-","-","-","5","9"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","-","-","-","6","-","8","-","-"},
+    		{"-","4","-","-","-","-","-","-","-"},
+    		{"-","-","5","3","-","-","-","-","7"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","2","-","-","-","-","6","-","-"},
+    		{"-","-","7","5","-","9","-","-","-"},
+    		{"2"}
+    };
+    
+    @Test
+    public void testSizeRow_CorrectValue() {
+    	SudokuSolver.symbols = sortedLine;
+    	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku4));
+    }
+    
+    String[][] sudoku5 = {
+    		{"8","6","-","-","2","-","-","-","-"},
+    		{"-","-","-","7","-","-","-","5","9", "1"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","-","-","-","6","-","8","-","-"},
+    		{"-","4","-","-","-","-","-","-","-"},
+    		{"-","-","5","3","-","-","-","-","7"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","2","-","-","-","-","6","-","-"},
+    		{"-","-","7","5","-","9","-","-","-"}
+    };
+    
+    @Test
+    public void testSizeColumn_CorrectValue() {
+    	SudokuSolver.symbols = sortedLine;
+    	assertFalse(SudokuSolver.isSudokuBoardValid(sudoku5));
+    }
+    
+    String[][] sudoku6 = {
+    		{"8","6","-","-","2","-","-","-","-"},
+    		{"-","-","-","7","-","-","-","5","9"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","-","-","-","6","-","8","-","-"},
+    		{"-","4","-","-","-","-","-","-","-"},
+    		{"-","-","5","3","-","-","-","-","7"},
+    		{"-","-","-","-","-","-","-","-","-"},
+    		{"-","2","-","-","-","-","6","-","-"},
+    		{"-","-","7","5","-","9","-","-","-"}
+    };
+    
+    SudokuBoard sb1 = new SudokuBoard(sudoku6);
+    RecursiveBruteSudokuSolver ss1 = new RecursiveBruteSudokuSolver(sb1);
+    
+    @Test(expected = NullPointerException.class)
+    public void testIsSolved_NullValues_WrongValue() {
+    	Integer row = null, col = null;
+    	ss1.solve(row, col);
+    }
+    
+    @Test
+    public void testIsSolved_Correct_WrongValue() {
+    	SudokuSolver.symbols = sortedLine;
+    	assertTrue(ss1.solve(0, 0));        
     }
 }

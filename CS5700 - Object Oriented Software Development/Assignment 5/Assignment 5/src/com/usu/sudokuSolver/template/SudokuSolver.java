@@ -1,5 +1,9 @@
 package com.usu.sudokuSolver.template;
 
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -17,10 +21,17 @@ public abstract class SudokuSolver {
 	public static String[] symbols = null;
 
 	protected abstract boolean solve(int row, int column);
+	
+	static List<Integer> boardSizes = new ArrayList<Integer>(Arrays.asList(2, 3, 4, 5));
+	
+	protected static void addToSwing(Container container, Component component, int gridx, int gridy, int gridwidth, int gridheight) {
+        Insets insets = new Insets(30, 10, 10, 10);
+        GridBagConstraints gbc = new GridBagConstraints(gridx, gridy, gridwidth, gridheight, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.BOTH, insets, 0, 0);
+        container.add(component, gbc);
+    }
 
 	public static boolean isSudokuBoardValid(String board[][]) {
-		List<Integer> boardSizes = new ArrayList<Integer>(Arrays.asList(2, 3, 4, 5));
-		if (board == null || (boardSizes.contains(Math.sqrt(board.length))))
+		if (board == null || !validBoardSize(board))
 			return false;
 
 		if(containsDuplicate(board)) {
@@ -60,7 +71,7 @@ public abstract class SudokuSolver {
 							if(column.contains(board[k][j]))
 								return true;
 							else
-								column.add(board[i][k]);
+								column.add(board[k][j]);
 						}
 					}
 				}
@@ -82,5 +93,18 @@ public abstract class SudokuSolver {
 			}
 		}
 		return false;
+	}
+	
+	private static boolean validBoardSize(String board[][]) {
+		if(!boardSizes.contains((int)Math.sqrt(board.length))) {
+			return false;
+		}
+		
+		for(int i = 0; i < board.length; i++) {
+			if(board[i].length != board.length) {
+				return false;
+			}
+		}
+		return true;
 	}
 }

@@ -1,0 +1,77 @@
+package com.usu.sudokuSolver.board.test;
+
+import com.usu.sudokuSolver.board.SudokuBoard;
+import com.usu.sudokuSolver.solution.RecursiveBruteSudokuSolver;
+import com.usu.sudokuSolver.template.SudokuSolver;
+
+import org.junit.Test;
+
+import java.util.Arrays;
+
+import static org.junit.Assert.assertTrue;
+
+public class SudokuSolver4x4Test {
+
+    String[][] sudoku = {
+    		{"2", "-", "-", "1"},
+    		{"1", "-", "-", "4"},
+    		{"-", "-", "4", "-"},
+    		{"-", "2", "-", "-"}
+    };
+
+    private String[] sortedLine = {"1","2","3","4"};
+
+    SudokuBoard sb = new SudokuBoard(sudoku);
+    RecursiveBruteSudokuSolver ss = new RecursiveBruteSudokuSolver(sb);
+    
+    @Test(expected = NullPointerException.class)
+    public void testIsSolved_NullValues() {
+    	Integer row = null, col = null;
+    	ss.solve(row, col);
+    }
+    
+    @Test
+    public void testIsSolved_Correct() {
+    	SudokuSolver.symbols = sortedLine;
+    	ss.solve(0, 0);
+        for (int i = 0; i < 9; i++) {
+            assertTrue(arrayPassed(sb.getRow(i)));
+            assertTrue(arrayPassed(sb.getColumn(i)));
+        }
+    }
+    
+    String[][] sudoku1 = {
+    		{"2", "-", "3", "1"},
+    		{"1", "3", "-", "4"},
+    		{"3", "1", "4", "-"},
+    		{"-", "2", "1", "3"}
+    };
+    
+    SudokuBoard sb1 = new SudokuBoard(sudoku1);
+    RecursiveBruteSudokuSolver ss1 = new RecursiveBruteSudokuSolver(sb1);
+    
+    @Test(expected = NullPointerException.class)
+    public void testIsSolved_NullValues_WrongValue() {
+    	Integer row = null, col = null;
+    	ss1.solve(row, col);
+    }
+    
+    @Test
+    public void testIsSolved_Correct_WrongValue() {
+    	SudokuSolver.symbols = sortedLine;
+    	ss1.solve(0, 0);
+        for (int i = 0; i < 9; i++) {
+            assertTrue(arrayPassed(sb1.getRow(i)));
+            assertTrue(arrayPassed(sb1.getColumn(i)));
+        }
+    }
+
+    private boolean arrayPassed(String[] toVerify) {
+        String[] copy = Arrays.copyOf(toVerify, 9);
+        Arrays.sort(copy);
+        return Arrays.equals(sortedLine, copy);
+    }
+    
+    @Test
+    public void test
+}

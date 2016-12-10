@@ -3,10 +3,13 @@ package com.usu.sudokuSolver.solution;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 import java.awt.EventQueue;
+import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 import com.usu.sudokuSolver.board.SudokuBoard;
 import com.usu.sudokuSolver.template.SudokuSolver;
@@ -21,7 +24,7 @@ public class BackTrackingSudokuSolver extends SudokuSolver {
 
 	public BackTrackingSudokuSolver(SudokuBoard sudokuBoard) {
 		this.sb = sudokuBoard;
-//		final JPanel panel = sudokuBoard.getPanel();
+		final JPanel panel = sudokuBoard.getPanel();
 
 		Runnable runner = new Runnable() {
 			public void run() {
@@ -37,6 +40,16 @@ public class BackTrackingSudokuSolver extends SudokuSolver {
 						}
 					}
 				};
+				
+				frame.setLayout(new GridBagLayout());
+                addToSwing(frame, panel, 0, 0, 1, 1);
+                
+                JButton btnSolve = new JButton("Solve!");
+                btnSolve.addActionListener(solveBtnListener);
+                addToSwing(frame, btnSolve, 0, 1, 1, 1);
+
+                frame.setSize(500, 600);
+                frame.setVisible(true);
 			}
 		};
 		EventQueue.invokeLater(runner);

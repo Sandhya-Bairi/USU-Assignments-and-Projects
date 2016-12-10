@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SudokuSolver4x4Test.testIsSolved_Correct_WrongValue" project="Assignment 5" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="testIsSolved_Correct_WrongValue" classname="com.usu.sudokuSolver.board.test.SudokuSolver4x4Test" time="199.885"/>
+</testrun>

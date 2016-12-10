@@ -2,12 +2,8 @@ package com.usu.sudokuSolver.solution;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-import java.awt.Component;
-import java.awt.Container;
 import java.awt.EventQueue;
-import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -67,8 +63,7 @@ public class RecursiveBruteSudokuSolver extends SudokuSolver {
         try {
             if (!sb.getCell(row, col).equals("-"))
                 return solve(nextRow, nextCol);
-        }
-        catch (ArrayIndexOutOfBoundsException e) {
+        } catch (ArrayIndexOutOfBoundsException e) {
             return true;
         }
 
@@ -94,11 +89,5 @@ public class RecursiveBruteSudokuSolver extends SudokuSolver {
             }
         }
         return true;
-    }
-
-    private static void addToSwing(Container container, Component component, int gridx, int gridy, int gridwidth, int gridheight) {
-        Insets insets = new Insets(30, 10, 10, 10);
-        GridBagConstraints gbc = new GridBagConstraints(gridx, gridy, gridwidth, gridheight, 1, 1, GridBagConstraints.CENTER, GridBagConstraints.BOTH, insets, 0, 0);
-        container.add(component, gbc);
     }
 }
