@@ -1,0 +1,53 @@
+package Problem;
+
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.highgui.Highgui;
+import org.opencv.imgproc.Imgproc;
+
+public class EdgeDetection {
+	//File paths
+    static final String IMAGE_SOURCE_DIR = "test_images";
+    
+    //Constants for pixel values
+    public final static double WAVELET_COEFF_THRESH = 20.0;
+    public final static double EDGE_MARK = 255.0;
+    public final static double NO_EDGE_MARK = 0.0;
+    public final static double[] NO_EDGE_PIX = {NO_EDGE_MARK, NO_EDGE_MARK, NO_EDGE_MARK};
+    public final static double[] YES_EDGE_PIX = {EDGE_MARK, EDGE_MARK, EDGE_MARK};
+	
+	public static void applyColumnBasedFHWT(String infile, String outfile) {
+        Mat orig = Highgui.imread(IMAGE_SOURCE_DIR + infile);
+        if (orig.rows() == 0 || orig.cols() == 0) {
+            throw new IllegalArgumentException("Failed to read " + IMAGE_SOURCE_DIR + infile);
+        }
+        final int num_rows = orig.rows();
+        final int num_cols = orig.cols();
+        Mat grayscale = new Mat(num_rows, num_cols, CvType.CV_8UC1);
+        Imgproc.cvtColor(orig, grayscale, Imgproc.COLOR_RGB2GRAY);
+        double[] fhwt_col_pix = new double[num_cols];
+
+        for (int col = 0; col < num_cols; col++) {
+            for (int row = 0; row < num_rows; row++) {
+                fhwt_col_pix[row] = grayscale.get(row, col)[0];
+            }
+            OneDHWT.inPlaceFastHaarWaveletTransformForNumIters(fhwt_col_pix, 1);
+            for (int row = 1; row < num_rows; row += 2) {
+                if (Math.abs(fhwt_col_pix[row]) >= WAVELET_COEFF_THRESH) {
+                    if (fhwt_col_pix[row] < 0) {
+                        orig.put(row, col, YES_EDGE_PIX);
+                        orig.put(row - 1, col, NO_EDGE_PIX);
+                    } else if (fhwt_col_pix[row] > 0) {
+                        orig.put(row, col, NO_EDGE_PIX);
+                        orig.put(row - 1, col, YES_EDGE_PIX);
+                    }
+                } else {
+                    orig.put(row, col, NO_EDGE_PIX);
+                    orig.put(row - 1, col, NO_EDGE_PIX);
+                }
+            }
+        }
+        Highgui.imwrite(IMAGE_SOURCE_DIR + outfile, orig);
+        orig.release();
+    }
+}
