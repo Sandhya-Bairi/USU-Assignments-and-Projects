@@ -14,10 +14,12 @@ auth.secure = True
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 
 api = tweepy.API(auth)
+places = api.geo_search(query="USA", granularity="country")
+place_id = places[0].id
 
 # Search for latest tweets about "donald trump"
 tweets = []
-for tweet in tweepy.Cursor(api.search, q='donald trump', since='2016-11-08', result_type='recent', lang='en', count=3000, geocode='38.47935,-98.525391,2000.37km').items(3000):
+for tweet in tweepy.Cursor(api.search, q='donald trump', since='2016-11-08', result_type='recent', lang='en', count=10000, geo_enabled = True, geo_id='38.00, 97.00, 3000.37km').items(10000):
     tweets.append(tweet)
 
 def toDataFrame(tweets):
