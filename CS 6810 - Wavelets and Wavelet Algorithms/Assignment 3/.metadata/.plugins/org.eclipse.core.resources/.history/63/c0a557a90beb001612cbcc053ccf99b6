@@ -159,7 +159,6 @@ public class Utils {
             }
             nonPrimDoubles.clear();
             nonPrimDoubles = null;
-            bufRdr.close();
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Utils.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
@@ -318,7 +317,7 @@ public class Utils {
             return null;
         }
         
-        //double[][] inv_mat = new double[nrows][ncols];
+        double[][] inv_mat = new double[nrows][ncols];
         
         
         return null;

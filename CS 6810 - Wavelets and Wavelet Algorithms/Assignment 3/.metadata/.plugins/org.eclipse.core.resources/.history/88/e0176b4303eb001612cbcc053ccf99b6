@@ -19,17 +19,14 @@ import Problem.Utils;
  * @author Vladimir Kulyukin
  */
 public class ImageManip {
-	
-	//File paths
-    static final String IMAGE_SOURCE_DIR = "test_images\\";
 
     // Change this variable accordingly
-    static final String OPENCV_DLL_PATH
-            = "D:\\workspace\\USU-Assignments\\CS 6810 - Wavelets and Wavelet Algorithms\\Assignment 3\\Assignment 3\\src\\Problem\\opencv_java2413.dll";
+    static final String OPENCV_SO_PATH
+            = "opencv_java2413.dll";
 
     // Use a static code block to load the dll/so;
     static {
-        System.load(OPENCV_DLL_PATH);
+        System.load(OPENCV_SO_PATH);
     }
     
     // get pix values from the image
@@ -287,6 +284,10 @@ public class ImageManip {
         return colary;
     }
 
+    // change this accordingly
+    static final String IMAGE_SOURCE_DIR
+            = "/home/ubuntu_hamor/RESEARCH/images/";
+
     public static void createBlackMatsWithWhiteHorLines(int img_size) {
         // hor lines: y is a row
         for (int y = 0; y < img_size; y++) {
@@ -402,11 +403,11 @@ public class ImageManip {
     // uncomment these tests to run examples covered in class.
     public static void main(String[] args) {
   
-        /*ImageManip.getPixValues("test_00.jpg");
-        ImageManip.get1CPixVals("test_00.jpg");
-        ImageManip.grayscaleImage("salt_of_the_earth.jpg", "salt_of_the_earth_gsl.jpg");
-        ImageManip.applyRowBasedFHWT("test_00.jpg");*/
-        EdgeDetection.applyColumnBasedFHWT("test_02.jpg", "test_021.jpg");
-        /*ImageManip.markFHWTEdgeHillTopsInRows("rings.jpg", "rings_edges.jpg");*/    
+        //ImageManip.getPixValues("test_00.jpg");
+        //ImageManip.get1CPixVals("test_00.jpg");
+        //ImageManip.grayscaleImage("salt_of_the_earth.jpg", "salt_of_the_earth_gsl.jpg");
+        //ImageManip.applyRowBasedFHWT("test_00.jpg");
+        //ImageManip.markFHWTEdgeHillTopsInRows("rings.jpg", "rings_edges.jpg");
+    
     }
 }

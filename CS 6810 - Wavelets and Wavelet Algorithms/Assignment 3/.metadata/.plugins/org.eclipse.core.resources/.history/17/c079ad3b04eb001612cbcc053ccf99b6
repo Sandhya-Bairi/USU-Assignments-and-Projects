@@ -406,7 +406,7 @@ public class ImageManip {
         ImageManip.get1CPixVals("test_00.jpg");
         ImageManip.grayscaleImage("salt_of_the_earth.jpg", "salt_of_the_earth_gsl.jpg");
         ImageManip.applyRowBasedFHWT("test_00.jpg");*/
-        EdgeDetection.applyColumnBasedFHWT("test_02.jpg", "test_021.jpg");
+        EdgeDetection.applyColumnBasedFHWT("test_00.jpg", "test_00.jpg");
         /*ImageManip.markFHWTEdgeHillTopsInRows("rings.jpg", "rings_edges.jpg");*/    
     }
 }

@@ -318,7 +318,7 @@ public class Utils {
             return null;
         }
         
-        //double[][] inv_mat = new double[nrows][ncols];
+        double[][] inv_mat = new double[nrows][ncols];
         
         
         return null;

@@ -5,7 +5,17 @@ import org.opencv.core.Mat;
 import org.opencv.highgui.Highgui;
 import org.opencv.imgproc.Imgproc;
 
-public class EdgeDetection extends ImageManip{
+public class EdgeDetection {
+	//File paths
+    static final String IMAGE_SOURCE_DIR = "test_images";
+    
+    //Constants for pixel values
+    public final static double WAVELET_COEFF_THRESH = 20.0;
+    public final static double EDGE_MARK = 255.0;
+    public final static double NO_EDGE_MARK = 0.0;
+    public final static double[] NO_EDGE_PIX = {NO_EDGE_MARK, NO_EDGE_MARK, NO_EDGE_MARK};
+    public final static double[] YES_EDGE_PIX = {EDGE_MARK, EDGE_MARK, EDGE_MARK};
+	
 	public static void applyColumnBasedFHWT(String infile, String outfile) {
         Mat orig = Highgui.imread(IMAGE_SOURCE_DIR + infile);
         if (orig.rows() == 0 || orig.cols() == 0) {
