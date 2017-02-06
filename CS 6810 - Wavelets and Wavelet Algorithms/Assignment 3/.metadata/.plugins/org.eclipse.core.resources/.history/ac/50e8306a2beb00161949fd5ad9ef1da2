@@ -406,7 +406,7 @@ public class ImageManip {
         ImageManip.grayscaleImage("salt_of_the_earth.jpg", "salt_of_the_earth_gsl.jpg");
         ImageManip.applyRowBasedFHWT("test_00.jpg");
         ImageManip.markFHWTEdgeHillTopsInRows("rings.jpg", "rings_edges.jpg");*/
-    	EdgeDetection.applyColumnBasedFHWT("test_02.jpg", "test_021.jpg");
+    	EdgeDetection.applyColumnBasedFHWT("test_03.jpg", "test_031.jpg");
     	//EdgeDetection.markFHWTEdgeHillTopsInCols("rings.jpg", "rings_edges.jpg");
     }
 }

@@ -133,15 +133,4 @@ public class EdgeDetection extends ImageManip{
         Highgui.imwrite(IMAGE_SOURCE_DIR + outfile, orig);
         orig.release();
     }
-	
-	public static int nearestPowerOfTwo(int size){
-        //find next highest power of 2
-        int powerOf2 = 1;
-        int power = 1;
-        while(powerOf2 < size){
-        	powerOf2 = (int) Math.pow(2, power);
-            power += 1;
-        }
-        return powerOf2;
-    }
 }

@@ -407,6 +407,6 @@ public class ImageManip {
         ImageManip.applyRowBasedFHWT("test_00.jpg");
         ImageManip.markFHWTEdgeHillTopsInRows("rings.jpg", "rings_edges.jpg");*/
     	EdgeDetection.applyColumnBasedFHWT("test_02.jpg", "test_021.jpg");
-    	//EdgeDetection.markFHWTEdgeHillTopsInCols("rings.jpg", "rings_edges.jpg");
+    	EdgeDetection.markFHWTEdgeHillTopsInCols("rings.jpg", "rings_edges.jpg");
     }
 }

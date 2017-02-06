@@ -4,7 +4,8 @@
 <fullyQualifiedTypeName name="org.opencv.imgproc.Imgproc"/>
 <fullyQualifiedTypeName name="org.opencv.highgui.Highgui"/>
 <fullyQualifiedTypeName name="org.opencv.core.CvType"/>
-<fullyQualifiedTypeName name="Problem.OneDHWT"/>
 <fullyQualifiedTypeName name="Problem.EdgeDetection"/>
 <fullyQualifiedTypeName name="Problem.ImageManip"/>
+<fullyQualifiedTypeName name="org.opencv.core.Size"/>
+<fullyQualifiedTypeName name="Problem.OneDHWT"/>
 </qualifiedTypeNameHistroy>
