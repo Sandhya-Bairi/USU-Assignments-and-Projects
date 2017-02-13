@@ -1,0 +1,24 @@
+package Problem;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class PadLocalizer {
+	
+	public static final String imageFolder="HW4_Images\\";
+	public static void main(String[] args) {
+		if(!new File("out").exists()) {
+			new File("out").mkdir();
+		}
+		Scanner s = new Scanner(System.in);
+		String originalImageName=s.next(), grassImageName=s.next(), outputImage=s.next();
+		localizePad(originalImageName, grassImageName, "out\\"+outputImage);
+	}
+	
+	public static void localizePad(String originalImageFile, String grassImageFile, String outputImageFile) {
+		
+	}
+	public static void localizePadInDir(String originalDir, String grassDir, String outputDir) {
+		
+	}
+}
