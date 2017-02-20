@@ -25,8 +25,8 @@ public class Ripples_F_ex_4_4_p34 extends Function {
 	static final int S6_START_1024 = 0;
 	static final int S6_END_1024 = 31;
 	
-	static double[] sDomain = partition(0, 511, 1);
 	static double[] sRangeFig_4_12_p33 = new double[1024];
+	static double[] sDomainFig_4_12_p33 = partition(0.0, 1.0, 1.0/1024.0);
 	static Ripples_F_p33 sRipples_F_p33 = new Ripples_F_p33();
 	
 	public final static double FSNORM = Math.sqrt(2);

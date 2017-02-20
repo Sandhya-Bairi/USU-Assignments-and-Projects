@@ -1,7 +1,6 @@
 package Problem2;
 
 import Problem1.CDF24;
-import Problem1.Utils;
 
 public class Ripples_F_ex_4_4_p34 extends Function {
 	public static enum DWT {CDF44, HWT};
@@ -25,12 +24,11 @@ public class Ripples_F_ex_4_4_p34 extends Function {
 	static final int S6_START_1024 = 0;
 	static final int S6_END_1024 = 31;
 	
-	static double[] sDomain = partition(0, 511, 1);
 	static double[] sRangeFig_4_12_p33 = new double[1024];
+	static double[] sDomainFig_4_12_p33 = partition(0.0, 1.0, 1.0/1024.0);
 	static Ripples_F_p33 sRipples_F_p33 = new Ripples_F_p33();
-	
-	public final static double FSNORM = Math.sqrt(2);
-    public final static double FDNORM = 1/FSNORM;
+
+	public Ripples_F_ex_4_4_p34() {}
 
 	@Override
 	public double v(double t) {
@@ -52,6 +50,19 @@ public class Ripples_F_ex_4_4_p34 extends Function {
 	static void multires_fig_4_13_hwt_p34(String message, int range_start, int range_end) {
 		multires_fig_4_13_p34_aux(message, DWT.HWT, 6, range_start, range_end);
 	}
+
+	/*static void fig_4_12_p33() {
+
+		for(int i = 0; i < 1024; i++)  {
+			sRangeFig_4_12_p33[i] = sRipples_F_p33.v(sDomainFig_4_12_p33[i]);
+		}
+
+		for(int i = 1; i < 1024; i += 32) {
+			sRangeFig_4_12_p33[i] += 2;
+		}
+
+		//display_signal(sRangeFig_4_12_p33);
+	}*/
 
 	static void multires_fig_4_13_p34_aux(String message, DWT dwt, int num_iters, int range_start, int range_end) {
 		for(int i = 0; i < 1024; i++)  {
@@ -151,90 +162,76 @@ public class Ripples_F_ex_4_4_p34 extends Function {
         return interval;
     }
 	
-	public static void forwardDWTForNumIters(double[] signal, DWT dwt, int num_iters, int range_start, int range_end) {
+	public static void forwardDWTForNumIters(double[] signal, ApplyDWT.DWT dwt, int num_iters, int range_start, int range_end) {
         if ( dwt == DWT.CDF44 ) {
-            CDF24.ordDWTForNumIters(signal, num_iters);
+            CDF24.ordDWTForNumIters(signal, num_iters, false);
         }
         else if ( dwt == DWT.HWT ) {
-            orderedNormalizedFastHaarWaveletTransformForNumIters(signal, num_iters);
+            OneDHaar.orderedNormalizedFastHaarWaveletTransformForNumIters(signal, num_iters);
         }
         else {
             throw new IllegalArgumentException("Illegal dwt value: " + dwt);
         }
     }
 	
-	public static void inverseDWTForNumIters(double[] signal, DWT dwt, int num_iters) {
-        if ( dwt == DWT.CDF44 ) {
-            CDF24.ordInvDWTForNumIters(signal, num_iters);
-        }
-        else if ( dwt == DWT.HWT ) {
-            orderedNormalizedFastInverseHaarWaveletTransformForNumIters(signal, num_iters);
-        }
-        else {
-            throw new IllegalArgumentException("Illegal dwt value: " + dwt);
-        }
-    }
-	
-	public static void orderedNormalizedFastHaarWaveletTransformForNumIters(double[] sample, int num_iters) {
-        final int n = sample.length;
-        if ( !Utils.isPowerOf2(n) ) return;
-        final int NUM_SWEEPS = (int) (Math.log(n) / Math.log(2.0));
-        if ( num_iters > NUM_SWEEPS ) return;
-        double acoeff, ccoeff;
-        if ( NUM_SWEEPS == 1 ) {
-            acoeff = FSNORM * (sample[0] + sample[1])/2.0;
-            ccoeff = FDNORM * (sample[0] - sample[1]);
-            sample[0] = acoeff;
-            sample[1] = ccoeff;
+	public static void orderedDWTForNumIters(double[] signal, int num_iters, boolean dbg_flag) {
+        final int N = signal.length;
+        if ( N < 4 || !Utils.isPowerOf2(N) ) {
+            System.out.println("No DWT will be done: signal's length is < 4 or not a power of 2");
             return;
         }
-        double[] acoeffs;
-        double[] ccoeffs;
-        for (int SWEEP_NUM = 1; SWEEP_NUM <= num_iters; SWEEP_NUM++) {
-            int size = (int) Math.pow(2.0, (double) (NUM_SWEEPS - SWEEP_NUM)); 
-            acoeffs = new double[size]; // where we place a-coefficients
-            ccoeffs = new double[size]; // where we place c-coefficients
-            int ai = 0; // index over acoeffs
-            int ci = 0; // index over ccoeffs
-            int end = ((int) Math.pow(2.0, (double) (NUM_SWEEPS - SWEEP_NUM + 1))) - 1;
-            for (int i = 0; i <= end; i += 2) {
-                acoeffs[ai++] = FSNORM * (sample[i] + sample[i + 1])/2.0;
-                ccoeffs[ci++] = FDNORM * (sample[i] - sample[i + 1]);
+        int i, j, mid;
+        double[] D4 = null;
+
+        if ( dbg_flag ) { 
+            System.out.print("=>INPUT: "); Utils.displaySample(signal);
+        }
+        
+        int numScalesToDo = Utils.powVal(N)-1; 
+        int currScale  = 0;
+        int signal_length = N;
+        while ( signal_length >= 4 )  {
+            
+            mid = signal_length >> 1; // n / 2;
+            if ( dbg_flag ) System.out.println("MID           = " + mid);
+            if ( dbg_flag ) System.out.println("signal_length = " + signal_length);
+            D4 = new double[signal_length]; // temporary array that saves the scalers and wavelets
+            for(i = 0, j = 0; j < signal_length-3; i += 1, j += 2) {
+                if ( dbg_flag ) {
+                    final String cursig = "s^{" + (currScale+1) + "}_{" + (numScalesToDo-1) + "}";
+                    final String prvsig = "s^{" + currScale + "}_{" + numScalesToDo + "}";
+                    System.out.println("FWD SCL:  " + cursig + "[" + i + "]=" + "H0*" + prvsig + "[" + j + "]+H1*" + prvsig + "[" + (j+1) + "]+" +
+                        "H2*" + prvsig + "[" + (j+2) + "]+" + "H3*" + prvsig + "[" + (j+3) + "]; " );
+                    System.out.println("FWD WVL:  " + cursig + "[" + (mid+i) + "]=" + "G0*" + prvsig + "[" + j + "]+" + "G1*" + prvsig + "[" + (j+1) + "]+" +
+                        "G2*" + prvsig + "[" + (j+2) + "]+" + "G3*" + prvsig + "[" + (j+3) + "]" );
+                }
+                // cdf44[i] is a scaled sample
+                D4[i]     = H0*signal[j] + H1*signal[j+1] + H2*signal[j+2] + H3*signal[j+3];
+                // cdf44[mid+i] is the corresponding wavelet for d4[i]
+                D4[mid+i] = G0*signal[j] + G1*signal[j+1] + G2*signal[j+2] + G3*signal[j+3];
+            }
+
+            // cdf44[i] is a scaled sample with a mirror wrap-up
+            D4[i]     = H0*signal[signal_length-2] + H1*signal[signal_length-1] + H2*signal[0] + H3*signal[1];
+            // cdf44[mid+i] is the corresponding wavelet for d4[i]
+            D4[mid+i] = G0*signal[signal_length-2] + G1*signal[signal_length-1] + G2*signal[0] + G3*signal[1];
+            
+            if ( dbg_flag ) {
+                final String cursig = "s^{" + currScale + "}_{" + numScalesToDo + "}";
+                final String prvsig = "s^{" + (currScale-1) + "}_{" + (numScalesToDo+1) + "}";
+                System.out.println("FWD SCL:  " + cursig + "[" + i + "]=" + "H0*" + prvsig + "[" + (signal_length-2) + "]+H1*" + prvsig + "[" + (signal_length-1) + "]+" +
+                       "H2*" + prvsig + "[" + 0 + "]+" + "H3*" + prvsig + "[" + 1 + "]; " );
+                System.out.println("FWD WVL:  " + cursig + "[" + (mid+i) + "]=" + "G0*" + prvsig + "[" + (signal_length-2) + "]+" + "G1*" + prvsig + "[" + (signal_length-1) + "]+" +
+                       "G2*" + prvsig + "[" + 0 + "]+" + "G3*" + prvsig + "[" + 1 + "]" );
             }
             
-            for (int i = 0; i < size; i++) {
-                sample[i] = acoeffs[i];
-                sample[i + size] = ccoeffs[i];
-            }
-        }
-    }
-	
-	public static void orderedNormalizedFastInverseHaarWaveletTransformForNumIters(double[] sample, int num_iters) {
-        int n = sample.length;
-        if (n < 2 || !Utils.isPowerOf2(n)) {
-            return;
-        }
-        n = (int) (Math.log(n) / Math.log(2.0));
-        if (num_iters > n) {
-            return;
-        }
-        double a0 = 0;
-        double a1 = 0;
-        double[] restored_vals = null;
-        int GAP = (int)(Math.pow(2.0, n-num_iters));
-        for (int L = 1; L <= num_iters; L++) {
-            restored_vals = null;
-            restored_vals = new double[2 * GAP]; // restored values at level L
-            for (int i = 0; i < GAP; i++) {
-                double d = FSNORM * sample[GAP + i];
-                double s = FDNORM * sample[i];
-                a0 = s + d/2;
-                a1 = s - d/2;
-                restored_vals[2 * i] = a0;
-                restored_vals[2 * i + 1] = a1;
-            }
-            System.arraycopy(restored_vals, 0, sample, 0, 2 * GAP);
-            GAP *= 2;
+            System.arraycopy(D4, 0, signal, 0, D4.length);
+            D4 = null;
+            signal_length >>= 1; // signal_length gets halved at each iteration/scale
+            
+            currScale     += 1;
+            numScalesToDo -= 1;
+            if ( currScale >= num_iters ) return;
         }
     }
 	

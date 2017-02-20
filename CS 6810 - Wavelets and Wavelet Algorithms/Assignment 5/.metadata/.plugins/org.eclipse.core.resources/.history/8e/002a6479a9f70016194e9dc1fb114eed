@@ -25,12 +25,11 @@ public class Ripples_F_ex_4_4_p34 extends Function {
 	static final int S6_START_1024 = 0;
 	static final int S6_END_1024 = 31;
 	
-	static double[] sDomain = partition(0, 511, 1);
 	static double[] sRangeFig_4_12_p33 = new double[1024];
+	static double[] sDomainFig_4_12_p33 = partition(0.0, 1.0, 1.0/1024.0);
 	static Ripples_F_p33 sRipples_F_p33 = new Ripples_F_p33();
-	
-	public final static double FSNORM = Math.sqrt(2);
-    public final static double FDNORM = 1/FSNORM;
+
+	public Ripples_F_ex_4_4_p34() {}
 
 	@Override
 	public double v(double t) {
@@ -52,6 +51,19 @@ public class Ripples_F_ex_4_4_p34 extends Function {
 	static void multires_fig_4_13_hwt_p34(String message, int range_start, int range_end) {
 		multires_fig_4_13_p34_aux(message, DWT.HWT, 6, range_start, range_end);
 	}
+
+	/*static void fig_4_12_p33() {
+
+		for(int i = 0; i < 1024; i++)  {
+			sRangeFig_4_12_p33[i] = sRipples_F_p33.v(sDomainFig_4_12_p33[i]);
+		}
+
+		for(int i = 1; i < 1024; i += 32) {
+			sRangeFig_4_12_p33[i] += 2;
+		}
+
+		//display_signal(sRangeFig_4_12_p33);
+	}*/
 
 	static void multires_fig_4_13_p34_aux(String message, DWT dwt, int num_iters, int range_start, int range_end) {
 		for(int i = 0; i < 1024; i++)  {
@@ -156,19 +168,7 @@ public class Ripples_F_ex_4_4_p34 extends Function {
             CDF24.ordDWTForNumIters(signal, num_iters);
         }
         else if ( dwt == DWT.HWT ) {
-            orderedNormalizedFastHaarWaveletTransformForNumIters(signal, num_iters);
-        }
-        else {
-            throw new IllegalArgumentException("Illegal dwt value: " + dwt);
-        }
-    }
-	
-	public static void inverseDWTForNumIters(double[] signal, DWT dwt, int num_iters) {
-        if ( dwt == DWT.CDF44 ) {
-            CDF24.ordInvDWTForNumIters(signal, num_iters);
-        }
-        else if ( dwt == DWT.HWT ) {
-            orderedNormalizedFastInverseHaarWaveletTransformForNumIters(signal, num_iters);
+            OneDHaar.orderedNormalizedFastHaarWaveletTransformForNumIters(signal, num_iters);
         }
         else {
             throw new IllegalArgumentException("Illegal dwt value: " + dwt);
@@ -206,35 +206,6 @@ public class Ripples_F_ex_4_4_p34 extends Function {
                 sample[i] = acoeffs[i];
                 sample[i + size] = ccoeffs[i];
             }
-        }
-    }
-	
-	public static void orderedNormalizedFastInverseHaarWaveletTransformForNumIters(double[] sample, int num_iters) {
-        int n = sample.length;
-        if (n < 2 || !Utils.isPowerOf2(n)) {
-            return;
-        }
-        n = (int) (Math.log(n) / Math.log(2.0));
-        if (num_iters > n) {
-            return;
-        }
-        double a0 = 0;
-        double a1 = 0;
-        double[] restored_vals = null;
-        int GAP = (int)(Math.pow(2.0, n-num_iters));
-        for (int L = 1; L <= num_iters; L++) {
-            restored_vals = null;
-            restored_vals = new double[2 * GAP]; // restored values at level L
-            for (int i = 0; i < GAP; i++) {
-                double d = FSNORM * sample[GAP + i];
-                double s = FDNORM * sample[i];
-                a0 = s + d/2;
-                a1 = s - d/2;
-                restored_vals[2 * i] = a0;
-                restored_vals[2 * i + 1] = a1;
-            }
-            System.arraycopy(restored_vals, 0, sample, 0, 2 * GAP);
-            GAP *= 2;
         }
     }
 	
