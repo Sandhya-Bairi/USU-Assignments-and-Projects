@@ -1,0 +1,67 @@
+package Problem1;
+
+public class CDF24 {
+	static final double SQRT_OF_3 = Math.sqrt(3);
+	protected final static double denom = 4 * Math.sqrt(2);
+
+	// forward transform smoothing coefficients
+	protected final static double h0 = (1 + SQRT_OF_3)/denom;
+	protected final static double h1 = (3 + SQRT_OF_3)/denom; 
+	protected final static double h2 = (3 - SQRT_OF_3)/denom; 
+	protected final static double h3 = (1 - SQRT_OF_3)/denom;
+
+	// forward transform wavelet coefficients
+	protected final static double g0 =  h3;
+	protected final static double g1 = -h2;
+	protected final static double g2 =  h1;
+	protected final static double g3 = -h0;
+
+	// Inverse transform coefficients for smoothed values
+	protected final static double Ih0 = h2;
+	protected final static double Ih1 = g2;
+	protected final static double Ih2 = h0;
+	protected final static double Ih3 = g0;
+
+	// Inverse transform for wavelet values
+	protected final static double Ig0 = h3;
+	protected final static double Ig1 = g3;
+	protected final static double Ig2 = h1;
+	protected final static double Ig3 = g1;
+
+
+	public static void ordDWTForNumIters(double[] signal, int num_iters) {
+		final int N = signal.length;
+		if (N < 4 || !Utils.isPowerOf2(N)) {
+			System.out.println("CDF can't be done: Signal length is either less than 4 or not power of 2");
+			return;
+		}
+
+		int currScale = 0;
+		int signal_length = N;
+		while (signal_length >= 4)  {
+
+			int i, j;
+			int half = currScale >> 1;
+
+			double tmp[] = new double[currScale];
+
+			i = 0;
+			for (j=0; j < currScale-3; j=j+2) {
+				tmp[i] = signal[j]*h0 + signal[j+1]*h1 + signal[j+2]*h2 + signal[j+3]*h3;
+				tmp[i+half] = signal[j]*g0 + signal[j+1]*g1 + signal[j+2]*g2 + signal[j+3]*g3;
+				i++;
+			}
+
+			tmp[i] = signal[currScale-2]*h0 + signal[currScale-1]*h1 + signal[0]*h2 + signal[1]*h3;
+			tmp[i+half] = signal[currScale-2]*g0 + signal[currScale-1]*g1 + signal[0]*g2 + signal[1]*g3;
+
+			for (i = 0; i < currScale; i++) {
+				signal[i] = tmp[i];
+			}
+		}
+	}
+
+	public static void ordInvDWTForNumIters(double[] signal, int num_iters) {
+
+	}
+}

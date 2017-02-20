@@ -1,0 +1,292 @@
+// javac -cp "./opencv-244.jar"  *.java
+// java -cp ./opencv-244.jar:. ImageManip 
+
+import java.util.Arrays;
+import java.io.*;
+
+import org.opencv.core.Core;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.core.Point;
+import org.opencv.core.Scalar;
+import org.opencv.highgui.Highgui;
+import org.opencv.imgproc.Imgproc;
+
+public class PadLocalizer {
+
+    // Change this variable accordingly
+    static final String OPENCV_SO_PATH
+            = "/home/cheaps/Wavelets/hw04/libopencv_java244.so";
+            //"/home/ubuntu_hamor/programming/opencv_2.4.4/bin/libopencv_java244.so";
+
+    // Use a static code block to load the dll/so;
+    static {
+        System.load(OPENCV_SO_PATH);
+    }
+    
+    public final static double WAVELET_COEFF_THRESH = 20.0;
+    public final static double EDGE_MARK = 255.0;
+    public final static double NO_EDGE_MARK = 0.0;
+    public final static double[] NO_EDGE_PIX = {NO_EDGE_MARK, NO_EDGE_MARK, NO_EDGE_MARK};
+    public final static double[] YES_EDGE_PIX = {EDGE_MARK, EDGE_MARK, EDGE_MARK};
+
+    public static void drawLineInMat(Mat mat, Point start_point, Point end_point,
+            Scalar color, int line_width) 
+    {
+        Core.line(mat, start_point, end_point, color, line_width);
+    }
+
+	public static double getMode(double[] vals) 
+    {
+    	int idx = 0;
+    	int pop = 0;
+    	for(int i = 0; i < vals.length; i++)
+    	{
+    		int curPop = 0;
+    		for(int j = 0; j < vals.length; j++)
+    		{
+    			if(i == j) continue;
+    			if(vals[j] == vals[i]) curPop++;
+    		}
+    		if(curPop > pop)
+    		{
+    			pop = curPop;
+    			idx = i;
+    		}
+    	}
+    	return vals[idx];
+    }
+
+    public static double findStripJump(double[] strip, int iters) 
+    {
+        int beginI = strip.length;
+        for(int i = 0; i < iters; i++)
+        	beginI /= 2;
+        int endI = beginI*2;
+        //beginI = 0;
+        int resI = 0;
+        int thresh = 10;
+        for(int i = beginI+6; i < endI; i++)
+        {
+        	if(Math.abs(strip[i]) <= thresh && 
+        		Math.abs(strip[i-1]) <= thresh && 
+        		Math.abs(strip[i-2]) <= thresh && 
+        		Math.abs(strip[i-3]) <= thresh &&
+        		Math.abs(strip[i-3]) <= thresh && 
+        		Math.abs(strip[i-4]) <= thresh && 
+        		Math.abs(strip[i-5]) <= thresh &&  
+        		Math.abs(strip[i-6]) <= thresh)
+    		{
+    			resI = (i-6)-beginI;
+    			break;
+    		}
+        }
+        for(int i = 0; i < iters; i++)
+        	resI *= 2;
+        return resI;
+    }
+
+    public final static double[] EDGE_PIX_2 = {0, 0, 255};
+    public final static double[] EDGE_PIX = {0, 255, 255};
+
+    public static void localizePad(String originalImageFile, String grassImageFile, String outputImageFile) 
+	{
+		File of = new File(originalImageFile);
+		File bwf = new File(grassImageFile);
+		System.out.println("\nOriginal: " + originalImageFile);
+		System.out.println("BW: " + grassImageFile);
+		System.out.println("New: " + outputImageFile);
+		System.out.println("");
+		if(of.exists() && bwf.exists())
+		{
+			Mat bw = Highgui.imread(grassImageFile);
+			Mat orig = Highgui.imread(originalImageFile);
+	        if (bw.rows() == 0 || bw.cols() == 0) {
+	            throw new IllegalArgumentException("Failed to read " + grassImageFile);
+	        }
+
+	        int num_rows = (int)Math.pow((int)2, (int)(Math.log(bw.rows())/Math.log(2)));
+	        int num_cols = (int)Math.pow((int)2, (int)(Math.log(bw.cols())/Math.log(2)));
+	        int col_offset = num_cols/5;
+	        double[] horizon = new double[num_cols];
+
+	        for(int i = 0; i < num_cols; i++)
+	        {
+	        	double[] strip = new double[num_rows];
+	        	for(int j = 0; j < num_rows; j++)
+	        	{
+	        		strip[j] = bw.get(j, col_offset+i)[0];
+	        	}
+	        	//Do haar on strip
+	        	int pIterCount = 3;
+	        	OneDHWT.ordFHWTForNumIters(strip, pIterCount);
+	        	horizon[i] = PadLocalizer.findStripJump(strip, pIterCount);
+	        }
+	        double[] newHorizon = horizon;
+
+	        int iters = 5;
+	        OneDHWT.ordFHWTForNumIters(newHorizon, iters);
+	        int num_wavelets = 0;
+	        int active = newHorizon.length;
+	        for(int i = 0; i < iters; i++)
+	        {
+	        	num_wavelets += (active/2);
+	        	active /= 2;
+	        }
+	        for(int i = (newHorizon.length-num_wavelets)-1; i < newHorizon.length; i++)
+	        {
+	        	newHorizon[i] = 0;
+	        }
+	        OneDHWT.ordInvFHWTForNumItersFromOrig(newHorizon, iters);
+
+	        /*
+	        boolean hasLast = false;
+	        int lastI = 0;
+	        for(int i = 0; i < newHorizon.length; i++)
+	        {
+        		if(hasLast)
+        		{
+        			int li = lastI;
+        			int si = i;
+	        		Point sp = new Point(col_offset+li, (int)newHorizon[lastI]);
+	        		Point ep = new Point(col_offset+si, (int)newHorizon[i]);
+	        		Scalar cl = new Scalar(EDGE_PIX);
+	        		drawLineInMat(orig, sp, ep, cl, 2);
+	        		//bw.put(si, (int)horizon[i-beginI], EDGE_PIX);
+	        		lastI = i;
+        		}
+        		else
+        		{
+        			lastI = i;
+        			hasLast = true;
+        		}
+	        
+	        }*/
+        
+        	
+        	double mean = newHorizon[newHorizon.length/3];
+	        Point lt = new Point(0, newHorizon[0]);
+	        Point lb = new Point(0, newHorizon[0]);
+	        Point rt = new Point(0, mean);
+	        Point rb = new Point(0, mean);
+	        boolean done = false;
+	        boolean tdone = false;
+	        for(int i = 0; i < newHorizon.length; i++)
+	        {
+	        	if(i < newHorizon.length/2)
+	        	{
+	        		if(newHorizon[i] >= lt.y && !tdone)
+	        		{
+	        			lt.x = col_offset + i;
+	        			lt.y = newHorizon[i];
+	        		
+	        		}
+	        		if(newHorizon[i] < lb.y && !tdone)
+	        		{
+	        			if(Math.abs(newHorizon[i]-lb.y) > 2*Math.abs(newHorizon[i-1]-lb.y) && Math.abs(newHorizon[i]-lb.y) > 15)
+	        			{
+	        				rt.x = col_offset + i+2;
+	        				rt.y = newHorizon[i+2];
+	        				tdone = true;
+	        			}
+	        			else
+	        			{
+		        			lb.x = col_offset + i;
+		        			lb.y = newHorizon[i];
+		        		}
+	        		}
+	        	}
+	        	else
+	        	{
+	        		if(newHorizon[i] >= rt.y && !done)
+	        		{
+	        			if(Math.abs(newHorizon[i]-rt.y) > 2*Math.abs(newHorizon[i-1]-rt.y) && Math.abs(newHorizon[i]-rt.y) > 25)
+	        			{
+	        				rt.x = col_offset + i+2;
+	        				rt.y = newHorizon[i+2];
+	        				done = true;
+	        			}
+	        			else
+	        			{
+		        			rt.x = col_offset + i;
+		        			rt.y = newHorizon[i];
+		        		}
+	        		}
+	        		if(newHorizon[i] <= rb.y && !done)
+	        		{
+	        			rb.x = col_offset + i;
+	        			rb.y = newHorizon[i];
+	        		}
+	        	}
+	        }
+	        double mmean1 = 0;
+	        for(int i = (int)(lt.x-col_offset); i < (lt.x-col_offset)+((rt.x-lt.x)/4); i++)
+	        {
+	        	mmean1 += newHorizon[i];
+	        }
+	        mmean1 /= ((rt.x-lt.x)/4);
+
+	        double mmean2 = 0;
+	        for(int i = (int)(((lt.x-col_offset)+((rt.x-lt.x)*3)/4)); i < rt.x-col_offset; i++)
+	        {
+	        	mmean2 += newHorizon[i];
+	        }
+	        mmean2 /= ((rt.x-lt.x)/4);
+	        lb.x = lt.x;
+	        lb.y = mmean1;
+	        rb.x = rt.x;
+	        rb.y = mmean2;
+
+	        if(Math.abs(rt.y-mean) > 2*Math.abs(lt.y-mean))
+	        	rt.y = lt.y+(Math.abs(rt.y-mean)/2);
+	        if(Math.abs(lt.y-mean) > 2*Math.abs(rt.y-mean))
+	        	lt.y = rt.y+(Math.abs(lt.y-mean)/2);
+	        	
+	        Scalar cl = new Scalar(EDGE_PIX_2);
+    		drawLineInMat(orig, lt, rt, cl, 2);
+    		drawLineInMat(orig, rt, rb, cl, 2);
+    		drawLineInMat(orig, rb, lb, cl, 2);
+    		drawLineInMat(orig, lb, lt, cl, 2);
+	        Highgui.imwrite(outputImageFile, orig);
+        	bw.release();
+        	orig.release();
+			// From the top run the haar wavelet transform
+			// Save off the intersection point
+			// Run haar wavelet transform on those saved points
+			// The resulting wavelets should tell us everything we need
+		}
+		else
+		{
+			System.out.println("ERROR. Cannot find the necessary files.");
+		}
+	} 
+
+	public static void localizePadInDir(String originalDir, String grassDir, String outputDir) 
+	{
+		File originalFolder = new File(originalDir);
+		File bwFolder = new File(grassDir);
+
+		File[] originalFiles = originalFolder.listFiles();
+		File[] bwFiles = bwFolder.listFiles();
+
+		if(originalFiles.length != bwFiles.length) return;
+
+		Arrays.sort(originalFiles);
+		Arrays.sort(bwFiles);
+
+		for(int i = 0; i < originalFiles.length; i++)
+		{
+			PadLocalizer.localizePad(originalFiles[i].getAbsolutePath(), bwFiles[i].getAbsolutePath(), outputDir+originalFiles[i].getName());
+		}
+	}
+    // change this accordingly
+    static final String SOURCE_DIR
+            = "/home/cheaps/Wavelets/hw04/";
+            //"/home/ubuntu_hamor/RESEARCH/images/";
+
+    public static void main(String[] args) 
+    {
+    	PadLocalizer.localizePadInDir(SOURCE_DIR+"Originals/", SOURCE_DIR+"BW/", SOURCE_DIR+"Output/");
+    }  
+}
+
