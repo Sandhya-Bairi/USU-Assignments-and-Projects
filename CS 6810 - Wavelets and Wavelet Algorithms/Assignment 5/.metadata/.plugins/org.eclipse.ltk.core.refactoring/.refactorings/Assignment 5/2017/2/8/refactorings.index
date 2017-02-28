@@ -10,3 +10,7 @@
 1487565223515	Rename local variable 'inv_sig'
 1487567124672	Rename local variable 'scopy'
 1487567337052	Delete element
+1487696925732	Rename enum constant 'CDF44'
+1487699154740	Rename field 'sRangeFig_4_12_p33'
+1487699169330	Rename type 'Ripples_F_p33'
+1487699817924	Rename field 'sRipples_F_p33'

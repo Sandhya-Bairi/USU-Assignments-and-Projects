@@ -4,14 +4,8 @@ import Problem1.CDF24;
 import Problem1.Utils;
 
 public class Ripples_F_ex_4_4_p34 extends Function {
-	public static enum DWT {CDF44, HWT};
+	public static enum DWT {CDF24, HWT};
 	public static enum COEFF {S, D};
-
-	static final int D10_START_1024 = 512;
-	static final int D10_END_1024 = 1023;
-
-	static final int D9_START_1024 = 256;
-	static final int D9_END_1024 = 511;
 
 	static final int D8_START_1024 = 128;
 	static final int D8_END_1024 = 255;
@@ -26,27 +20,28 @@ public class Ripples_F_ex_4_4_p34 extends Function {
 	static final int S6_END_1024 = 31;
 	
 	static double[] sDomain = partition(0, 511, 1);
-	static double[] sRangeFig_4_12_p33 = new double[1024];
-	static Ripples_F_p33 sRipples_F_p33 = new Ripples_F_p33();
+	static double[] sRangeFig_4_12_p34 = new double[512];
+	static Ripples_F_ex_4_4_p34 sRipples_F_p34 = new Ripples_F_ex_4_4_p34();
+	static double[] sRange  = new double[512];
 	
 	public final static double FSNORM = Math.sqrt(2);
     public final static double FDNORM = 1/FSNORM;
 
 	@Override
 	public double v(double t) {
-		if (0 <= t && t < 0.25) {
+		if (0.0 <= t && t < 0.25) {
 			return Math.sin(4*Math.PI*t);
 		} else if (0.25 <= t && t < 0.75) {
 			return 1 + Math.sin(4*Math.PI*t);
 		} else if (0.75 <= t && t <= 1) {
 			return Math.sin(4*Math.PI*t);
 		} else {
-			throw new IllegalArgumentException("t == " + t);
+			return 0;
 		}
 	}
 
 	static void multires_fig_4_13_cdf_p34(String message, int range_start, int range_end) {
-		multires_fig_4_13_p34_aux(message, DWT.CDF44, 6, range_start, range_end);
+		multires_fig_4_13_p34_aux(message, DWT.CDF24, 6, range_start, range_end);
 	}
 
 	static void multires_fig_4_13_hwt_p34(String message, int range_start, int range_end) {
@@ -55,22 +50,22 @@ public class Ripples_F_ex_4_4_p34 extends Function {
 
 	static void multires_fig_4_13_p34_aux(String message, DWT dwt, int num_iters, int range_start, int range_end) {
 		for(int i = 0; i < 1024; i++)  {
-			sRangeFig_4_12_p33[i] = sRipples_F_p33.v(sDomainFig_4_12_p33[i]);
+			//sRangeFig_4_12_p34[i] = sRipples_F_p34.v(sDomainFig_4_12_p34[i]);
 		}
 
 		for(int i = 1; i < 1024; i += 32) {
-			sRangeFig_4_12_p33[i] += 2;
+			sRangeFig_4_12_p34[i] += 2;
 		}
 
 		//final int NUM_ITERS = 6;
-		forwardDWTForNumIters(sRangeFig_4_12_p33, dwt, num_iters, range_start, range_end);
+		forwardDWTForNumIters(sRangeFig_4_12_p34, dwt, num_iters, range_start, range_end);
 
 		//CDF44.orderedDWTForNumIters(sRangeFig_4_12_p33, 6, false);
 
-		double[] signal = new double[sRangeFig_4_12_p33.length];
+		double[] signal = new double[sRangeFig_4_12_p34.length];
 		for(int i = 0; i < 1024; i++) {
 			if ( i >= range_start && i <= range_end ) {
-				signal[i] = sRangeFig_4_12_p33[i];
+				signal[i] = sRangeFig_4_12_p34[i];
 			}
 			else {
 				signal[i] = 0;
@@ -88,22 +83,6 @@ public class Ripples_F_ex_4_4_p34 extends Function {
 
 		//display_signal(signal);
 		System.out.println("=========================");
-	}
-
-	static void fig_4_13_D10_CDF44_p34() {
-		multires_fig_4_13_cdf_p34("Fig. 4.13, 06-06-07-08-09-D10, CDF(4,4) p. 33", D10_START_1024, D10_END_1024);
-	}
-
-	static void fig_4_13_D10_HWT_p34() {
-		multires_fig_4_13_hwt_p34("Fig. 4.13, 06-06-07-08-09-D10, HWT, p. 33", D10_START_1024, D10_END_1024);
-	}
-
-	static void fig_4_13_D9_CDF44_p34() {
-		multires_fig_4_13_cdf_p34("Fig. 4.13, 06-06-07-08-D9-010, CDF(4,4), p. 33", D9_START_1024, D9_END_1024);
-	}
-
-	static void fig_4_13_D9_HWT_p34() {
-		multires_fig_4_13_hwt_p34("Fig. 4.13, 06-06-07-08-D9-010, HWT, p. 33", D9_START_1024, D9_END_1024);
 	}
 
 	static void fig_4_13_D8_CDF44_p34() {
@@ -139,10 +118,9 @@ public class Ripples_F_ex_4_4_p34 extends Function {
 	}
 	
 	public static double[] partition(double from, double upto, double step) {
-        if ( upto <= from ) return null;
+        if (upto <= from) return null;
         int n = (int)((upto - from)/step) + 1;
         double[] interval = new double[n];
-       
         int i;
         double curr;
         for(i = 0, curr = from; i < n; i++, curr += step) {
@@ -152,7 +130,7 @@ public class Ripples_F_ex_4_4_p34 extends Function {
     }
 	
 	public static void forwardDWTForNumIters(double[] signal, DWT dwt, int num_iters, int range_start, int range_end) {
-        if ( dwt == DWT.CDF44 ) {
+        if ( dwt == DWT.CDF24 ) {
             CDF24.ordDWTForNumIters(signal, num_iters);
         }
         else if ( dwt == DWT.HWT ) {
@@ -164,7 +142,7 @@ public class Ripples_F_ex_4_4_p34 extends Function {
     }
 	
 	public static void inverseDWTForNumIters(double[] signal, DWT dwt, int num_iters) {
-        if ( dwt == DWT.CDF44 ) {
+        if ( dwt == DWT.CDF24 ) {
             CDF24.ordInvDWTForNumIters(signal, num_iters);
         }
         else if ( dwt == DWT.HWT ) {
@@ -238,11 +216,122 @@ public class Ripples_F_ex_4_4_p34 extends Function {
         }
     }
 	
-	static public class Ripples_F_p33 extends Function {
-	    
-	    public Ripples_F_p33() {}
-	    @Override
-	    public double v(double t) { return Math.log(2.0 + Math.sin(3 * Math.PI * Math.sqrt(t))); } 
-	    
+	public static void main(String[] args) {
+		generateRange(512);
+		addRandomNoiseToSignal(sRange);
+        computeSTDsForDWTMultiresCoeffs(sRange, DWT.HWT, 3, true);
 	}
+	
+	public static void generateRange(int size) {
+        Ripples_F_ex_4_4_p34 curve1 = new Ripples_F_ex_4_4_p34();
+        int i = 0;
+        for(double x: sDomain) {
+            sRange[i++] = curve1.v(x);
+        }
+    }
+	
+	public static void computeSTDsForDWTMultiresCoeffs(double[] signal, DWT dwt, int num_iters, boolean display_signal_flag) {
+        forwardDWTForNumIters(signal, dwt, num_iters);
+        double[] reconstructed_signal = null; 
+        final int sig_len = signal.length;
+        int start = 0; int end = 0;
+        
+        for(int scale = 1; scale <= num_iters; scale++) {
+            start = getDCoeffsStart(sig_len, scale);
+            end   = getDCoeffsEnd(sig_len, scale);
+            reconstructed_signal = new double[signal.length];
+            multiresSignalReconstruct(signal, reconstructed_signal, dwt, COEFF.D, num_iters, scale);
+            System.out.println("start = " + start + "; end = " + end);
+            System.out.println("STD of D[" + (num_iters - scale) + "] = " + Utils.computeCorrectedSTDInRange(signal, start, end));
+            if ( display_signal_flag ) Utils.displaySignalRange(signal, start, end);
+            multiresSignalReconstruct(signal, reconstructed_signal, dwt, COEFF.S, num_iters, scale);
+            start = 0;
+            end   = getSCoeffsEnd(sig_len, scale);
+            System.out.println("start = " + 0 + "; end = " + end);
+            System.out.println("STD of S[" + (num_iters - scale) + "] = " + Utils.computeCorrectedSTDInRange(signal, start, end));
+            if ( display_signal_flag) Utils.displaySignalRange(signal, start, end);
+            System.out.println("*********************");
+        }
+        System.out.println();
+    }
+	
+	public static void forwardDWTForNumIters(double[] signal, DWT dwt, int num_iters) {
+        if ( dwt == DWT.CDF24 ) {
+            CDF24.ordDWTForNumIters(signal, num_iters);
+        }
+        else if ( dwt == DWT.HWT ) {
+            orderedNormalizedFastHaarWaveletTransformForNumIters(signal, num_iters);
+        }
+        else {
+            throw new IllegalArgumentException("Illegal dwt value: " + dwt);
+        }
+    }
+	
+	public static void multiresSignalReconstruct(double[] signal_transform, double[] reconstructed_signal, DWT dwt, COEFF coeff, int num_scales, int scale_num) {
+        final int signal_size = signal_transform.length;
+        int range_start = 0;
+        int range_end = 0;
+        
+        switch ( coeff ) {
+            case S: 
+                range_end = getSCoeffsEnd(signal_size, scale_num);
+                break;
+            case D:
+                range_start = getDCoeffsStart(signal_size, scale_num);
+                range_end = getDCoeffsEnd(signal_size, scale_num);
+                break;
+            default:
+                throw new IllegalArgumentException("multiresSignalReconstruct: unknown coeff type");
+        }
+       
+        System.arraycopy(signal_transform, 0, reconstructed_signal, 0, signal_size);
+        for(int i = 0; i < signal_size; i++) {
+            if ( i < range_start || i > range_end ) {
+                reconstructed_signal[i] = 0;
+            }
+        }
+        
+        inverseDWTForNumIters(reconstructed_signal, dwt, num_scales);
+    }
+	
+	static double[] generate_signal_with_noise_ex_4_4_p34(int len, int x, double v) {
+        double[] signal = new double[len];
+        double[] signal_domain = partition(0.0, 1.0, 1.0/len);
+ 
+        Ripples_F_ex_4_4_p34 sf = new Ripples_F_ex_4_4_p34();
+        
+        for(int i = 0; i < len; i++) {
+            signal[i] = sf.v(signal_domain[i]);
+        }
+        
+        // add noise at x
+        signal[x] = v;
+        signal_domain = null;
+        
+        return signal;
+    }
+    
+	static void display_signal_with_noise_ex_4_4_p34_512() {
+        double[] signal = generate_signal_with_noise_ex_4_4_p34(512, 200, 4.0);
+        displaySignal(signal);
+        signal = null;
+    }
+	
+	public static int getDCoeffsStart(int signal_len, int curr_scale) {
+        return (int)(signal_len/Math.pow(2.0, curr_scale));
+    }
+	
+	public static int getDCoeffsEnd(int signal_len, int curr_scale) {
+        return 2*getDCoeffsStart(signal_len, curr_scale) - 1;
+    }
+	
+	public static int getSCoeffsEnd(int signal_len, int curr_scale) {
+        return (int)(signal_len/Math.pow(2.0, curr_scale))-1;
+    }
+	
+	static void displaySignal(double[] signal) {
+        for(double d: signal) {
+            System.out.println(d);
+        }
+    }
 }
