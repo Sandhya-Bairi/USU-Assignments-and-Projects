@@ -51,7 +51,7 @@ public class CDF24 {
 			tmp[half+i] = g0*signal[length-2] + g1*signal[length-1] + g2*signal[0] + g3*signal[1];
 
 			signal = Arrays.copyOf(tmp, tmp.length);
-			tmp = null;
+			//tmp = null;
 			length /= 2;
 		}
 		return signal;

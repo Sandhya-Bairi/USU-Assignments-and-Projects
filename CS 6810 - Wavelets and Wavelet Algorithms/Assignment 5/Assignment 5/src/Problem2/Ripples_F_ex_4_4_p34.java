@@ -124,7 +124,7 @@ public class Ripples_F_ex_4_4_p34 extends Function {
         int i;
         double curr;
         for(i = 0, curr = from; i < n; i++, curr += step) {
-            interval[i] = curr;
+            interval[i] = curr/upto;
         }
         return interval;
     }

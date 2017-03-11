@@ -1,7 +1,0 @@
-package Problem;
-
-public class CDF24 {
-	
-	public static void ordDWTForNumIters(double[] signal, int num_iters) {}
-	public static void ordInvDWTForNumIters(double[] signal, int num_iters) {}
-}
