@@ -1,0 +1,74 @@
+package Problem;
+
+public class TwoDHWT {
+	public static void ordFwdDWTForNumIters(double[][] signal, int num_iters) {
+		if (signal.length != signal[0].length) {
+			throw new IllegalArgumentException("Signal is not a square matrix of n x n");
+		}
+
+		if (!Utils.isPowerOf2(signal.length)) {
+			throw new IllegalArgumentException("Signal's dimension is not a power of 2");
+		}
+
+		int n = signal[0].length;
+
+		for(int i=num_iters;i>0;i--) {
+			if (n > 1) {
+				//Row based HWT
+				applyDWTToRowsOnce(signal, n);
+
+				//Column based HWT
+				applyDWTToColsOnce(signal, n);
+
+				//Rearranging
+				fwdRearrangeAHVD(signal, n);			
+			}
+			n/=2;
+		}
+	}
+
+	public static void applyDWTToRowsOnce(double[][] signal, int n) {
+		for(int row = 0; row < n; row++) {
+			for(int c = 0; c < n; c += 2) {
+				double plus  =  (signal[row][c]+signal[row][c+1])/2.0;
+				double minus = (signal[row][c]-signal[row][c+1])/2.0;
+				signal[row][c] = plus; signal[row][c+1] = minus;
+			}
+		}
+	}
+
+	public static void applyDWTToColsOnce(double[][] signal, int n) {
+		for(int col = 0; col < n; col++) {
+			for(int r = 0; r < n; r += 2) {
+				double plus  = (signal[r][col] + signal[r+1][col])/2.0;
+				double minus = (signal[r][col] - signal[r+1][col])/2.0;
+				signal[r][col] = plus; signal[r+1][col] = minus;
+			}
+		}
+	}
+	
+	public static void fwdRearrangeAHVD(double[][] signal, int n) {
+        double[][] M = new double[n][n];
+        final int ttn_1 = n >> 1;
+        int ar = 0, ac = 0;
+        int hr = 0, hc = ttn_1;
+        int vr = ttn_1, vc = 0;
+        int dr = ttn_1, dc = ttn_1;
+        
+        for(int sig_ah_r = 0, sig_vd_r = 1; sig_ah_r < n; sig_ah_r += 2, sig_vd_r += 2) {
+            ac = 0; hc = ttn_1; vc = 0; dc = ttn_1;
+            for(int c = 0; c < n; c += 2) {
+                M[ar][ac] = signal[sig_ah_r][c];
+                M[hr][hc] = signal[sig_ah_r][c+1];
+                M[vr][vc] = signal[sig_vd_r][c];
+                M[dr][dc] = signal[sig_vd_r][c+1];
+                ac++; hc++; vc++; dc++;
+            }
+            ar++; hr++; vr++; dr++;
+        }
+        for(int r = 0; r < n; r++) {
+            System.arraycopy(M[r], 0, signal[r], 0, n);
+        }
+        M = null;
+    }
+}

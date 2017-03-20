@@ -1,0 +1,46 @@
+package Problem1;
+
+public class TwoDHWT {
+	public static void ordFwdDWTForNumIters(double[][] sig, int num_iters, boolean dbg_flag) {
+		if (sig.length != sig[0].length) {
+			throw new IllegalArgumentException("Signal is not a square matrix of n x n");
+		}
+
+		if (!Utils.isPowerOf2(sig.length)) {
+			throw new IllegalArgumentException("sig's dimension is not a power of 2");
+		}
+		
+		int n = sig[0].length;
+
+		for(int i=num_iters;i>0;i--) {
+			if (dbg_flag == true) {
+				System.out.println("ORD FWD DWT for ttn = " + sig[0].length + " num_iters = " + num_iters);
+			}
+
+			if (sig[0].length > 1) {
+				//Row based HWT
+				applyDWTToRowsOnce(sig, sig[0].length);
+				System.out.println("Row-Based HWT");
+				Utils.display2DArray(sig, sig[0].length, sig[0].length);
+				
+				//Column based HWT
+				applyDWTToColsOnce(sig, sig[0].length);				
+				System.out.println();
+				System.out.println("Col-Based HWT");
+				Utils.display2DArray(sig, sig[0].length, sig[0].length);
+				
+				//
+				System.out.println("Pre-rearranged Matrix");
+				Utils.display2DArray(sig, sig[0].length, sig[0].length);
+				System.out.println();
+				
+				//
+				fwdRearrangeAHVD(sig, sig[0].length);				
+				System.out.println("Rearranged Matrix");
+				Utils.display2DArray(sig, sig[0].length, sig[0].length);
+				System.out.println();			
+			}
+			n/=2;
+		}
+	}
+}
