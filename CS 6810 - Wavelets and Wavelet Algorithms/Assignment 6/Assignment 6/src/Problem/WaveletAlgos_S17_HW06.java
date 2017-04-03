@@ -207,7 +207,6 @@ public class WaveletAlgos_S17_HW06 {
                 temp.put(cmat_row, cmat_col, data);
             }
         }
-//        Highgui.imwrite("output\\temp_hor_scale_" + half + ".jpg", temp);
         temp.release();
         
     }
@@ -251,7 +250,6 @@ public class WaveletAlgos_S17_HW06 {
                 temp.put(cmat_row, cmat_col, data);
             }
         }
-//        Highgui.imwrite("output\\temp_ver_scale_" + half + ".jpg", temp);
         temp.release();
     }
     
@@ -270,7 +268,6 @@ public class WaveletAlgos_S17_HW06 {
                 temp.put(cmat_row, cmat_col, data);
             }
         }
-//        Highgui.imwrite("output\\temp_dig_scale_" + half + ".jpg", temp);
         temp.release();
     }
     
@@ -290,7 +287,6 @@ public class WaveletAlgos_S17_HW06 {
                 temp.put(cmat_row, cmat_col, data);
             }
         }
-//        Highgui.imwrite("output\\temp_avrg_" + half + ".jpg", temp);
         temp.release();
     }
 }

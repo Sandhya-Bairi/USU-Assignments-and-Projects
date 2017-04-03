@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;avrg_ttn&apos; in &apos;Problem.TwoDHWT.ordInvDWTForNumIters(...)&apos; to &apos;n&apos;&#x0D;&#x0A;- Original project: &apos;Assignment 7&apos;&#x0D;&#x0A;- Original element: &apos;Problem.TwoDHWT.ordInvDWTForNumIters(double[][], int, int, boolean).avrg_ttn&apos;&#x0D;&#x0A;- Renamed element: &apos;avrg_ttn&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;avrg_ttn&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;Problem{TwoDHWT.java[TwoDHWT~ordInvDWTForNumIters~\[\[D~I~I~Z@avrg_ttn!8700!8758!8710!8717!I!67108880!false" name="n" references="true" stamp="1490910027886" version="1.0"/>
+</session>
