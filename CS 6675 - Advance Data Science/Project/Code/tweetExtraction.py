@@ -19,7 +19,7 @@ place_id = places[0].id
 
 # Search for latest tweets about "airlines"
 tweets = []
-for tweet in tweepy.Cursor(api.search, q='flight', since='2015-11-08', result_type='recent', lang='en', count=10000000, geo_enabled=True, geo_id='38.00, 97.00, 3000.37km').items(10000000):
+for tweet in tweepy.Cursor(api.search, q='airlines', since='2015-01-01', result_type='recent', lang='en', count=10000, geo_enabled=True, geo_id='38.00, 97.00, 3000.37km').items(10000):
     tweets.append(tweet)
 
 def toDataFrame(tweets):
@@ -42,8 +42,6 @@ def toDataFrame(tweets):
     DataSet['userLocation'] = [tweet.user.location for tweet in tweets]
     DataSet['userTimezone'] = [tweet.user.time_zone for tweet in tweets]
     DataSet['geo'] = [tweet.geo for tweet in tweets]
-    DataSet['place'] = [tweet.place for tweet in tweets]
-    DataSet['country'] = [tweet.geo for tweet in tweets]
 
     return DataSet
 

@@ -1807,3 +1807,1806 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jface.text 2 0 2017-03-30 19:01:18.617
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-04-07 20:19:58.717 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.simpleconfigurator 4 0 2017-04-07 20:19:59.473
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.equinox.internal.simpleconfigurator.Activator.start() of bundle org.eclipse.equinox.simpleconfigurator.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:795)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.SystemModule.startWorker(SystemModule.java:247)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.SystemModule.start(SystemModule.java:177)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:383)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:402)
+	at org.eclipse.osgi.launch.Equinox.start(Equinox.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:326)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:239)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: java.lang.IllegalStateException: The System Bundle was updated. The framework must be restarted to finalize the configuration change
+	at org.eclipse.equinox.internal.simpleconfigurator.ConfigApplier.install(ConfigApplier.java:80)
+	at org.eclipse.equinox.internal.simpleconfigurator.SimpleConfiguratorImpl.applyConfiguration(SimpleConfiguratorImpl.java:191)
+	at org.eclipse.equinox.internal.simpleconfigurator.SimpleConfiguratorImpl.applyConfiguration(SimpleConfiguratorImpl.java:205)
+	at org.eclipse.equinox.internal.simpleconfigurator.Activator.start(Activator.java:60)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	... 24 more
+Root exception:
+java.lang.IllegalStateException: The System Bundle was updated. The framework must be restarted to finalize the configuration change
+	at org.eclipse.equinox.internal.simpleconfigurator.ConfigApplier.install(ConfigApplier.java:80)
+	at org.eclipse.equinox.internal.simpleconfigurator.SimpleConfiguratorImpl.applyConfiguration(SimpleConfiguratorImpl.java:191)
+	at org.eclipse.equinox.internal.simpleconfigurator.SimpleConfiguratorImpl.applyConfiguration(SimpleConfiguratorImpl.java:205)
+	at org.eclipse.equinox.internal.simpleconfigurator.Activator.start(Activator.java:60)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.SystemModule.startWorker(SystemModule.java:247)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.SystemModule.start(SystemModule.java:177)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:383)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:402)
+	at org.eclipse.osgi.launch.Equinox.start(Equinox.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:326)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:239)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.jpt.jaxb.eclipselink.ui 4 0 2017-04-07 20:19:59.586
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jaxb.eclipselink.ui [430]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jaxb.ui; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jaxb.ui; bundle-version="1.5.100.v201603180253"; singleton:="true"
+       org.eclipse.jpt.jaxb.ui [431]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.400,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+              org.eclipse.wst.web.ui [896]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                     org.eclipse.wst.jsdt.ui [1402]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                            org.eclipse.wst.jsdt.manipulation [860]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                   org.eclipse.wst.jsdt.core [1395]
+                                     Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.jaxb.ui 4 0 2017-04-07 20:19:59.592
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jaxb.ui [431]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.400,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+       org.eclipse.wst.web.ui [896]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+              org.eclipse.wst.jsdt.ui [1402]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                     org.eclipse.wst.jsdt.manipulation [860]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                            org.eclipse.wst.jsdt.core [1395]
+                              Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.jpa.eclipselink.ui 4 0 2017-04-07 20:19:59.606
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.eclipselink.ui [440]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.ui; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.ui; bundle-version="3.4.100.v201603180253"; singleton:="true"
+       org.eclipse.jpt.jpa.ui [442]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+              org.eclipse.wst.web.ui [896]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                     org.eclipse.wst.jsdt.ui [1402]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                            org.eclipse.wst.jsdt.manipulation [860]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                   org.eclipse.wst.jsdt.core [1395]
+                                     Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+              org.eclipse.jst.j2ee.ui [469]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.jpa.ui 4 0 2017-04-07 20:19:59.617
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.ui [442]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.200,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+       org.eclipse.wst.web.ui [896]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+              org.eclipse.wst.jsdt.ui [1402]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                     org.eclipse.wst.jsdt.manipulation [860]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                            org.eclipse.wst.jsdt.core [1395]
+                              Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.200,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+       org.eclipse.jst.j2ee.ui [469]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ejb.ui 4 0 2017-04-07 20:19:59.631
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ejb.ui [455]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jee.ui; bundle-version="[1.0.100,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jee.ui; bundle-version="1.0.701.v201408251535"; singleton:="true"
+       org.eclipse.jst.jee.ui [476]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+              org.eclipse.jst.j2ee.ui [469]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                     org.eclipse.wst.web.ui [896]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                            org.eclipse.wst.jsdt.ui [1402]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                   org.eclipse.wst.jsdt.manipulation [860]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                          org.eclipse.wst.jsdt.core [1395]
+                                            Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.navigator.ui [468]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                     org.eclipse.jst.j2ee.jca.ui [467]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.ejb.annotations.ui 4 0 2017-04-07 20:19:59.643
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.ejb.annotations.ui [463]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ejb.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ejb.ui; bundle-version="1.1.900.v201402130359"; singleton:="true"
+       org.eclipse.jst.ejb.ui [455]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.jee.ui; bundle-version="[1.0.100,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.jee.ui; bundle-version="1.0.701.v201408251535"; singleton:="true"
+              org.eclipse.jst.jee.ui [476]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                     org.eclipse.jst.j2ee.ui [469]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                            org.eclipse.wst.web.ui [896]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                                   org.eclipse.wst.jsdt.ui [1402]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                          org.eclipse.wst.jsdt.manipulation [860]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                                 org.eclipse.wst.jsdt.core [1395]
+                                                   Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+                     org.eclipse.jst.j2ee.navigator.ui [468]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                            org.eclipse.jst.j2ee.jca.ui [467]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.jca.ui 4 0 2017-04-07 20:19:59.651
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.jca.ui [467]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+       org.eclipse.jst.j2ee.ui [469]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+              org.eclipse.wst.web.ui [896]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                     org.eclipse.wst.jsdt.ui [1402]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                            org.eclipse.wst.jsdt.manipulation [860]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                   org.eclipse.wst.jsdt.core [1395]
+                                     Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.navigator.ui 4 0 2017-04-07 20:19:59.659
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.navigator.ui [468]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+       org.eclipse.jst.j2ee.jca.ui [467]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+              org.eclipse.jst.j2ee.ui [469]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                     org.eclipse.wst.web.ui [896]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                            org.eclipse.wst.jsdt.ui [1402]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                   org.eclipse.wst.jsdt.manipulation [860]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                          org.eclipse.wst.jsdt.core [1395]
+                                            Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.ui 4 0 2017-04-07 20:19:59.668
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.ui [469]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+       org.eclipse.wst.web.ui [896]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+              org.eclipse.wst.jsdt.ui [1402]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                     org.eclipse.wst.jsdt.manipulation [860]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                            org.eclipse.wst.jsdt.core [1395]
+                              Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.webservice.ui 4 0 2017-04-07 20:19:59.676
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.webservice.ui [472]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+       org.eclipse.jst.j2ee.ui [469]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+              org.eclipse.wst.web.ui [896]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                     org.eclipse.wst.jsdt.ui [1402]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                            org.eclipse.wst.jsdt.manipulation [860]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                   org.eclipse.wst.jsdt.core [1395]
+                                     Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+       org.eclipse.jst.j2ee.navigator.ui [468]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+              org.eclipse.jst.j2ee.jca.ui [467]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2017-04-07 20:19:59.684
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jee.ui [476]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+       org.eclipse.jst.j2ee.ui [469]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+              org.eclipse.wst.web.ui [896]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                     org.eclipse.wst.jsdt.ui [1402]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                            org.eclipse.wst.jsdt.manipulation [860]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                   org.eclipse.wst.jsdt.core [1395]
+                                     Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+       org.eclipse.jst.j2ee.navigator.ui [468]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+              org.eclipse.jst.j2ee.jca.ui [467]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.servlet.ui 4 0 2017-04-07 20:19:59.694
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.servlet.ui [506]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+       org.eclipse.wst.web.ui [896]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+              org.eclipse.wst.jsdt.ui [1402]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                     org.eclipse.wst.jsdt.manipulation [860]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                            org.eclipse.wst.jsdt.core [1395]
+                              Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jee.ui; bundle-version="[1.0.100,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jee.ui; bundle-version="1.0.701.v201408251535"; singleton:="true"
+       org.eclipse.jst.jee.ui [476]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+              org.eclipse.jst.j2ee.ui [469]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.navigator.ui [468]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                     org.eclipse.jst.j2ee.jca.ui [467]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis.consumption.ui 4 0 2017-04-07 20:19:59.702
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis.consumption.ui [512]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [525]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.webservice.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.webservice.ui; bundle-version="1.1.500.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.webservice.ui [472]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                     org.eclipse.jst.j2ee.ui [469]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                            org.eclipse.wst.web.ui [896]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                                   org.eclipse.wst.jsdt.ui [1402]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                          org.eclipse.wst.jsdt.manipulation [860]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                                 org.eclipse.wst.jsdt.core [1395]
+                                                   Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+                     org.eclipse.jst.j2ee.navigator.ui [468]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                            org.eclipse.jst.j2ee.jca.ui [467]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis.creation.ui 4 0 2017-04-07 20:19:59.713
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis.creation.ui [513]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.300,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [525]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.webservice.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.webservice.ui; bundle-version="1.1.500.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.webservice.ui [472]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                     org.eclipse.jst.j2ee.ui [469]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                            org.eclipse.wst.web.ui [896]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                                   org.eclipse.wst.jsdt.ui [1402]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                          org.eclipse.wst.jsdt.manipulation [860]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                                 org.eclipse.wst.jsdt.core [1395]
+                                                   Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+                     org.eclipse.jst.j2ee.navigator.ui [468]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                            org.eclipse.jst.j2ee.jca.ui [467]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis.consumption.ui; bundle-version="[1.0.101,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis.consumption.ui; bundle-version="1.0.800.v201505131719"; singleton:="true"
+       org.eclipse.jst.ws.axis.consumption.ui [512]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis2.consumption.core 4 0 2017-04-07 20:19:59.724
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.consumption.core [516]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [525]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.webservice.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.webservice.ui; bundle-version="1.1.500.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.webservice.ui [472]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                     org.eclipse.jst.j2ee.ui [469]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                            org.eclipse.wst.web.ui [896]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                                   org.eclipse.wst.jsdt.ui [1402]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                          org.eclipse.wst.jsdt.manipulation [860]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                                 org.eclipse.wst.jsdt.core [1395]
+                                                   Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+                     org.eclipse.jst.j2ee.navigator.ui [468]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                            org.eclipse.jst.j2ee.jca.ui [467]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis2.consumption.ui 4 0 2017-04-07 20:19:59.735
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.consumption.ui [517]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [525]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.webservice.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.webservice.ui; bundle-version="1.1.500.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.webservice.ui [472]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                     org.eclipse.jst.j2ee.ui [469]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                            org.eclipse.wst.web.ui [896]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                                   org.eclipse.wst.jsdt.ui [1402]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                          org.eclipse.wst.jsdt.manipulation [860]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                                 org.eclipse.wst.jsdt.core [1395]
+                                                   Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+                     org.eclipse.jst.j2ee.navigator.ui [468]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                            org.eclipse.jst.j2ee.jca.ui [467]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201309242118"
+       org.eclipse.jst.ws.axis2.consumption.core [516]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis2.creation.core 4 0 2017-04-07 20:19:59.746
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.creation.core [519]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201309242118"
+       org.eclipse.jst.ws.axis2.consumption.core [516]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+              org.eclipse.jst.ws.consumption.ui [525]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.webservice.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.webservice.ui; bundle-version="1.1.500.v201302011850"; singleton:="true"
+                     org.eclipse.jst.j2ee.webservice.ui [472]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                            org.eclipse.jst.j2ee.ui [469]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                                   org.eclipse.wst.web.ui [896]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                                          org.eclipse.wst.jsdt.ui [1402]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                                 org.eclipse.wst.jsdt.manipulation [860]
+                                                   Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                                     -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                                        org.eclipse.wst.jsdt.core [1395]
+                                                          Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+                            org.eclipse.jst.j2ee.navigator.ui [468]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                                   org.eclipse.jst.j2ee.jca.ui [467]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.axis2.creation.ui 4 0 2017-04-07 20:19:59.759
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.creation.ui [520]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [525]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.webservice.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.webservice.ui; bundle-version="1.1.500.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.webservice.ui [472]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                     org.eclipse.jst.j2ee.ui [469]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                            org.eclipse.wst.web.ui [896]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                                   org.eclipse.wst.jsdt.ui [1402]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                          org.eclipse.wst.jsdt.manipulation [860]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                                 org.eclipse.wst.jsdt.core [1395]
+                                                   Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+                     org.eclipse.jst.j2ee.navigator.ui [468]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                            org.eclipse.jst.j2ee.jca.ui [467]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.creation.core
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.creation.core; bundle-version="1.0.200.v201309242118"
+       org.eclipse.jst.ws.axis2.creation.core [519]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201309242118"
+              org.eclipse.jst.ws.axis2.consumption.core [516]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.ui; bundle-version="1.0.200.v201309242118"; singleton:="true"
+       org.eclipse.jst.ws.axis2.consumption.ui [517]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201309242118"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201309242118"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.consumption.ui 4 0 2017-04-07 20:19:59.767
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.consumption.ui [525]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.webservice.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.webservice.ui; bundle-version="1.1.500.v201302011850"; singleton:="true"
+       org.eclipse.jst.j2ee.webservice.ui [472]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+              org.eclipse.jst.j2ee.ui [469]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                     org.eclipse.wst.web.ui [896]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                            org.eclipse.wst.jsdt.ui [1402]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                   org.eclipse.wst.jsdt.manipulation [860]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                          org.eclipse.wst.jsdt.core [1395]
+                                            Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.navigator.ui [468]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                     org.eclipse.jst.j2ee.jca.ui [467]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.creation.ui 4 0 2017-04-07 20:19:59.777
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.creation.ui [528]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [525]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.webservice.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.webservice.ui; bundle-version="1.1.500.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.webservice.ui [472]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                     org.eclipse.jst.j2ee.ui [469]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                            org.eclipse.wst.web.ui [896]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                                   org.eclipse.wst.jsdt.ui [1402]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                          org.eclipse.wst.jsdt.manipulation [860]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                                 org.eclipse.wst.jsdt.core [1395]
+                                                   Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+                     org.eclipse.jst.j2ee.navigator.ui [468]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                            org.eclipse.jst.j2ee.jca.ui [467]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.consumption.ui 4 0 2017-04-07 20:19:59.784
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.consumption.ui [530]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [525]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.webservice.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.webservice.ui; bundle-version="1.1.500.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.webservice.ui [472]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                     org.eclipse.jst.j2ee.ui [469]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                            org.eclipse.wst.web.ui [896]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                                   org.eclipse.wst.jsdt.ui [1402]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                          org.eclipse.wst.jsdt.manipulation [860]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                                 org.eclipse.wst.jsdt.core [1395]
+                                                   Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+                     org.eclipse.jst.j2ee.navigator.ui [468]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                            org.eclipse.jst.j2ee.jca.ui [467]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.creation.ui 4 0 2017-04-07 20:19:59.793
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.creation.ui [533]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [525]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.webservice.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.webservice.ui; bundle-version="1.1.500.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.webservice.ui [472]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                     org.eclipse.jst.j2ee.ui [469]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                            org.eclipse.wst.web.ui [896]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                                   org.eclipse.wst.jsdt.ui [1402]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                          org.eclipse.wst.jsdt.manipulation [860]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                              -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                                 org.eclipse.wst.jsdt.core [1395]
+                                                   Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+                     org.eclipse.jst.j2ee.navigator.ui [468]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                            org.eclipse.jst.j2ee.jca.ui [467]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.ui; bundle-version="1.0.300.v201309232152"; singleton:="true"
+       org.eclipse.jst.ws.cxf.consumption.ui [530]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.creation.ui; bundle-version="[1.0.305,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.creation.ui; bundle-version="1.0.900.v201503111711"; singleton:="true"
+       org.eclipse.jst.ws.creation.ui [528]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.800.v201504152025"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.jaxws.dom.integration 4 0 2017-04-07 20:19:59.802
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.jaxws.dom.integration [543]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jee.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.jee.ui; bundle-version="1.0.701.v201408251535"; singleton:="true"
+       org.eclipse.jst.jee.ui [476]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+              org.eclipse.jst.j2ee.ui [469]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                     org.eclipse.wst.web.ui [896]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+                            org.eclipse.wst.jsdt.ui [1402]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+                                   org.eclipse.wst.jsdt.manipulation [860]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                                          org.eclipse.wst.jsdt.core [1395]
+                                            Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.navigator.ui; bundle-version="[1.1.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.j2ee.navigator.ui; bundle-version="1.1.600.v201302011850"; singleton:="true"
+              org.eclipse.jst.j2ee.navigator.ui [468]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.jca.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.jca.ui; bundle-version="1.1.500.v201304231803"; singleton:="true"
+                     org.eclipse.jst.j2ee.jca.ui [467]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.web.ui; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.web.ui; bundle-version="1.1.601.v201602221748"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ui; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ui; bundle-version="1.1.900.v201602161345"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.debug.crossfire 4 0 2017-04-07 20:20:00.023
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.debug.crossfire [845]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.debug.core; bundle-version="3.1.0"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.debug.core; bundle-version="3.1.300.v201605251607"; singleton:="true"
+       org.eclipse.wst.jsdt.debug.core [1396]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core.formatter
+           -> Export-Package: org.eclipse.wst.jsdt.core.formatter; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core
+           -> Export-Package: org.eclipse.wst.jsdt.core; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.debug.rhino 4 0 2017-04-07 20:20:00.029
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.debug.rhino [846]
+  Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.debug.core.breakpoints
+    -> Export-Package: org.eclipse.wst.jsdt.debug.core.breakpoints; bundle-symbolic-name="org.eclipse.wst.jsdt.debug.core"; bundle-version="3.1.300.v201605251607"; version="0.0.0"
+       org.eclipse.wst.jsdt.debug.core [1396]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core.formatter
+           -> Export-Package: org.eclipse.wst.jsdt.core.formatter; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+              org.eclipse.wst.jsdt.core [1395]
+                Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core
+           -> Export-Package: org.eclipse.wst.jsdt.core; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.debug.core.jsdi
+    -> Export-Package: org.eclipse.wst.jsdt.debug.core.jsdi; bundle-symbolic-name="org.eclipse.wst.jsdt.debug.core"; bundle-version="3.1.300.v201605251607"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.debug.rhino.ui 4 0 2017-04-07 20:20:00.033
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.debug.rhino.ui [848]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.debug.rhino
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.debug.rhino; bundle-version="1.0.500.v201605251607"; singleton:="true"
+       org.eclipse.wst.jsdt.debug.rhino [846]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.debug.core.breakpoints
+           -> Export-Package: org.eclipse.wst.jsdt.debug.core.breakpoints; bundle-symbolic-name="org.eclipse.wst.jsdt.debug.core"; bundle-version="3.1.300.v201605251607"; version="0.0.0"
+              org.eclipse.wst.jsdt.debug.core [1396]
+                Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core
+                  -> Export-Package: org.eclipse.wst.jsdt.core; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.debug.core
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.debug.core; bundle-version="3.1.300.v201605251607"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.debug.ui
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.debug.ui; bundle-version="1.0.600.v201605311817"; singleton:="true"
+       org.eclipse.wst.jsdt.debug.ui [850]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.debug.core; bundle-version="3.1.300.v201605251607"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+       org.eclipse.wst.jsdt.manipulation [860]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.debug.ui 4 0 2017-04-07 20:20:00.038
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.debug.ui [850]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.debug.core
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.debug.core; bundle-version="3.1.300.v201605251607"; singleton:="true"
+       org.eclipse.wst.jsdt.debug.core [1396]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core.formatter
+           -> Export-Package: org.eclipse.wst.jsdt.core.formatter; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+              org.eclipse.wst.jsdt.core [1395]
+                Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core
+           -> Export-Package: org.eclipse.wst.jsdt.core; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.js.bower 4 0 2017-04-07 20:20:00.043
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.js.bower [852]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.js.common; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.js.common; bundle-version="1.0.0.v201605232036"; singleton:="true"
+       org.eclipse.wst.jsdt.js.common [1397]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+              org.eclipse.wst.jsdt.core [1395]
+                Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.manipulation 4 0 2017-04-07 20:20:00.048
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.manipulation [860]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.support.firefox 4 0 2017-04-07 20:20:00.053
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.support.firefox [861]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+       org.eclipse.wst.jsdt.ui [1402]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.web.core 4 0 2017-04-07 20:20:00.060
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.web.core [864]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.web.support.jsp 4 0 2017-04-07 20:20:00.065
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.web.support.jsp [865]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.web.ui; bundle-version="[1.0.200,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.web.ui; bundle-version="1.0.801.v201602241914"; singleton:="true"
+       org.eclipse.wst.jsdt.web.ui [866]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+              org.eclipse.wst.jsdt.core [1395]
+                Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.web.core; bundle-version="[1.0.300,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.web.core; bundle-version="1.0.801.v201602241914"; singleton:="true"
+              org.eclipse.wst.jsdt.web.core [864]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.web.core; bundle-version="[1.0.300,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.web.core; bundle-version="1.0.801.v201602241914"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.web.ui 4 0 2017-04-07 20:20:00.070
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.web.ui [866]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.web.core; bundle-version="[1.0.300,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.web.core; bundle-version="1.0.801.v201602241914"; singleton:="true"
+       org.eclipse.wst.jsdt.web.core [864]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.web.ui 4 0 2017-04-07 20:20:00.075
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.web.ui [896]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.ui; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.ui; bundle-version="2.0.0.v201605262108"; singleton:="true"
+       org.eclipse.wst.jsdt.ui [1402]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+              org.eclipse.wst.jsdt.manipulation [860]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+                     org.eclipse.wst.jsdt.core [1395]
+                       Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-04-07 20:20:00.080
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.core [1293]
+  Another singleton bundle selected: osgi.identity; type="osgi.bundle"; version:Version="3.12.2.v20161117-1814"; osgi.identity="org.eclipse.jdt.core"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2017-04-07 20:20:00.085
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.ui [1297]
+  Another singleton bundle selected: osgi.identity; type="osgi.bundle"; version:Version="3.12.2.v20160929-0804"; osgi.identity="org.eclipse.jdt.ui"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.pde.api.tools 4 0 2017-04-07 20:20:00.090
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.api.tools [1344]
+  Another singleton bundle selected: osgi.identity; type="osgi.bundle"; version:Version="1.1.2.v20161115-0549"; osgi.identity="org.eclipse.pde.api.tools"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.pde.ui 4 0 2017-04-07 20:20:00.095
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ui [1346]
+  Another singleton bundle selected: osgi.identity; type="osgi.bundle"; version:Version="3.9.100.v20161102-0517"; osgi.identity="org.eclipse.pde.ui"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.chromium.debug.core 4 0 2017-04-07 20:20:00.101
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.chromium.debug.core [1391]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.debug.core; bundle-version="[3.1.200,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.debug.core; bundle-version="3.1.300.v201605251607"; singleton:="true"
+       org.eclipse.wst.jsdt.debug.core [1396]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core.formatter
+           -> Export-Package: org.eclipse.wst.jsdt.core.formatter; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+              org.eclipse.wst.jsdt.core [1395]
+                Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core
+           -> Export-Package: org.eclipse.wst.jsdt.core; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.chromium.debug.ui 4 0 2017-04-07 20:20:00.107
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.chromium.debug.ui [1393]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.chromium.debug.core; bundle-version="[0.4.0,0.5.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.chromium.debug.core; bundle-version="0.4.0.v201605131737"; singleton:="true"
+       org.eclipse.wst.jsdt.chromium.debug.core [1391]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.debug.core; bundle-version="[3.1.200,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.debug.core; bundle-version="3.1.300.v201605251607"; singleton:="true"
+              org.eclipse.wst.jsdt.debug.core [1396]
+                Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core.formatter
+                  -> Export-Package: org.eclipse.wst.jsdt.core.formatter; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+                     org.eclipse.wst.jsdt.core [1395]
+                       Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+                Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core
+                  -> Export-Package: org.eclipse.wst.jsdt.core; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 0 2017-04-07 20:20:00.112
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.core [1395]
+  Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.debug.core 4 0 2017-04-07 20:20:00.119
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.debug.core [1396]
+  Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core.formatter
+    -> Export-Package: org.eclipse.wst.jsdt.core.formatter; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+  Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.core
+    -> Export-Package: org.eclipse.wst.jsdt.core; bundle-symbolic-name="org.eclipse.wst.jsdt.core"; bundle-version="2.0.0.v201605251700"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.js.common 4 0 2017-04-07 20:20:00.127
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.js.common [1397]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.js.grunt 4 0 2017-04-07 20:20:00.134
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.js.grunt [1398]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.js.common; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.js.common; bundle-version="1.0.0.v201605232036"; singleton:="true"
+       org.eclipse.wst.jsdt.js.common [1397]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.js.gulp 4 0 2017-04-07 20:20:00.141
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.js.gulp [1399]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.js.common; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.js.common; bundle-version="1.0.0.v201605232036"; singleton:="true"
+       org.eclipse.wst.jsdt.js.common [1397]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.js.node 4 0 2017-04-07 20:20:00.146
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.js.node [1400]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+       org.eclipse.wst.jsdt.core [1395]
+         Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.js.common
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.js.common; bundle-version="1.0.0.v201605232036"; singleton:="true"
+       org.eclipse.wst.jsdt.js.common [1397]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.js.npm 4 0 2017-04-07 20:20:00.150
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.js.npm [1401]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.js.common; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.js.common; bundle-version="1.0.0.v201605232036"; singleton:="true"
+       org.eclipse.wst.jsdt.js.common [1397]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+              org.eclipse.wst.jsdt.core [1395]
+                Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.jsdt.ui 4 0 2017-04-07 20:20:00.154
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.jsdt.ui [1402]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.manipulation; bundle-version="[1.0.200,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.manipulation; bundle-version="1.0.601.v201602241911"; singleton:="true"
+       org.eclipse.wst.jsdt.manipulation [860]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+              org.eclipse.wst.jsdt.core [1395]
+                Unresolved requirement: Import-Package: org.eclipse.wst.jsdt.nashorn.extension.loader
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.jsdt.core; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.jsdt.core; bundle-version="2.0.0.v201605251700"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.osgi 4 0 2017-04-07 20:20:00.227
+!MESSAGE Bundle org.eclipse.equinox.simpleconfigurator_1.1.200.v20160504-1450 [3] is not active.
+
+!ENTRY com.vectrace.MercurialEclipse 4 0 2017-04-07 20:20:13.191
+!MESSAGE . Command line: hg -y debuginstall, error code: -1
+!STACK 1
+. Command line: hg -y debuginstall, error code: -1
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+	at com.vectrace.MercurialEclipse.commands.HgDebugInstallClient.debugInstall(HgDebugInstallClient.java:30)
+	at com.vectrace.MercurialEclipse.MercurialEclipsePlugin.checkHgInstallation(MercurialEclipsePlugin.java:217)
+	at com.vectrace.MercurialEclipse.MercurialEclipsePlugin$1.run(MercurialEclipsePlugin.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 -1 2017-04-07 20:20:13.191
+!MESSAGE . Command line: hg -y debuginstall
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-07 20:20:13.337
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Anuj Khasgiwala'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.vectrace.MercurialEclipse 4 0 2017-04-07 20:20:13.377
+!MESSAGE . Command line: hg -y debuginstall, error code: -1
+!STACK 1
+. Command line: hg -y debuginstall, error code: -1
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+	at com.vectrace.MercurialEclipse.commands.HgDebugInstallClient.debugInstall(HgDebugInstallClient.java:30)
+	at com.vectrace.MercurialEclipse.MercurialEclipsePlugin.checkHgInstallation(MercurialEclipsePlugin.java:217)
+	at com.vectrace.MercurialEclipse.DefaultConfiguration.getExecutable(DefaultConfiguration.java:37)
+	at com.vectrace.MercurialEclipse.commands.HgClients.getExecutable(HgClients.java:51)
+	at com.vectrace.MercurialEclipse.commands.RootlessHgCommand.getExecutable(RootlessHgCommand.java:49)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.getCommands(AbstractShellCommand.java:457)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:336)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToString(AbstractShellCommand.java:441)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToString(AbstractShellCommand.java:437)
+	at com.vectrace.MercurialEclipse.commands.HgConfigClient.getHgConfigLines(HgConfigClient.java:30)
+	at com.vectrace.MercurialEclipse.commands.HgConfigClient.getHgConfigLine(HgConfigClient.java:22)
+	at com.vectrace.MercurialEclipse.team.MercurialUtilities.getDefaultUserName(MercurialUtilities.java:281)
+	at com.vectrace.MercurialEclipse.preferences.PreferenceInitializer$1.run(PreferenceInitializer.java:141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 -1 2017-04-07 20:20:13.377
+!MESSAGE . Command line: hg -y debuginstall
+
+!ENTRY com.vectrace.MercurialEclipse 4 0 2017-04-07 20:20:13.502
+!MESSAGE . Command line: hg -y debuginstall, error code: -1
+!STACK 1
+. Command line: hg -y debuginstall, error code: -1
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+	at com.vectrace.MercurialEclipse.commands.HgDebugInstallClient.debugInstall(HgDebugInstallClient.java:30)
+	at com.vectrace.MercurialEclipse.MercurialEclipsePlugin.checkHgInstallation(MercurialEclipsePlugin.java:217)
+	at com.vectrace.MercurialEclipse.DefaultConfiguration.getExecutable(DefaultConfiguration.java:37)
+	at com.vectrace.MercurialEclipse.commands.HgClients.getExecutable(HgClients.java:51)
+	at com.vectrace.MercurialEclipse.commands.RootlessHgCommand.getExecutable(RootlessHgCommand.java:49)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.getRunDir(AbstractShellCommand.java:533)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.setupProcess(AbstractShellCommand.java:394)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:339)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToString(AbstractShellCommand.java:441)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToString(AbstractShellCommand.java:437)
+	at com.vectrace.MercurialEclipse.commands.HgConfigClient.getHgConfigLines(HgConfigClient.java:30)
+	at com.vectrace.MercurialEclipse.commands.HgConfigClient.getHgConfigLine(HgConfigClient.java:22)
+	at com.vectrace.MercurialEclipse.team.MercurialUtilities.getDefaultUserName(MercurialUtilities.java:281)
+	at com.vectrace.MercurialEclipse.preferences.PreferenceInitializer$1.run(PreferenceInitializer.java:141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 -1 2017-04-07 20:20:13.503
+!MESSAGE . Command line: hg -y debuginstall
+
+!ENTRY com.vectrace.MercurialEclipse 4 0 2017-04-07 20:20:13.628
+!MESSAGE . Command line: hg -y showconfig ui.username, error code: -1
+!STACK 1
+. Command line: hg -y showconfig ui.username, error code: -1
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToString(AbstractShellCommand.java:441)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToString(AbstractShellCommand.java:437)
+	at com.vectrace.MercurialEclipse.commands.HgConfigClient.getHgConfigLines(HgConfigClient.java:30)
+	at com.vectrace.MercurialEclipse.commands.HgConfigClient.getHgConfigLine(HgConfigClient.java:22)
+	at com.vectrace.MercurialEclipse.team.MercurialUtilities.getDefaultUserName(MercurialUtilities.java:281)
+	at com.vectrace.MercurialEclipse.preferences.PreferenceInitializer$1.run(PreferenceInitializer.java:141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 -1 2017-04-07 20:20:13.628
+!MESSAGE . Command line: hg -y showconfig ui.username
