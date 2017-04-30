@@ -1,102 +1,130 @@
-%%% =======================================================================
-%%% HW08: Harmonic Recovery and Audio Analysis
-%%% Author: Anuj Khasgiwala
-%%% =======================================================================
-function problem_01()
-  warning("off", "Octave:broadcast");
-  DELTA = (2*pi)/6283;
-  threshold = 0.1;
-  t = -pi:DELTA:pi;
+% Problem 1
+dataFile = fopen('data.txt','r');
+sinusoid_data = fscanf(dataFile,'%f',[1 6284]);
+fclose(dataFile);
 
-  %% combined sinusoid
-  data = load("D:/workspace/USU-Assignments/CS 6810 - Wavelets and Wavelet Algorithms/Assignment 8/hw08/data.txt");
-  data = data'(:)';
+% Recovering Sine Coefficients
+trig = 0;
+f = 1:150;
+DELTA = 0.001;
+t = -pi:DELTA:pi;
+coeffs = zeros(size(f));
+for fi = f
+    if(trig == 0)
+        coeff = 1/pi*sum(sinusoid_data.*sin(fi*t))*DELTA;
+    else
+        coeff = 1/pi*sum(sinusoid_data.*cos(fi*t))*DELTA;
+    end
+    if(abs(coeff) > 0.001)
+        coeffs(fi) = coeff;
+        if (abs(coeff) > 0.03)
+            if(trig == 0)
+                display(['b',num2str(fi), ' = ', num2str(coeff)]);
+            else
+                display(['a',num2str(fi), ' = ', num2str(coeff)]);
+            end
+        end
+    end
+end
+fprintf('\n');
+% plot
+figure;
+plot(f, coeffs);
+xlabel('Freq');
+ylabel('Coeff');
 
-  %% plot data
-  figure;
-  plot(t, data);
-  xlabel('x');
-  ylabel('y');
-  title('Input Data');
+% Recovering Cosine Coefficiens
+trig = 1;
+f = 1:150;
+DELTA = 0.001;
+t = -pi:DELTA:pi;
+coeffs = zeros(size(f));
+for fi = f
+    if(trig == 0)
+        coeff = 1/pi*sum(sinusoid_data.*sin(fi*t))*DELTA;
+    else
+        coeff = 1/pi*sum(sinusoid_data.*cos(fi*t))*DELTA;
+    end
+    if(abs(coeff) > 0.001)
+        coeffs(fi) = coeff;
+        if (abs(coeff) > 0.03)
+            if(trig == 0)
+                display(['b',num2str(fi), ' = ', num2str(coeff)]);
+            else
+                display(['a',num2str(fi), ' = ', num2str(coeff)]);
+            end
+        end
+    end
+end
+fprintf('\n');
+% plot
+figure;
+plot(f, coeffs);
+xlabel('Freq');
+ylabel('Coeff');
 
-  %% ================= Recovering sine Coefficients ======================
+% Problem 2
+% file1
+[y,Fs] = audioread(strcat('ODE_TO_JOY_BOTH_HANDS','.wav'));
+Nsamps = length(y);
 
-  f = 1:150;
-  sine_coeffs = [];
-  cos_coeffs = [];
-  for fi=f
-      sine_coeff = 1/pi*sum(data.*sin(fi*t))*DELTA;
-      if ( abs(sine_coeff) > threshold )
-        disp(strcat(strcat(strcat("a",num2str(fi))," = "), num2str(abs(sine_coeff))));
-        sine_coeffs(fi) = abs(sine_coeff);
-      else
-        sine_coeffs(fi) = 0.0;
-      endif
-  %% ================= Recovering cosine Coefficients ======================
-      cos_coeff = 1/pi*sum(data.*cos(fi*t))*DELTA;
-      if ( abs(cos_coeff) > threshold )
-        disp(strcat(strcat(strcat("b",num2str(fi))," = "), num2str(abs(cos_coeff))));
-        cos_coeffs(fi) = abs(cos_coeff);
-      else
-        cos_coeffs(fi) = 0.0;
-      endif
-  end
+y_fft = abs(fft(y));
+y_fft = y_fft(1:Nsamps/2);
+f = Fs*(0:Nsamps/2-1)/Nsamps;
 
-  %% plot sine coefficients
-  figure;
-  plot(f, sine_coeffs);
-  xlabel('Freq');
-  ylabel('Sine Coeff');
-  title('Present Sine Coefficients');
+figure;
+plot(f, y_fft);
+xlim([0 1000]);
+xlabel('Frequency (Hz)');
+ylabel('Amplitude');
+title(['Frequency Response of ',strrep('ODE_TO_JOY_BOTH_HANDS','_',' ')]);
+disp(['Top 5 Frequencies in ','ODE_TO_JOY_BOTH_HANDS']);
+disp('1 - E4');
+disp('2 - G4');
+disp('3 - D4');
+disp('4 - C4');
+disp('5 - D5');
+fprintf('\n');
 
-  %% plot cosine coefficients
-  figure;
-  plot(f, cos_coeffs);
-  xlabel('Freq');
-  ylabel('Cosine Coeff');
-  title('Present Cosine Coefficients')
+% file2
+[y,Fs] = audioread(strcat('ODE_TO_JOY_ORCHESTRA','.wav'));
+Nsamps = length(y);
 
-endfunction
+y_fft = abs(fft(y));
+y_fft = y_fft(1:Nsamps/2);
+f = Fs*(0:Nsamps/2-1)/Nsamps;
 
-function analysis(file, titlen)
-  [y, Fs] = audioread(file);
-  Nsamps = length(y);
-  t = (1/Fs)*(1:Nsamps);
-  y_fft = abs(fft(y));
-  y_fft = y_fft(1:Nsamps/2);
-  f = Fs*(0:Nsamps/2-1)/Nsamps;
+figure;
+plot(f, y_fft);
+xlim([0 1000]);
+xlabel('Frequency (Hz)');
+ylabel('Amplitude');
+title(['Frequency Response of ',strrep('ODE_TO_JOY_ORCHESTRA','_',' ')]);
+disp(['Top 5 Frequencies in ','ODE_TO_JOY_BOTH_HANDS']);
+disp('1 - D5');
+disp('2 - G5');
+disp('3 - A5');
+disp('4 - E5');
+disp('5 - A4');
+fprintf('\n');
 
-  figure;
-  plot(f,y_fft);
-  xlim([0 1000]);
-  xlabel('Frequency(Hz)');
-  ylabel('Amplitude');
-  title(titlen);
-endfunction
+% file3
+[y,Fs] = audioread(strcat('ODE_TO_JOY_RIGHT_HAND','.wav'));
+Nsamps = length(y);
 
-function problem_02()
-  warning("off", "Octave:broadcast");
-  analysis("D:/workspace/USU-Assignments/CS 6810 - Wavelets and Wavelet Algorithms/Assignment 8/hw08/ODE_TO_JOY_RIGHT_HAND.wav", "Right hand");
-  disp("Right hand top 5 frequencies");
-  disp("330Hz -> E4");
-  disp("390Hz -> G4");
-  disp("290Hz -> D4");
-  disp("585Hz -> D5");
-  disp("524Hz -> C5");
-  
-  analysis("D:/workspace/USU-Assignments/CS 6810 - Wavelets and Wavelet Algorithms/Assignment 8/hw08/ODE_TO_JOY_BOTH_HANDS.wav", "Both hands");
-  disp("Both hands top 5 frequencies");
-  disp("330Hz -> E4");
-  disp("390Hz -> G4");
-  disp("293Hz -> D4");
-  disp("585Hz -> D5");
-  disp("260Hz -> C4");
+y_fft = abs(fft(y));
+y_fft = y_fft(1:Nsamps/2);
+f = Fs*(0:Nsamps/2-1)/Nsamps;
 
-  analysis("D:/workspace/USU-Assignments/CS 6810 - Wavelets and Wavelet Algorithms/Assignment 8/hw08/ODE_TO_JOY_ORCHESTRA.wav", "Orchestra");
-  disp("Orchestra top 5 frequencies");
-  disp("1190Hz -> D6");
-  disp("1350Hz -> E6");
-  disp("775Hz -> G5");
-  disp("595Hz -> D5");
-  disp("795Hz -> G5");
-endfunction
+figure;
+plot(f, y_fft);
+xlim([0 1000]);
+xlabel('Frequency (Hz)');
+ylabel('Amplitude');
+title(['Frequency Response of ',strrep('ODE_TO_JOY_RIGHT_HAND','_',' ')]);
+disp(['Top 5 Frequencies in ','ODE_TO_JOY_RIGHT_HAND']);
+disp('1 - E4');
+disp('2 - G4');
+disp('3 - D4');
+disp('4 - D5');
+disp('5 - C5');
