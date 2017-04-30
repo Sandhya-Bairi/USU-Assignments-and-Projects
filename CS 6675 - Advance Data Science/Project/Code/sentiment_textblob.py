@@ -7,9 +7,9 @@ import csv
 
 def sentiment(message):
     blob = TextBlob(message)
-    if blob.sentiment.polarity > 0 :
+    if blob.sentiment.polarity > 0:
         return 'Positive'
-    elif blob.sentiment.polarity < 0 :
+    elif blob.sentiment.polarity < 0:
         return 'Negative'
     else:
         return 'Neutral'
@@ -31,10 +31,10 @@ def csvReader():
     with open('airlineTweets.csv','rb', encoding="utf8") as tweetCSV:
         csvFile = csv.reader(tweetCSV)
         for row in csvFile:
-            t = removeHash(removeAt(removeLink(row[1])))
+            t = removeHash(removeAt(removeLink(row[0])))
             x = sentiment(t)
             with open('airline_tweets_sentiment.csv', 'a', encoding="utf8") as tweetCSV1:
                 csvFileWrite = csv.writer(tweetCSV1,delimiter = ',')
-                csvFileWrite.writerow((row[0],t,row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11],row[12],row[13],x))
+                csvFileWrite.writerow((row[0],row[1],row[2],x))
 
 csvReader()
