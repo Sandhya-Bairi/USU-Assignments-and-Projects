@@ -28,13 +28,13 @@ def removeHash(message):
 
 #csv file reading
 def csvReader():
-    with open('airlineTweets.csv','rb', encoding="utf8") as tweetCSV:
+    with open('shobhitreviews.csv','rb', encoding="utf8") as tweetCSV:
         csvFile = csv.reader(tweetCSV)
         for row in csvFile:
             t = removeHash(removeAt(removeLink(row[0])))
             x = sentiment(t)
-            with open('airline_tweets_sentiment.csv', 'a', encoding="utf8") as tweetCSV1:
+            with open('shobhitreviews_sentiment.csv', 'a', encoding="utf8") as tweetCSV1:
                 csvFileWrite = csv.writer(tweetCSV1,delimiter = ',')
-                csvFileWrite.writerow((row[0],row[1],row[2],x))
+                csvFileWrite.writerow((row[0],row[1],row[2],row[3],x))
 
 csvReader()
